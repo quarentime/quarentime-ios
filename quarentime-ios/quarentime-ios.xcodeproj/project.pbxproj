@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024F29362426D870008B58A8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F29342426D870008B58A8 /* Network.swift */; };
+		024F29372426D870008B58A8 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F29352426D870008B58A8 /* RequestType.swift */; };
+		02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C802425FAC7005284DE /* AppDelegate.swift */; };
+		02F96C832425FAC7005284DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C822425FAC7005284DE /* SceneDelegate.swift */; };
+		02F96C852425FAC7005284DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C842425FAC7005284DE /* ViewController.swift */; };
+		02F96C882425FAC7005284DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F96C862425FAC7005284DE /* Main.storyboard */; };
+		02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F96C892425FAC8005284DE /* Assets.xcassets */; };
+		02F96C8D2425FAC8005284DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F96C8B2425FAC8005284DE /* LaunchScreen.storyboard */; };
+		02F96C982425FAC8005284DE /* quarentime_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C972425FAC8005284DE /* quarentime_iosTests.swift */; };
+		02F96CA32425FAC8005284DE /* quarentime_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */; };
+		099F27EC7EE37F231275FC6F /* Pods_quarentime_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */; };
+		842159E230910DFD56319621 /* Pods_quarentime_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */; };
+		D9A0BC158309383BDCB8BC7A /* Pods_quarentime_ios_quarentime_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02F96C942425FAC8005284DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02F96C752425FAC7005284DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02F96C7C2425FAC7005284DE;
+			remoteInfo = "quarentime-ios";
+		};
+		02F96C9F2425FAC8005284DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02F96C752425FAC7005284DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02F96C7C2425FAC7005284DE;
+			remoteInfo = "quarentime-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024F29342426D870008B58A8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		024F29352426D870008B58A8 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		02F96C7D2425FAC7005284DE /* quarentime-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quarentime-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F96C802425FAC7005284DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02F96C822425FAC7005284DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		02F96C842425FAC7005284DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02F96C872425FAC7005284DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02F96C892425FAC8005284DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02F96C8C2425FAC8005284DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02F96C8E2425FAC8005284DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F96C932425FAC8005284DE /* quarentime-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quarentime-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F96C972425FAC8005284DE /* quarentime_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quarentime_iosTests.swift; sourceTree = "<group>"; };
+		02F96C992425FAC8005284DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F96C9E2425FAC8005284DE /* quarentime-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quarentime-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quarentime_iosUITests.swift; sourceTree = "<group>"; };
+		02F96CA42425FAC8005284DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218BE79091AB8CD38FB4C3A3 /* Pods-quarentime-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		47C837F1DD79059406452532 /* Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_ios_quarentime_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1753BFDA5F3B0BCF762EFB /* Pods-quarentime-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74FD2E0689C73588DCBBC896 /* Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC8130E5BF13801550AEC31D /* Pods-quarentime-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.release.xcconfig"; sourceTree = "<group>"; };
+		F776C0125EA0596260D0D14C /* Pods-quarentime-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02F96C7A2425FAC7005284DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099F27EC7EE37F231275FC6F /* Pods_quarentime_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F96C902425FAC8005284DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842159E230910DFD56319621 /* Pods_quarentime_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F96C9B2425FAC8005284DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A0BC158309383BDCB8BC7A /* Pods_quarentime_ios_quarentime_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024F292E2426D6D3008B58A8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				024F29302426D6E8008B58A8 /* Login */,
+				024F292F2426D6DD008B58A8 /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		024F292F2426D6DD008B58A8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		024F29302426D6E8008B58A8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		024F29312426D79E008B58A8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		024F29322426D7A4008B58A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		024F29332426D870008B58A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				024F29342426D870008B58A8 /* Network.swift */,
+				024F29352426D870008B58A8 /* RequestType.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02F96C742425FAC7005284DE = {
+			isa = PBXGroup;
+			children = (
+				02F96C7F2425FAC7005284DE /* quarentime-ios */,
+				02F96C962425FAC8005284DE /* quarentime-iosTests */,
+				02F96CA12425FAC8005284DE /* quarentime-iosUITests */,
+				02F96C7E2425FAC7005284DE /* Products */,
+				BF8FA8E9704552D525776B8A /* Pods */,
+				61A77401A2EC32C83DE570AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02F96C7E2425FAC7005284DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02F96C7D2425FAC7005284DE /* quarentime-ios.app */,
+				02F96C932425FAC8005284DE /* quarentime-iosTests.xctest */,
+				02F96C9E2425FAC8005284DE /* quarentime-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02F96C7F2425FAC7005284DE /* quarentime-ios */ = {
+			isa = PBXGroup;
+			children = (
+				024F29312426D79E008B58A8 /* Components */,
+				024F29322426D7A4008B58A8 /* Extensions */,
+				024F292E2426D6D3008B58A8 /* Features */,
+				024F29332426D870008B58A8 /* Network */,
+				02F96C802425FAC7005284DE /* AppDelegate.swift */,
+				02F96C822425FAC7005284DE /* SceneDelegate.swift */,
+				02F96C842425FAC7005284DE /* ViewController.swift */,
+				02F96C862425FAC7005284DE /* Main.storyboard */,
+				02F96C892425FAC8005284DE /* Assets.xcassets */,
+				02F96C8B2425FAC8005284DE /* LaunchScreen.storyboard */,
+				02F96C8E2425FAC8005284DE /* Info.plist */,
+			);
+			path = "quarentime-ios";
+			sourceTree = "<group>";
+		};
+		02F96C962425FAC8005284DE /* quarentime-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				02F96C972425FAC8005284DE /* quarentime_iosTests.swift */,
+				02F96C992425FAC8005284DE /* Info.plist */,
+			);
+			path = "quarentime-iosTests";
+			sourceTree = "<group>";
+		};
+		02F96CA12425FAC8005284DE /* quarentime-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */,
+				02F96CA42425FAC8005284DE /* Info.plist */,
+			);
+			path = "quarentime-iosUITests";
+			sourceTree = "<group>";
+		};
+		61A77401A2EC32C83DE570AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */,
+				5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */,
+				4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF8FA8E9704552D525776B8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				218BE79091AB8CD38FB4C3A3 /* Pods-quarentime-ios.debug.xcconfig */,
+				BC8130E5BF13801550AEC31D /* Pods-quarentime-ios.release.xcconfig */,
+				47C837F1DD79059406452532 /* Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig */,
+				74FD2E0689C73588DCBBC896 /* Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig */,
+				6D1753BFDA5F3B0BCF762EFB /* Pods-quarentime-iosTests.debug.xcconfig */,
+				F776C0125EA0596260D0D14C /* Pods-quarentime-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02F96C7C2425FAC7005284DE /* quarentime-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F96CA72425FAC8005284DE /* Build configuration list for PBXNativeTarget "quarentime-ios" */;
+			buildPhases = (
+				37876C96DBC503E8BB6F67C6 /* [CP] Check Pods Manifest.lock */,
+				02F96C792425FAC7005284DE /* Sources */,
+				02F96C7A2425FAC7005284DE /* Frameworks */,
+				02F96C7B2425FAC7005284DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quarentime-ios";
+			productName = "quarentime-ios";
+			productReference = 02F96C7D2425FAC7005284DE /* quarentime-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02F96C922425FAC8005284DE /* quarentime-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F96CAA2425FAC8005284DE /* Build configuration list for PBXNativeTarget "quarentime-iosTests" */;
+			buildPhases = (
+				3A169618E409E81A8A601B5D /* [CP] Check Pods Manifest.lock */,
+				02F96C8F2425FAC8005284DE /* Sources */,
+				02F96C902425FAC8005284DE /* Frameworks */,
+				02F96C912425FAC8005284DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02F96C952425FAC8005284DE /* PBXTargetDependency */,
+			);
+			name = "quarentime-iosTests";
+			productName = "quarentime-iosTests";
+			productReference = 02F96C932425FAC8005284DE /* quarentime-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02F96C9D2425FAC8005284DE /* quarentime-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F96CAD2425FAC8005284DE /* Build configuration list for PBXNativeTarget "quarentime-iosUITests" */;
+			buildPhases = (
+				43823217C20452F040B98DEC /* [CP] Check Pods Manifest.lock */,
+				02F96C9A2425FAC8005284DE /* Sources */,
+				02F96C9B2425FAC8005284DE /* Frameworks */,
+				02F96C9C2425FAC8005284DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02F96CA02425FAC8005284DE /* PBXTargetDependency */,
+			);
+			name = "quarentime-iosUITests";
+			productName = "quarentime-iosUITests";
+			productReference = 02F96C9E2425FAC8005284DE /* quarentime-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02F96C752425FAC7005284DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Quarentime;
+				TargetAttributes = {
+					02F96C7C2425FAC7005284DE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					02F96C922425FAC8005284DE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 02F96C7C2425FAC7005284DE;
+					};
+					02F96C9D2425FAC8005284DE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 02F96C7C2425FAC7005284DE;
+					};
+				};
+			};
+			buildConfigurationList = 02F96C782425FAC7005284DE /* Build configuration list for PBXProject "quarentime-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02F96C742425FAC7005284DE;
+			productRefGroup = 02F96C7E2425FAC7005284DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02F96C7C2425FAC7005284DE /* quarentime-ios */,
+				02F96C922425FAC8005284DE /* quarentime-iosTests */,
+				02F96C9D2425FAC8005284DE /* quarentime-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02F96C7B2425FAC7005284DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F96C8D2425FAC8005284DE /* LaunchScreen.storyboard in Resources */,
+				02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */,
+				02F96C882425FAC7005284DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F96C912425FAC8005284DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F96C9C2425FAC8005284DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37876C96DBC503E8BB6F67C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quarentime-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A169618E409E81A8A601B5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quarentime-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43823217C20452F040B98DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quarentime-ios-quarentime-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02F96C792425FAC7005284DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F96C852425FAC7005284DE /* ViewController.swift in Sources */,
+				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
+				024F29362426D870008B58A8 /* Network.swift in Sources */,
+				02F96C832425FAC7005284DE /* SceneDelegate.swift in Sources */,
+				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F96C8F2425FAC8005284DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F96C982425FAC8005284DE /* quarentime_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F96C9A2425FAC8005284DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F96CA32425FAC8005284DE /* quarentime_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02F96C952425FAC8005284DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02F96C7C2425FAC7005284DE /* quarentime-ios */;
+			targetProxy = 02F96C942425FAC8005284DE /* PBXContainerItemProxy */;
+		};
+		02F96CA02425FAC8005284DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02F96C7C2425FAC7005284DE /* quarentime-ios */;
+			targetProxy = 02F96C9F2425FAC8005284DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02F96C862425FAC7005284DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02F96C872425FAC7005284DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02F96C8B2425FAC8005284DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02F96C8C2425FAC8005284DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02F96CA52425FAC8005284DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02F96CA62425FAC8005284DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02F96CA82425FAC8005284DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 218BE79091AB8CD38FB4C3A3 /* Pods-quarentime-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quarentime-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.quarentime.quarentime-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02F96CA92425FAC8005284DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8130E5BF13801550AEC31D /* Pods-quarentime-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quarentime-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.quarentime.quarentime-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02F96CAB2425FAC8005284DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1753BFDA5F3B0BCF762EFB /* Pods-quarentime-iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quarentime-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.quarentime.quarentime-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quarentime-ios.app/quarentime-ios";
+			};
+			name = Debug;
+		};
+		02F96CAC2425FAC8005284DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F776C0125EA0596260D0D14C /* Pods-quarentime-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quarentime-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.quarentime.quarentime-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quarentime-ios.app/quarentime-ios";
+			};
+			name = Release;
+		};
+		02F96CAE2425FAC8005284DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C837F1DD79059406452532 /* Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quarentime-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.quarentime.quarentime-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "quarentime-ios";
+			};
+			name = Debug;
+		};
+		02F96CAF2425FAC8005284DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74FD2E0689C73588DCBBC896 /* Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "quarentime-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.quarentime.quarentime-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "quarentime-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02F96C782425FAC7005284DE /* Build configuration list for PBXProject "quarentime-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F96CA52425FAC8005284DE /* Debug */,
+				02F96CA62425FAC8005284DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F96CA72425FAC8005284DE /* Build configuration list for PBXNativeTarget "quarentime-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F96CA82425FAC8005284DE /* Debug */,
+				02F96CA92425FAC8005284DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F96CAA2425FAC8005284DE /* Build configuration list for PBXNativeTarget "quarentime-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F96CAB2425FAC8005284DE /* Debug */,
+				02F96CAC2425FAC8005284DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F96CAD2425FAC8005284DE /* Build configuration list for PBXNativeTarget "quarentime-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F96CAE2425FAC8005284DE /* Debug */,
+				02F96CAF2425FAC8005284DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02F96C752425FAC7005284DE /* Project object */;
+}

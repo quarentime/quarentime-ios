@@ -1,0 +1,6 @@
+framework module Pods_quarentime_iosTests {
+  umbrella header "Pods-quarentime-iosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
