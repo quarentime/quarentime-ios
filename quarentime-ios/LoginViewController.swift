@@ -53,6 +53,9 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
             print("Login error: \(error.localizedDescription)")
             return
           }
+            print(user?.user.displayName)
+            print(user?.user.email)
+            print(user?.user.phoneNumber)
             // aca en user tengo toda la data del usuario para mandar al server
         })
       }
