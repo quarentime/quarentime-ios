@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  quarentime-ios
+  
+  Created by Fernando Romiti on 21/03/20.
+  Copyright © 2020 Quarentime. All rights reserved.
+*/
+
+"onboarding.page1.title" = "Invite family, friends and colleagues.";
+"onboarding.page1.subTitle" = "Create your own close contact circle (contact trace)";
