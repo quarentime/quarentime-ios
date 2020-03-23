@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func goToLogin(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+        let balanceViewController = storyBoard.instantiateViewController(withIdentifier: "login") as! LoginViewController
+        self.present(balanceViewController, animated: true, completion: nil)
+    }
+    
 }
 

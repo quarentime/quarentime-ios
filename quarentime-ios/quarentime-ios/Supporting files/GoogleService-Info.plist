@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>627240942816-o58gk1hg3umrvmbkmstfl947jku5dnaf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.627240942816-o58gk1hg3umrvmbkmstfl947jku5dnaf</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>627240942816-me7ksbup4ps1ait8e49j0a8ng16ndcq8.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCMAzrERFK2JE-MGaZl9QTbcesWhlR8CP4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>627240942816</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.quarentime.quarentime-ios</string>
+	<key>PROJECT_ID</key>
+	<string>quarentime</string>
+	<key>STORAGE_BUCKET</key>
+	<string>quarentime.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:627240942816:ios:70c8737e0cbf2a18a2e485</string>
+	<key>DATABASE_URL</key>
+	<string>https://quarentime.firebaseio.com</string>
+</dict>
+</plist>
