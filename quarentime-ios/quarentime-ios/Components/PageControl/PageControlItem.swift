@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-final class PageControlItem: UIView {
+final class PageControlItem: UIView, XibViewGettable {
 
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var widthConstraint: NSLayoutConstraint!
@@ -18,13 +18,6 @@ final class PageControlItem: UIView {
         didSet {
             update()
         }
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        containerView.backgroundColor = .gray
-        layer.cornerRadius = 3
-        layer.masksToBounds = true
     }
     
     func update() {
@@ -37,12 +30,10 @@ final class PageControlItem: UIView {
     
     private func select() {
         self.containerView.backgroundColor = .black
-        self.widthConstraint.constant = 20
     }
     
     private func deSelect() {
-        self.containerView.backgroundColor = .gray
-        self.widthConstraint.constant = 6
+        self.containerView.backgroundColor = .lightGray
     }
     
 }

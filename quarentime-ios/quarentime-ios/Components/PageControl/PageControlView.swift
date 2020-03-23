@@ -5,11 +5,10 @@
 //  Created by Fernando Romiti on 21/03/20.
 //  Copyright © 2020 Quarentime. All rights reserved.
 //
-import Foundation
 
 import UIKit
 
-final class PageControlView: UIStackView, PageControlViewProtocol {
+final class PageControlView: UIStackView, XibViewGettable, PageControlViewProtocol {
     
     var numberOfPages: Int = 0 {
         didSet {
@@ -26,7 +25,6 @@ final class PageControlView: UIStackView, PageControlViewProtocol {
     static func getView(itemsCount: Int) -> PageControlViewProtocol {
         let view = PageControlView()
         view.numberOfPages = itemsCount
-        view.updateViews()
         view.axis = .horizontal
         view.spacing = 6.0
         view.currentIndex = 0
@@ -34,9 +32,10 @@ final class PageControlView: UIStackView, PageControlViewProtocol {
     }
     
     private func updateViews() {
-        subviews.forEach { $0.removeFromSuperview() }
         for _ in 0...numberOfPages - 1 {
-//            addArrangedSubview(PageControlItem.getView())
+            let itemView = PageControlItem.getView()
+            itemView.update()
+            addArrangedSubview(itemView)
         }
     }
     
