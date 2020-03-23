@@ -13,24 +13,22 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController, GIDSignInDelegate {
     
-    // @IBOutlet weak var googleSignInButton: GIDSignInButton!
+    @IBOutlet weak var googleSignInButton: UIButton!
+    @IBOutlet weak var facebookSignInButton: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // set google sign-in delegate
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-//        GIDSignIn.sharedInstance().delegate = self
-//
-//        GIDSignIn.sharedInstance()?.presentingViewController = self
-//        GIDSignIn.sharedInstance().signIn()
-        
-        
         GIDSignIn.sharedInstance().delegate = self
-        // GIDSignIn.sharedInstance().uiDelegate = self
-            
         
-        // Do any additional setup after loading the view.
+        googleSignInButton.setTitle("login.signin.google".local, for: .normal)
+        facebookSignInButton.setTitle("login.signin.facebook".local, for: .normal)
+        
+        descriptionLabel.text = "login.description".local
+        
     }
     
   
