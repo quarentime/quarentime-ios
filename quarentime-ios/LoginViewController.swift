@@ -55,7 +55,10 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
           }
             print(user?.user.displayName)
             print(user?.user.email)
-            print(user?.user.phoneNumber)
+            print(authentication.accessToken)
+            print(authentication.refreshToken)
+            print(user?.user.refreshToken)
+            
             // aca en user tengo toda la data del usuario para mandar al server
         })
       }
