@@ -25,9 +25,9 @@
 		02F96CA32425FAC8005284DE /* quarentime_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */; };
 		099F27EC7EE37F231275FC6F /* Pods_quarentime_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */; };
 		842159E230910DFD56319621 /* Pods_quarentime_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */; };
-		B41E9C6E24271F5B00872042 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C6D24271F5B00872042 /* Login.storyboard */; };
-		B41E9C7024271F7400872042 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E9C6F24271F7400872042 /* LoginViewController.swift */; };
 		B41E9C722427209000872042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C712427209000872042 /* GoogleService-Info.plist */; };
+		B41E9C752428C00600872042 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C732428C00600872042 /* Login.storyboard */; };
+		B41E9C762428C00600872042 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E9C742428C00600872042 /* LoginViewController.swift */; };
 		D9A0BC158309383BDCB8BC7A /* Pods_quarentime_ios_quarentime_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,9 +78,9 @@
 		5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1753BFDA5F3B0BCF762EFB /* Pods-quarentime-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		74FD2E0689C73588DCBBC896 /* Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B41E9C6D24271F5B00872042 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = SOURCE_ROOT; };
-		B41E9C6F24271F7400872042 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		B41E9C712427209000872042 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B41E9C732428C00600872042 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B41E9C742428C00600872042 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC8130E5BF13801550AEC31D /* Pods-quarentime-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F776C0125EA0596260D0D14C /* Pods-quarentime-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,8 +132,8 @@
 		024F29302426D6E8008B58A8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B41E9C6D24271F5B00872042 /* Login.storyboard */,
-				B41E9C6F24271F7400872042 /* LoginViewController.swift */,
+				B41E9C732428C00600872042 /* Login.storyboard */,
+				B41E9C742428C00600872042 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -378,7 +378,7 @@
 			files = (
 				024F2945242712C8008B58A8 /* PageControlItem.xib in Resources */,
 				02F96C8D2425FAC8005284DE /* LaunchScreen.storyboard in Resources */,
-				B41E9C6E24271F5B00872042 /* Login.storyboard in Resources */,
+				B41E9C752428C00600872042 /* Login.storyboard in Resources */,
 				024F293B24270E7A008B58A8 /* Localizable.strings in Resources */,
 				02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */,
 				02F96C882425FAC7005284DE /* Main.storyboard in Resources */,
@@ -552,7 +552,7 @@
 				02F96C832425FAC7005284DE /* SceneDelegate.swift in Sources */,
 				024F293924270E53008B58A8 /* String+Localization.swift in Sources */,
 				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
-				B41E9C7024271F7400872042 /* LoginViewController.swift in Sources */,
+				B41E9C762428C00600872042 /* LoginViewController.swift in Sources */,
 				024F2944242712C8008B58A8 /* PageControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

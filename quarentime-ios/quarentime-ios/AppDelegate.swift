@@ -7,10 +7,12 @@
 //
 
 import UIKit
-// Login Google
+// firebase
 import Firebase
+// Login Google
 import GoogleSignIn
-// *****
+// Login Facebook
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // connect to firebase
         FirebaseApp.configure()
-        
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+
         return true
     }
 

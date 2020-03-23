@@ -19,10 +19,9 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb647186859392789</string>
 				<string>com.googleusercontent.apps.627240942816-o58gk1hg3umrvmbkmstfl947jku5dnaf</string>
 			</array>
 		</dict>
@@ -71,5 +70,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>FacebookAppID</key>
+	<string>647186859392789</string>
+	<key>FacebookDisplayName</key>
+	<string>Quarentime</string>
 </dict>
 </plist>

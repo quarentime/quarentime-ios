@@ -12,6 +12,8 @@ target 'quarentime-ios' do
   # google login
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  # Facebook login
+  pod 'FBSDKLoginKit'
 
 
   target 'quarentime-iosTests' do
