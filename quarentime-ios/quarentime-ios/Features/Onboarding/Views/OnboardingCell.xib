@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboardingCell" id="pNH-xb-cgJ" customClass="OnboardingCell" customModule="quarentime_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="767"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vXk-Ii-ozU">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="767"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addfriends" translatesAutoresizingMaskIntoConstraints="NO" id="K3N-G0-nIT">
+                        <rect key="frame" x="34" y="613" width="46" height="46"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Z7u-SF-LfO">
+                        <rect key="frame" x="34" y="678" width="345" height="67"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-6c-Y26">
+                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="33.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9J-fu-uuN">
+                                <rect key="frame" x="0.0" y="45.5" width="58" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Z7u-SF-LfO" secondAttribute="trailing" constant="34" id="70o-yX-mB9"/>
+                    <constraint firstItem="Z7u-SF-LfO" firstAttribute="top" secondItem="K3N-G0-nIT" secondAttribute="bottom" constant="19" id="DvX-fo-SY7"/>
+                    <constraint firstItem="Z7u-SF-LfO" firstAttribute="leading" secondItem="vXk-Ii-ozU" secondAttribute="leading" constant="34" id="GwC-Wm-WVu"/>
+                    <constraint firstAttribute="bottom" secondItem="Z7u-SF-LfO" secondAttribute="bottom" constant="22" id="Rlq-TF-Hmo"/>
+                    <constraint firstItem="K3N-G0-nIT" firstAttribute="leading" secondItem="vXk-Ii-ozU" secondAttribute="leading" constant="34" id="n2s-XS-vWB"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="413" height="767"/>
+            <connections>
+                <outlet property="iconImageView" destination="K3N-G0-nIT" id="GDM-R1-WMz"/>
+                <outlet property="subTitleLabel" destination="o9J-fu-uuN" id="Wfe-Av-aNP"/>
+                <outlet property="titleLabel" destination="jRo-6c-Y26" id="aLw-nd-diV"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="148"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addfriends" width="46" height="46"/>
+    </resources>
+</document>

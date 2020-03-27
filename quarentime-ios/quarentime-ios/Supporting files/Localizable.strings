@@ -8,5 +8,11 @@
 
 "onboarding.page1.title" = "Invite family, friends and colleagues.";
 "onboarding.page1.subTitle" = "Create your own close contact circle (contact trace)";
+"onboarding.page2.title" = "Track how your contact circle is feeling.";
+"onboarding.page2.subTitle" = "Discover if someone of your circle has been tested positive for COVID-19.";
+"onboarding.page3.title" = "Monitor your symptoms daily. Share it!";
+"onboarding.page3.subTitle" = "Are you having cough or difficulty breathing, or feel feverish? Share it!";
+"onboarding.page4.title" = "Get alerts! You’re close to a high-risk patients.";
+"onboarding.page4.subTitle" = "Take everyday precautions to keep space between yourself and others.";
 
 "button.skip" = "SKIP";

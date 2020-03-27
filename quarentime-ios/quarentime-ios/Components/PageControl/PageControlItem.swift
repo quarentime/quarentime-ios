@@ -21,10 +21,9 @@ final class PageControlItem: UIView, XibViewGettable {
     }
     
     func update() {
-        isSelected ? select() : deSelect()
         UIView.animate(withDuration: 0.35, delay: 0, usingSpringWithDamping: 0.60, initialSpringVelocity: 0.1, options: .allowUserInteraction, animations: { [weak self] in
             guard let self = self else { return }
-            self.layoutIfNeeded()
+            self.isSelected ? self.select() : self.deSelect()
         })
     }
     
