@@ -39,7 +39,8 @@ final class OnboardingVC: UIViewController, StoryboardGettable {
     }
     
     @IBAction func skipTapped(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        let letsStartVC = LetsStartVC.getVC()
+        present(letsStartVC, animated: true, completion: nil)
     }
     
 }

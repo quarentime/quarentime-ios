@@ -29,6 +29,9 @@
 		0235C3E324289DCA00365C97 /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0235C3CA24289DB300365C97 /* SF-Pro-Display-Ultralight.otf */; };
 		0235C3E424289DCA00365C97 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0235C3CD24289DB300365C97 /* SF-Pro-Display-UltralightItalic.otf */; };
 		02373D5C242E1A2C00526FF6 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02373D5B242E1A2C00526FF6 /* OnboardingCell.xib */; };
+		024790B024321209001CAFB2 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024790AF24321209001CAFB2 /* LaunchCoordinator.swift */; };
+		024790B324321DC1001CAFB2 /* LetsStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024790B224321DC1001CAFB2 /* LetsStartVC.swift */; };
+		024790B524321DCC001CAFB2 /* LetsStartVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024790B424321DCC001CAFB2 /* LetsStartVC.storyboard */; };
 		024F29362426D870008B58A8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F29342426D870008B58A8 /* Network.swift */; };
 		024F29372426D870008B58A8 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F29352426D870008B58A8 /* RequestType.swift */; };
 		024F293924270E53008B58A8 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F293824270E53008B58A8 /* String+Localization.swift */; };
@@ -45,8 +48,6 @@
 		027EAC45242E0CBC00C3A77E /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027EAC44242E0CBC00C3A77E /* OnboardingItem.swift */; };
 		02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C802425FAC7005284DE /* AppDelegate.swift */; };
 		02F96C832425FAC7005284DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C822425FAC7005284DE /* SceneDelegate.swift */; };
-		02F96C852425FAC7005284DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C842425FAC7005284DE /* ViewController.swift */; };
-		02F96C882425FAC7005284DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F96C862425FAC7005284DE /* Main.storyboard */; };
 		02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F96C892425FAC8005284DE /* Assets.xcassets */; };
 		02F96C8D2425FAC8005284DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F96C8B2425FAC8005284DE /* LaunchScreen.storyboard */; };
 		02F96C982425FAC8005284DE /* quarentime_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C972425FAC8005284DE /* quarentime_iosTests.swift */; };
@@ -96,6 +97,9 @@
 		0235C3D124289DB300365C97 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
 		0235C3D224289DB300365C97 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		02373D5B242E1A2C00526FF6 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
+		024790AF24321209001CAFB2 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
+		024790B224321DC1001CAFB2 /* LetsStartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsStartVC.swift; sourceTree = "<group>"; };
+		024790B424321DCC001CAFB2 /* LetsStartVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LetsStartVC.storyboard; sourceTree = "<group>"; };
 		024F29342426D870008B58A8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		024F29352426D870008B58A8 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		024F293824270E53008B58A8 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
@@ -113,8 +117,6 @@
 		02F96C7D2425FAC7005284DE /* quarentime-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quarentime-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F96C802425FAC7005284DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F96C822425FAC7005284DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02F96C842425FAC7005284DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		02F96C872425FAC7005284DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02F96C892425FAC8005284DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F96C8C2425FAC8005284DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02F96C8E2425FAC8005284DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,9 +216,27 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		024790AE243211D2001CAFB2 /* Navigation Flow */ = {
+			isa = PBXGroup;
+			children = (
+				024790AF24321209001CAFB2 /* LaunchCoordinator.swift */,
+			);
+			path = "Navigation Flow";
+			sourceTree = "<group>";
+		};
+		024790B124321D5D001CAFB2 /* LetsGetStarted */ = {
+			isa = PBXGroup;
+			children = (
+				024790B224321DC1001CAFB2 /* LetsStartVC.swift */,
+				024790B424321DCC001CAFB2 /* LetsStartVC.storyboard */,
+			);
+			path = LetsGetStarted;
+			sourceTree = "<group>";
+		};
 		024F292E2426D6D3008B58A8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				024790B124321D5D001CAFB2 /* LetsGetStarted */,
 				024F29302426D6E8008B58A8 /* Login */,
 				024F292F2426D6DD008B58A8 /* Onboarding */,
 			);
@@ -336,13 +356,12 @@
 				024F29322426D7A4008B58A8 /* Extensions */,
 				024F292E2426D6D3008B58A8 /* Features */,
 				0224FE522428888400D9AC86 /* Helpers */,
+				024790AE243211D2001CAFB2 /* Navigation Flow */,
 				024F29332426D870008B58A8 /* Network */,
 				0224FE53242888D900D9AC86 /* Services */,
 				024F293C24270E7E008B58A8 /* Supporting files */,
 				02F96C802425FAC7005284DE /* AppDelegate.swift */,
 				02F96C822425FAC7005284DE /* SceneDelegate.swift */,
-				02F96C842425FAC7005284DE /* ViewController.swift */,
-				02F96C862425FAC7005284DE /* Main.storyboard */,
 			);
 			path = "quarentime-ios";
 			sourceTree = "<group>";
@@ -516,9 +535,9 @@
 				02373D5C242E1A2C00526FF6 /* OnboardingCell.xib in Resources */,
 				02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */,
 				024F294D242734F6008B58A8 /* OnboardingVC.storyboard in Resources */,
-				02F96C882425FAC7005284DE /* Main.storyboard in Resources */,
 				0235C3DD24289DCA00365C97 /* SF-Pro-Display-Regular.otf in Resources */,
 				0235C3E224289DCA00365C97 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				024790B524321DCC001CAFB2 /* LetsStartVC.storyboard in Resources */,
 				0235C3D424289DCA00365C97 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,7 +634,6 @@
 			files = (
 				024F294924273341008B58A8 /* StoryboardGettable.swift in Sources */,
 				024F294B242734E4008B58A8 /* OnboardingVC.swift in Sources */,
-				02F96C852425FAC7005284DE /* ViewController.swift in Sources */,
 				027EAC42242E0BB800C3A77E /* OnboardingCell.swift in Sources */,
 				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
 				024F29362426D870008B58A8 /* Network.swift in Sources */,
@@ -624,10 +642,12 @@
 				0224FE582428895300D9AC86 /* SomeModel.swift in Sources */,
 				02F96C832425FAC7005284DE /* SceneDelegate.swift in Sources */,
 				0224FE552428892C00D9AC86 /* DemoService.swift in Sources */,
+				024790B024321209001CAFB2 /* LaunchCoordinator.swift in Sources */,
 				024F293924270E53008B58A8 /* String+Localization.swift in Sources */,
 				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
 				0224FE5A2428946900D9AC86 /* UIView+Constraints.swift in Sources */,
 				024F294824273341008B58A8 /* XibViewGettable.swift in Sources */,
+				024790B324321DC1001CAFB2 /* LetsStartVC.swift in Sources */,
 				027EAC45242E0CBC00C3A77E /* OnboardingItem.swift in Sources */,
 				024F2944242712C8008B58A8 /* PageControlView.swift in Sources */,
 			);
@@ -665,14 +685,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		02F96C862425FAC7005284DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02F96C872425FAC7005284DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		02F96C8B2425FAC8005284DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

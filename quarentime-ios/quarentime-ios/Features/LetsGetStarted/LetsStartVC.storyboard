@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2t-oH-fEL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Lets StartVC-->
+        <scene sceneID="Ddm-7W-d7b">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="N2t-oH-fEL" customClass="LetsStartVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S55-gw-1QE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for sign up!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qm5-yI-LPY">
+                                <rect key="frame" x="70.5" y="429.5" width="273.5" height="37.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballon_large" translatesAutoresizingMaskIntoConstraints="NO" id="oXe-3e-Z8c">
+                                <rect key="frame" x="102" y="69" width="290" height="292"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballon_medium" translatesAutoresizingMaskIntoConstraints="NO" id="YYS-qC-pVZ">
+                                <rect key="frame" x="34" y="482" width="206" height="202"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballon_small" translatesAutoresizingMaskIntoConstraints="NO" id="ojV-J1-CV0">
+                                <rect key="frame" x="209" y="584.5" width="136" height="138"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4o-Gx-Yvh">
+                                <rect key="frame" x="30" y="796" width="354" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gc5-DA-3k1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
+                                <state key="normal" title="LET'S START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="letsStartTapped:" destination="N2t-oH-fEL" eventType="touchUpInside" id="Xct-jS-VeC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oXe-3e-Z8c" firstAttribute="top" secondItem="2Ip-Ov-1XK" secondAttribute="top" constant="25" id="3f9-OY-itu"/>
+                            <constraint firstItem="oXe-3e-Z8c" firstAttribute="centerX" secondItem="S55-gw-1QE" secondAttribute="centerX" constant="40" id="5ej-kB-05z"/>
+                            <constraint firstItem="Qm5-yI-LPY" firstAttribute="centerX" secondItem="S55-gw-1QE" secondAttribute="centerX" id="ATv-xv-oRY"/>
+                            <constraint firstItem="2Ip-Ov-1XK" firstAttribute="trailing" secondItem="L4o-Gx-Yvh" secondAttribute="trailing" constant="30" id="Lpe-Px-L4w"/>
+                            <constraint firstItem="ojV-J1-CV0" firstAttribute="centerX" secondItem="S55-gw-1QE" secondAttribute="centerX" constant="70" id="Wdi-cC-fkf"/>
+                            <constraint firstItem="ojV-J1-CV0" firstAttribute="top" secondItem="Qm5-yI-LPY" secondAttribute="bottom" constant="117.5" id="Yfv-WM-4dE"/>
+                            <constraint firstItem="L4o-Gx-Yvh" firstAttribute="leading" secondItem="2Ip-Ov-1XK" secondAttribute="leading" constant="30" id="Zud-4x-VPC"/>
+                            <constraint firstItem="Qm5-yI-LPY" firstAttribute="centerY" secondItem="S55-gw-1QE" secondAttribute="centerY" id="bOV-g2-lad"/>
+                            <constraint firstAttribute="bottom" secondItem="L4o-Gx-Yvh" secondAttribute="bottom" constant="50" id="fg6-sZ-fQW"/>
+                            <constraint firstItem="YYS-qC-pVZ" firstAttribute="centerX" secondItem="S55-gw-1QE" secondAttribute="centerX" constant="-70" id="ovT-DI-oHD"/>
+                            <constraint firstItem="YYS-qC-pVZ" firstAttribute="top" secondItem="Qm5-yI-LPY" secondAttribute="bottom" constant="15" id="s9z-Ea-3Of"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Ip-Ov-1XK"/>
+                    </view>
+                    <connections>
+                        <outlet property="largeImageCenterConstraint" destination="5ej-kB-05z" id="kNi-b4-yMk"/>
+                        <outlet property="largeImageTopConstraint" destination="3f9-OY-itu" id="uaG-8q-csM"/>
+                        <outlet property="largeImageView" destination="oXe-3e-Z8c" id="wGe-hF-Oic"/>
+                        <outlet property="letsStartButton" destination="L4o-Gx-Yvh" id="Yr7-mE-lyz"/>
+                        <outlet property="mediumImageCenterConstraint" destination="ovT-DI-oHD" id="Dt0-53-aee"/>
+                        <outlet property="mediumImageTopConstraint" destination="s9z-Ea-3Of" id="qa0-XF-Kb6"/>
+                        <outlet property="mediumImageView" destination="YYS-qC-pVZ" id="Lyr-Wy-edB"/>
+                        <outlet property="smallImageCenterConstraint" destination="Wdi-cC-fkf" id="GIK-tf-Jbb"/>
+                        <outlet property="smallImageTopConstraint" destination="Yfv-WM-4dE" id="lbe-G3-mj0"/>
+                        <outlet property="smallImageView" destination="ojV-J1-CV0" id="bCf-kp-c9g"/>
+                        <outlet property="thanksLabel" destination="Qm5-yI-LPY" id="lso-m9-N9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FKb-vT-lJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-131.8840579710145" y="-309.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ballon_large" width="290" height="292"/>
+        <image name="ballon_medium" width="206" height="202"/>
+        <image name="ballon_small" width="136" height="138"/>
+    </resources>
+</document>
