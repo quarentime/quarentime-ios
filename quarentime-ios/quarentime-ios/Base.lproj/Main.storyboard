@@ -23,6 +23,15 @@
                                     <action selector="goToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlp-5G-Vay"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYu-J4-4jH">
+                                <rect key="frame" x="152" y="488" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Intake"/>
+                                <connections>
+                                    <action selector="goToIntake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6rU-Ib-1Vd"/>
+                                    <action selector="goToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kV-1M-apk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
