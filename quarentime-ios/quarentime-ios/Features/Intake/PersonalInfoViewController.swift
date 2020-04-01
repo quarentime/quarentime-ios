@@ -28,24 +28,6 @@ class PersonalInfoViewController: UIViewController, UITextFieldDelegate  {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        setupStepButtons()
-    }
-    
-    func setupStepButtons() {
-        buttonStep1.layer.borderWidth = 1
-        buttonStep1.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        buttonStep1.layer.cornerRadius = buttonStep1.frame.width / 2
-        
-        buttonStep2.layer.borderWidth = 1
-        buttonStep2.layer.borderColor = #colorLiteral(red: 0.8829681277, green: 0.8829888701, blue: 0.8829776645, alpha: 1)
-        buttonStep2.layer.cornerRadius = buttonStep2.frame.width / 2
-
-        buttonStep3.layer.borderWidth = 1
-        buttonStep3.layer.borderColor = #colorLiteral(red: 0.8829681277, green: 0.8829888701, blue: 0.8829776645, alpha: 1)
-        buttonStep3.layer.cornerRadius = buttonStep3.frame.width / 2
-    }
-    
 //MARK: - Actions
     @IBAction func privacyPolicyClicked(_ sender: Any) {
         if let url = URL(string: K.urlPrivacyPolicy) {
