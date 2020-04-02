@@ -49,6 +49,11 @@
 		02F96C982425FAC8005284DE /* quarentime_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C972425FAC8005284DE /* quarentime_iosTests.swift */; };
 		02F96CA32425FAC8005284DE /* quarentime_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */; };
 		099F27EC7EE37F231275FC6F /* Pods_quarentime_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */; };
+		2F012ECE2433A2810005D26A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F012ECD2433A2800005D26A /* Constants.swift */; };
+		2F012ED02433A80E0005D26A /* VerifyPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F012ECF2433A80E0005D26A /* VerifyPhoneNumberViewController.swift */; };
+		2F1B4CCB2434F8B30033371B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B4CCA2434F8B30033371B /* CustomButton.swift */; };
+		2FDDB1E1242FAD09009DE7B2 /* Intake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDDB1E0242FAD09009DE7B2 /* Intake.storyboard */; };
+		2FDDB1E3242FB9EB009DE7B2 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDB1E2242FB9EB009DE7B2 /* PersonalInfoViewController.swift */; };
 		842159E230910DFD56319621 /* Pods_quarentime_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */; };
 		B41E9C722427209000872042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C712427209000872042 /* GoogleService-Info.plist */; };
 		B41E9C752428C00600872042 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C732428C00600872042 /* Login.storyboard */; };
@@ -122,6 +127,11 @@
 		02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quarentime_iosUITests.swift; sourceTree = "<group>"; };
 		02F96CA42425FAC8005284DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218BE79091AB8CD38FB4C3A3 /* Pods-quarentime-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		2F012ECD2433A2800005D26A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F012ECF2433A80E0005D26A /* VerifyPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		2F1B4CCA2434F8B30033371B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2FDDB1E0242FAD09009DE7B2 /* Intake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intake.storyboard; sourceTree = "<group>"; };
+		2FDDB1E2242FB9EB009DE7B2 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		47C837F1DD79059406452532 /* Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_ios_quarentime_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +178,8 @@
 			children = (
 				024F294724273341008B58A8 /* StoryboardGettable.swift */,
 				024F294624273341008B58A8 /* XibViewGettable.swift */,
+				2F012ECD2433A2800005D26A /* Constants.swift */,
+				2F1B4CCA2434F8B30033371B /* CustomButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -219,6 +231,7 @@
 			children = (
 				024F29302426D6E8008B58A8 /* Login */,
 				024F292F2426D6DD008B58A8 /* Onboarding */,
+				2FDDB1DF242FACE4009DE7B2 /* Intake */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -347,6 +360,16 @@
 				02F96CA42425FAC8005284DE /* Info.plist */,
 			);
 			path = "quarentime-iosUITests";
+			sourceTree = "<group>";
+		};
+		2FDDB1DF242FACE4009DE7B2 /* Intake */ = {
+			isa = PBXGroup;
+			children = (
+				2FDDB1E0242FAD09009DE7B2 /* Intake.storyboard */,
+				2FDDB1E2242FB9EB009DE7B2 /* PersonalInfoViewController.swift */,
+				2F012ECF2433A80E0005D26A /* VerifyPhoneNumberViewController.swift */,
+			);
+			path = Intake;
 			sourceTree = "<group>";
 		};
 		61A77401A2EC32C83DE570AE /* Frameworks */ = {
@@ -504,6 +527,7 @@
 				0235C3D824289DCA00365C97 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
 				02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */,
 				024F294D242734F6008B58A8 /* OnboardingVC.storyboard in Resources */,
+				2FDDB1E1242FAD09009DE7B2 /* Intake.storyboard in Resources */,
 				02F96C882425FAC7005284DE /* Main.storyboard in Resources */,
 				B41E9C722427209000872042 /* GoogleService-Info.plist in Resources */,
 				0235C3DD24289DCA00365C97 /* SF-Pro-Display-Regular.otf in Resources */,
@@ -674,6 +698,8 @@
 				024F294B242734E4008B58A8 /* OnboardingVC.swift in Sources */,
 				02F96C852425FAC7005284DE /* ViewController.swift in Sources */,
 				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
+				2F1B4CCB2434F8B30033371B /* CustomButton.swift in Sources */,
+				2FDDB1E3242FB9EB009DE7B2 /* PersonalInfoViewController.swift in Sources */,
 				024F29362426D870008B58A8 /* Network.swift in Sources */,
 				024F2943242712C8008B58A8 /* PageControlViewProtocol.swift in Sources */,
 				024F2942242712C8008B58A8 /* PageControlItem.swift in Sources */,
@@ -682,10 +708,12 @@
 				0224FE552428892C00D9AC86 /* DemoService.swift in Sources */,
 				024F293924270E53008B58A8 /* String+Localization.swift in Sources */,
 				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
+				2F012ED02433A80E0005D26A /* VerifyPhoneNumberViewController.swift in Sources */,
 				B41E9C762428C00600872042 /* LoginViewController.swift in Sources */,
 				0224FE5A2428946900D9AC86 /* UIView+Constraints.swift in Sources */,
 				024F294824273341008B58A8 /* XibViewGettable.swift in Sources */,
 				024F2944242712C8008B58A8 /* PageControlView.swift in Sources */,
+				2F012ECE2433A2810005D26A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
