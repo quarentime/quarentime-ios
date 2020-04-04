@@ -18,10 +18,11 @@ struct LaunchCoordinator {
         // Do shitty configs for frameworks (if possible in background thread)
     }
     
-    func initializeApp(in window: UIWindow?, animated: Bool) {
+    /// Set the correct ViewController depending on app state
+    func setRootViewController(in window: UIWindow?, animated: Bool) {
         guard let keyWindow = window else { return }
         var oldVc = keyWindow.rootViewController
-        keyWindow.rootViewController = checkStateInRepositoryAndReturnVC()
+        keyWindow.rootViewController = checkAppStateInRepositoryAndReturnVC()
         let duration = animated == true ? 0.5 : 0.0
         UIView.transition(with: keyWindow, duration: duration, options: .transitionCrossDissolve, animations: {
         }, completion: { _ in
@@ -34,14 +35,14 @@ struct LaunchCoordinator {
     }
     
     // TODO: THIS IS TEMPORARY, WE NEED A REPOSITORY TO SAVE THIS APP STATES
-    private func checkStateInRepositoryAndReturnVC() -> UIViewController {
+    private func checkAppStateInRepositoryAndReturnVC() -> UIViewController {
         let loggedIn = true
-        let isOnboardingCompleted = false
+        let isOnboardingCompleted = true
         if loggedIn {
             if isOnboardingCompleted {
-                // SHOW HOME
+                return MainScreenVC.getVC()
             } else {
-                return OnboardingVC.getVC()
+                //return OnboardingVC.getVC()
             }
         } else {
             //Show login

@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if #available(iOS 13.0, *) {
         } else {
-            LaunchCoordinator.shared.initializeApp(in: window, animated: true)
+            LaunchCoordinator.shared.setRootViewController(in: window, animated: true)
         }
         return true
     }

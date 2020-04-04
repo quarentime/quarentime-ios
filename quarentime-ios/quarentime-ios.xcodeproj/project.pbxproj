@@ -46,6 +46,16 @@
 		024F294D242734F6008B58A8 /* OnboardingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024F294C242734F6008B58A8 /* OnboardingVC.storyboard */; };
 		027EAC42242E0BB800C3A77E /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027EAC41242E0BB800C3A77E /* OnboardingCell.swift */; };
 		027EAC45242E0CBC00C3A77E /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027EAC44242E0CBC00C3A77E /* OnboardingItem.swift */; };
+		02E8290024381D5E00F60F16 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E828FF24381D5E00F60F16 /* MainScreenVC.swift */; };
+		02E8290224381D6F00F60F16 /* MainScreenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8290124381D6F00F60F16 /* MainScreenVC.storyboard */; };
+		02E8290424381FA100F60F16 /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8290324381FA100F60F16 /* HomeVC.storyboard */; };
+		02E8290624381FB200F60F16 /* AddFriendsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8290524381FB200F60F16 /* AddFriendsVC.storyboard */; };
+		02E8290824381FC800F60F16 /* SymptomsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8290724381FC800F60F16 /* SymptomsVC.storyboard */; };
+		02E8290A24381FDB00F60F16 /* TrackVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8290924381FDB00F60F16 /* TrackVC.storyboard */; };
+		02E8290C24381FF100F60F16 /* AddFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8290B24381FF100F60F16 /* AddFriendsVC.swift */; };
+		02E8290E2438200700F60F16 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8290D2438200700F60F16 /* HomeVC.swift */; };
+		02E829102438430D00F60F16 /* SymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8290F2438430D00F60F16 /* SymptomsVC.swift */; };
+		02E82912243866F500F60F16 /* TrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E82911243866F500F60F16 /* TrackVC.swift */; };
 		02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C802425FAC7005284DE /* AppDelegate.swift */; };
 		02F96C832425FAC7005284DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C822425FAC7005284DE /* SceneDelegate.swift */; };
 		02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F96C892425FAC8005284DE /* Assets.xcassets */; };
@@ -114,6 +124,16 @@
 		024F294C242734F6008B58A8 /* OnboardingVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingVC.storyboard; sourceTree = "<group>"; };
 		027EAC41242E0BB800C3A77E /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		027EAC44242E0CBC00C3A77E /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		02E828FF24381D5E00F60F16 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		02E8290124381D6F00F60F16 /* MainScreenVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreenVC.storyboard; sourceTree = "<group>"; };
+		02E8290324381FA100F60F16 /* HomeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeVC.storyboard; sourceTree = "<group>"; };
+		02E8290524381FB200F60F16 /* AddFriendsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddFriendsVC.storyboard; sourceTree = "<group>"; };
+		02E8290724381FC800F60F16 /* SymptomsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SymptomsVC.storyboard; sourceTree = "<group>"; };
+		02E8290924381FDB00F60F16 /* TrackVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackVC.storyboard; sourceTree = "<group>"; };
+		02E8290B24381FF100F60F16 /* AddFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsVC.swift; sourceTree = "<group>"; };
+		02E8290D2438200700F60F16 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		02E8290F2438430D00F60F16 /* SymptomsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsVC.swift; sourceTree = "<group>"; };
+		02E82911243866F500F60F16 /* TrackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackVC.swift; sourceTree = "<group>"; };
 		02F96C7D2425FAC7005284DE /* quarentime-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quarentime-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F96C802425FAC7005284DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F96C822425FAC7005284DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +256,7 @@
 		024F292E2426D6D3008B58A8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				02E828FA24381BF300F60F16 /* MainScreen */,
 				024790B124321D5D001CAFB2 /* LetsGetStarted */,
 				024F29302426D6E8008B58A8 /* Login */,
 				024F292F2426D6DD008B58A8 /* Onboarding */,
@@ -325,6 +346,55 @@
 				027EAC44242E0CBC00C3A77E /* OnboardingItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		02E828FA24381BF300F60F16 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				02E828FD24381CBB00F60F16 /* AddFriends */,
+				02E828FB24381C0D00F60F16 /* Home */,
+				02E828FE24381CD300F60F16 /* Symptoms */,
+				02E828FC24381CA600F60F16 /* Track */,
+				02E8290124381D6F00F60F16 /* MainScreenVC.storyboard */,
+				02E828FF24381D5E00F60F16 /* MainScreenVC.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		02E828FB24381C0D00F60F16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				02E8290324381FA100F60F16 /* HomeVC.storyboard */,
+				02E8290D2438200700F60F16 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		02E828FC24381CA600F60F16 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				02E8290924381FDB00F60F16 /* TrackVC.storyboard */,
+				02E82911243866F500F60F16 /* TrackVC.swift */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		02E828FD24381CBB00F60F16 /* AddFriends */ = {
+			isa = PBXGroup;
+			children = (
+				02E8290524381FB200F60F16 /* AddFriendsVC.storyboard */,
+				02E8290B24381FF100F60F16 /* AddFriendsVC.swift */,
+			);
+			path = AddFriends;
+			sourceTree = "<group>";
+		};
+		02E828FE24381CD300F60F16 /* Symptoms */ = {
+			isa = PBXGroup;
+			children = (
+				02E8290724381FC800F60F16 /* SymptomsVC.storyboard */,
+				02E8290F2438430D00F60F16 /* SymptomsVC.swift */,
+			);
+			path = Symptoms;
 			sourceTree = "<group>";
 		};
 		02F96C742425FAC7005284DE = {
@@ -514,9 +584,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E8290824381FC800F60F16 /* SymptomsVC.storyboard in Resources */,
 				0235C3D624289DCA00365C97 /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				02E8290424381FA100F60F16 /* HomeVC.storyboard in Resources */,
 				0235C3E324289DCA00365C97 /* SF-Pro-Display-Ultralight.otf in Resources */,
 				0235C3D724289DCA00365C97 /* SF-Pro-Display-Heavy.otf in Resources */,
+				02E8290A24381FDB00F60F16 /* TrackVC.storyboard in Resources */,
 				0235C3D324289DCA00365C97 /* SF-Pro-Display-Black.otf in Resources */,
 				0235C3DF24289DCA00365C97 /* SF-Pro-Display-Semibold.otf in Resources */,
 				0235C3E024289DCA00365C97 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
@@ -532,12 +605,14 @@
 				0235C3E424289DCA00365C97 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
 				0235C3E124289DCA00365C97 /* SF-Pro-Display-Thin.otf in Resources */,
 				0235C3D824289DCA00365C97 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				02E8290624381FB200F60F16 /* AddFriendsVC.storyboard in Resources */,
 				02373D5C242E1A2C00526FF6 /* OnboardingCell.xib in Resources */,
 				02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */,
 				024F294D242734F6008B58A8 /* OnboardingVC.storyboard in Resources */,
 				0235C3DD24289DCA00365C97 /* SF-Pro-Display-Regular.otf in Resources */,
 				0235C3E224289DCA00365C97 /* SF-Pro-Display-ThinItalic.otf in Resources */,
 				024790B524321DCC001CAFB2 /* LetsStartVC.storyboard in Resources */,
+				02E8290224381D6F00F60F16 /* MainScreenVC.storyboard in Resources */,
 				0235C3D424289DCA00365C97 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,9 +708,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				024F294924273341008B58A8 /* StoryboardGettable.swift in Sources */,
+				02E8290024381D5E00F60F16 /* MainScreenVC.swift in Sources */,
 				024F294B242734E4008B58A8 /* OnboardingVC.swift in Sources */,
 				027EAC42242E0BB800C3A77E /* OnboardingCell.swift in Sources */,
 				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
+				02E82912243866F500F60F16 /* TrackVC.swift in Sources */,
 				024F29362426D870008B58A8 /* Network.swift in Sources */,
 				024F2943242712C8008B58A8 /* PageControlViewProtocol.swift in Sources */,
 				024F2942242712C8008B58A8 /* PageControlItem.swift in Sources */,
@@ -646,9 +723,12 @@
 				024F293924270E53008B58A8 /* String+Localization.swift in Sources */,
 				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
 				0224FE5A2428946900D9AC86 /* UIView+Constraints.swift in Sources */,
+				02E8290E2438200700F60F16 /* HomeVC.swift in Sources */,
 				024F294824273341008B58A8 /* XibViewGettable.swift in Sources */,
 				024790B324321DC1001CAFB2 /* LetsStartVC.swift in Sources */,
 				027EAC45242E0CBC00C3A77E /* OnboardingItem.swift in Sources */,
+				02E8290C24381FF100F60F16 /* AddFriendsVC.swift in Sources */,
+				02E829102438430D00F60F16 /* SymptomsVC.swift in Sources */,
 				024F2944242712C8008B58A8 /* PageControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9HL-I4-H1q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SymptomsVC-->
+        <scene sceneID="uVt-YS-zCe">
+            <objects>
+                <viewController id="9HL-I4-H1q" customClass="SymptomsVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dKA-wp-kCv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SYMPTOMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hee-u6-f3m">
+                                <rect key="frame" x="160.5" y="437.5" width="93.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hee-u6-f3m" firstAttribute="centerX" secondItem="dKA-wp-kCv" secondAttribute="centerX" id="blw-Sh-Rec"/>
+                            <constraint firstItem="Hee-u6-f3m" firstAttribute="centerY" secondItem="dKA-wp-kCv" secondAttribute="centerY" id="sUF-q4-94N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FPr-QI-inB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="symptoms_icon" id="Nov-li-NEm"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Qk-Sc-TNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="symptoms_icon" width="19" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mSh-OM-AZ2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add FriendsVC-->
+        <scene sceneID="xqb-q7-kHd">
+            <objects>
+                <viewController id="mSh-OM-AZ2" customClass="AddFriendsVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hew-vN-rRm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD FRIENDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etv-NL-QBk">
+                                <rect key="frame" x="153" y="437.5" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="etv-NL-QBk" firstAttribute="centerY" secondItem="Hew-vN-rRm" secondAttribute="centerY" id="1xc-u1-e3D"/>
+                            <constraint firstItem="etv-NL-QBk" firstAttribute="centerX" secondItem="Hew-vN-rRm" secondAttribute="centerX" id="K5J-eG-H5T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yk3-JJ-SKt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="addfriends_icon" selectedImage="addfriends_icon_selected" id="c9I-Oz-jNV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMJ-mS-yLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addfriends_icon" width="24" height="24"/>
+        <image name="addfriends_icon_selected" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TFl-nn-gmG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="N4l-ZD-Di2">
+            <objects>
+                <viewController id="TFl-nn-gmG" customClass="HomeVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fEa-8Y-Zp9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emq-PL-lmQ">
+                                <rect key="frame" x="182" y="437.5" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="emq-PL-lmQ" firstAttribute="centerY" secondItem="fEa-8Y-Zp9" secondAttribute="centerY" id="EO9-7c-r56"/>
+                            <constraint firstItem="emq-PL-lmQ" firstAttribute="centerX" secondItem="fEa-8Y-Zp9" secondAttribute="centerX" id="oc2-gL-wo5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x7d-c7-0fJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="home_icon" selectedImage="home_icon_selected" id="AEJ-gj-kDj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cms-BR-XLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_icon" width="24" height="24"/>
+        <image name="home_icon_selected" width="24" height="24"/>
+    </resources>
+</document>
