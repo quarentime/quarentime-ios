@@ -8,29 +8,27 @@
 
 import UIKit
 
-class VerifyPhoneNumberViewController: UIViewController, UITextFieldDelegate {
+class VerifyAccountVC: UIViewController, UITextFieldDelegate, StoryboardGettable {
+    
+    enum Direction { case left, right }
     
     @IBOutlet weak var buttonStep1: UIButton!
     @IBOutlet weak var buttonStep2: UIButton!
     @IBOutlet weak var buttonStep3: UIButton!
     
-    @IBOutlet var codeOutletCollection: [UITextField]!
-    @IBOutlet weak var infoTextLabel: UILabel!
+    @IBOutlet var textFieldsCollection: [UITextField]!
     
     var textFieldsIndexes:[UITextField:Int] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for index in 0 ..< codeOutletCollection.count {
-            textFieldsIndexes[codeOutletCollection[index]] = index
+        for index in 0 ..< textFieldsCollection.count {
+            textFieldsIndexes[textFieldsCollection[index]] = index
         }
-        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        infoTextLabel.font = UIFont(name: "Roboto-Light", size: 8.0)
-    }
+    
     
     //MARK: - textField Delegate
     
@@ -48,7 +46,12 @@ class VerifyPhoneNumberViewController: UIViewController, UITextFieldDelegate {
         return false
     }
     
-    enum Direction { case left, right }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textFieldsCollection.last?.text?.isEmpty == false {
+            let surveyVC = SurveyVC.getVC()
+            present(surveyVC, animated: true, completion: nil)
+        }
+    }
     
     func setNextResponder(_ index:Int?, direction:Direction) {
         
@@ -56,32 +59,21 @@ class VerifyPhoneNumberViewController: UIViewController, UITextFieldDelegate {
         
         if direction == .left {
             index == 0 ?
-                (_ = codeOutletCollection.first?.resignFirstResponder()) :
-                (_ = codeOutletCollection[(index - 1)].becomeFirstResponder())
+                (_ = textFieldsCollection.first?.resignFirstResponder()) :
+                (_ = textFieldsCollection[(index - 1)].becomeFirstResponder())
         } else {
-            index == codeOutletCollection.count - 1 ?
-                (_ = codeOutletCollection.last?.resignFirstResponder()) :
-                (_ = codeOutletCollection[(index + 1)].becomeFirstResponder())
+            index == textFieldsCollection.count - 1 ?
+                (_ = textFieldsCollection.last?.resignFirstResponder()) :
+                (_ = textFieldsCollection[(index + 1)].becomeFirstResponder())
         }
         
     }
     
     //MARK: - IBActions
     
-    @IBAction func privacyPolicyClicked(_ sender: Any) {
-        if let url = URL(string: K.urlPrivacyPolicy) {
+    @IBAction func privacyPolicyTapped(_ sender: Any) {
+        if let url = URL(string: Constants.urlPrivacyPolicy) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

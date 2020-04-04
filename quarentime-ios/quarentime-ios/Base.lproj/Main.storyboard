@@ -29,7 +29,6 @@
                                 <state key="normal" title="Go to Intake"/>
                                 <connections>
                                     <action selector="goToIntake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6rU-Ib-1Vd"/>
-                                    <action selector="goToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kV-1M-apk"/>
                                 </connections>
                             </button>
                         </subviews>

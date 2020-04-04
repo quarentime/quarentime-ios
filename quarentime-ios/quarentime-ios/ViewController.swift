@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     
     //temporary button
     @IBAction func goToIntake(_ sender: Any) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Intake", bundle: nil)
-        let personalInfo = storyBoard.instantiateViewController(withIdentifier: "personalInfo") as! PersonalInfoViewController
+        let storyBoard: UIStoryboard = UIStoryboard(name: "PersonalInformationVC", bundle: nil)
+        let personalInfo = storyBoard.instantiateViewController(withIdentifier: "personalInfo") as! PersonalInformationVC
         self.present(personalInfo, animated: true, completion: nil)
     }
     

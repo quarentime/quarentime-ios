@@ -8,9 +8,8 @@
 
 import Foundation
 
-struct K {
+struct Constants {
     
     static let urlPrivacyPolicy = "https://www.google.com"
-    
-    
+
 }
