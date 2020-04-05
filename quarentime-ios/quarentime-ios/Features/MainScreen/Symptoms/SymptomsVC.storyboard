@@ -29,7 +29,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FPr-QI-inB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="symptoms_icon" id="Nov-li-NEm"/>
+                    <tabBarItem key="tabBarItem" title="" image="symptoms_icon" selectedImage="symptoms_icon_selected" id="Nov-li-NEm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qk-Sc-TNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -39,5 +39,6 @@
     </scenes>
     <resources>
         <image name="symptoms_icon" width="19" height="24"/>
+        <image name="symptoms_icon_selected" width="19" height="24"/>
     </resources>
 </document>
