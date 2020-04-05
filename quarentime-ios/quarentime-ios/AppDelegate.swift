@@ -7,12 +7,7 @@
 //
 
 import UIKit
-// firebase
-import Firebase
-// Login Google
-import GoogleSignIn
-// Login Facebook
-import FBSDKCoreKit
+//import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,10 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             LaunchCoordinator.shared.setRootViewController(in: window, animated: true)
         }
-        
-        // connect to firebase
-        FirebaseApp.configure()
-        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+//        This from FBSDKCoreKit Ininitialize the app, is that needed for facebook login???? I think is not needed
+//        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
 
         return true
     }
@@ -49,7 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // to receive google sign-in handle url
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return GIDSignIn.sharedInstance().handle(url)
+        return GoogleSignInWrapper.shared.handle(url)
     }
+    
 }
 

@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 struct LaunchCoordinator {
     
     static let shared = LaunchCoordinator()
     
-    private init() { }
+    private init() {
+        initializeThirdPartyLibraries()
+    }
     
-    func initializeThirdPartyLibraries() {
+    private func initializeThirdPartyLibraries() {
         // Do shitty configs for frameworks (if possible in background thread)
+        FirebaseApp.configure()
     }
     
     /// Set the correct ViewController depending on app state
@@ -36,16 +40,16 @@ struct LaunchCoordinator {
     
     // TODO: THIS IS TEMPORARY, WE NEED A REPOSITORY TO SAVE THIS APP STATES
     private func checkAppStateInRepositoryAndReturnVC() -> UIViewController {
-        let loggedIn = true
-        let isOnboardingCompleted = true
+        let loggedIn = AppStateRepository.shared.isLoggedIn()
+        let isOnboardingCompleted = AppStateRepository.shared.isOnboardingComplete()
         if loggedIn {
             if isOnboardingCompleted {
                 return MainScreenVC.getVC()
             } else {
-                //return OnboardingVC.getVC()
+                return OnboardingVC.getVC()
             }
         } else {
-            //Show login
+            return LoginVC.getVC()
         }
     }
 }

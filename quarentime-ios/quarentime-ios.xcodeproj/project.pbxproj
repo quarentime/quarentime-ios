@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021CEB5124397358000956CB /* AppStateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021CEB5024397358000956CB /* AppStateRepository.swift */; };
+		021CEB532439A156000956CB /* GoogleSignInWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021CEB522439A156000956CB /* GoogleSignInWrapper.swift */; };
+		021CEB552439A643000956CB /* FacebookSignInWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021CEB542439A643000956CB /* FacebookSignInWrapper.swift */; };
 		0224FE552428892C00D9AC86 /* DemoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224FE542428892C00D9AC86 /* DemoService.swift */; };
 		0224FE582428895300D9AC86 /* SomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224FE572428895300D9AC86 /* SomeModel.swift */; };
 		0224FE5A2428946900D9AC86 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224FE592428946900D9AC86 /* UIView+Constraints.swift */; };
@@ -79,8 +82,8 @@
 		2FEBAB8D2437D53200E45E86 /* SecondQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBAB8C2437D53200E45E86 /* SecondQuestionVC.swift */; };
 		842159E230910DFD56319621 /* Pods_quarentime_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */; };
 		B41E9C722427209000872042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C712427209000872042 /* GoogleService-Info.plist */; };
-		B41E9C752428C00600872042 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C732428C00600872042 /* Login.storyboard */; };
-		B41E9C762428C00600872042 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E9C742428C00600872042 /* LoginViewController.swift */; };
+		B41E9C752428C00600872042 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C732428C00600872042 /* LoginVC.storyboard */; };
+		B41E9C762428C00600872042 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E9C742428C00600872042 /* LoginVC.swift */; };
 		D9A0BC158309383BDCB8BC7A /* Pods_quarentime_ios_quarentime_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +105,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021CEB5024397358000956CB /* AppStateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateRepository.swift; sourceTree = "<group>"; };
+		021CEB522439A156000956CB /* GoogleSignInWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInWrapper.swift; sourceTree = "<group>"; };
+		021CEB542439A643000956CB /* FacebookSignInWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSignInWrapper.swift; sourceTree = "<group>"; };
 		0224FE542428892C00D9AC86 /* DemoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoService.swift; sourceTree = "<group>"; };
 		0224FE572428895300D9AC86 /* SomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeModel.swift; sourceTree = "<group>"; };
 		0224FE592428946900D9AC86 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
@@ -185,8 +191,8 @@
 		6D1753BFDA5F3B0BCF762EFB /* Pods-quarentime-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		74FD2E0689C73588DCBBC896 /* Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B41E9C712427209000872042 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B41E9C732428C00600872042 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		B41E9C742428C00600872042 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B41E9C732428C00600872042 /* LoginVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
+		B41E9C742428C00600872042 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BC8130E5BF13801550AEC31D /* Pods-quarentime-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F776C0125EA0596260D0D14C /* Pods-quarentime-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,6 +225,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021CEB4F2439732F000956CB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				021CEB5024397358000956CB /* AppStateRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		0224FE522428888400D9AC86 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,8 +328,10 @@
 		024F29302426D6E8008B58A8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B41E9C732428C00600872042 /* Login.storyboard */,
-				B41E9C742428C00600872042 /* LoginViewController.swift */,
+				B41E9C732428C00600872042 /* LoginVC.storyboard */,
+				B41E9C742428C00600872042 /* LoginVC.swift */,
+				021CEB522439A156000956CB /* GoogleSignInWrapper.swift */,
+				021CEB542439A643000956CB /* FacebookSignInWrapper.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -323,6 +339,7 @@
 		024F29312426D79E008B58A8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2F1B4CCA2434F8B30033371B /* CustomButton.swift */,
 				024F293D242712C7008B58A8 /* PageControl */,
 			);
 			path = Components;
@@ -462,12 +479,12 @@
 			isa = PBXGroup;
 			children = (
 				024F29312426D79E008B58A8 /* Components */,
-				2F1B4CCA2434F8B30033371B /* CustomButton.swift */,
 				024F29322426D7A4008B58A8 /* Extensions */,
 				024F292E2426D6D3008B58A8 /* Features */,
 				0224FE522428888400D9AC86 /* Helpers */,
 				024790AE243211D2001CAFB2 /* Navigation Flow */,
 				024F29332426D870008B58A8 /* Network */,
+				021CEB4F2439732F000956CB /* Repository */,
 				0224FE53242888D900D9AC86 /* Services */,
 				024F293C24270E7E008B58A8 /* Supporting files */,
 				02F96C802425FAC7005284DE /* AppDelegate.swift */,
@@ -711,7 +728,7 @@
 				0235C3DA24289DCA00365C97 /* SF-Pro-Display-LightItalic.otf in Resources */,
 				0235C3DE24289DCA00365C97 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				02F96C8D2425FAC8005284DE /* LaunchScreen.storyboard in Resources */,
-				B41E9C752428C00600872042 /* Login.storyboard in Resources */,
+				B41E9C752428C00600872042 /* LoginVC.storyboard in Resources */,
 				024F293B24270E7A008B58A8 /* Localizable.strings in Resources */,
 				0235C3DB24289DCA00365C97 /* SF-Pro-Display-Medium.otf in Resources */,
 				0235C3E424289DCA00365C97 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
@@ -894,11 +911,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021CEB552439A643000956CB /* FacebookSignInWrapper.swift in Sources */,
 				024F294924273341008B58A8 /* StoryboardGettable.swift in Sources */,
 				02E8290024381D5E00F60F16 /* MainScreenVC.swift in Sources */,
 				024F294B242734E4008B58A8 /* OnboardingVC.swift in Sources */,
 				027EAC42242E0BB800C3A77E /* OnboardingCell.swift in Sources */,
 				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
+				021CEB5124397358000956CB /* AppStateRepository.swift in Sources */,
 				02E82912243866F500F60F16 /* TrackVC.swift in Sources */,
 				2F1B4CCB2434F8B30033371B /* CustomButton.swift in Sources */,
 				2FEBAB8B2437D51600E45E86 /* FirstQuestionVC.swift in Sources */,
@@ -915,7 +934,7 @@
 				024F293924270E53008B58A8 /* String+Localization.swift in Sources */,
 				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
 				2F012ED02433A80E0005D26A /* VerifyAccountVC.swift in Sources */,
-				B41E9C762428C00600872042 /* LoginViewController.swift in Sources */,
+				B41E9C762428C00600872042 /* LoginVC.swift in Sources */,
 				0224FE5A2428946900D9AC86 /* UIView+Constraints.swift in Sources */,
 				02E8290E2438200700F60F16 /* HomeVC.swift in Sources */,
 				2FEBAB892437D21000E45E86 /* SurveyVC.swift in Sources */,
@@ -923,6 +942,7 @@
 				024790B324321DC1001CAFB2 /* LetsStartVC.swift in Sources */,
 				027EAC45242E0CBC00C3A77E /* OnboardingItem.swift in Sources */,
 				02E8290C24381FF100F60F16 /* AddFriendsVC.swift in Sources */,
+				021CEB532439A156000956CB /* GoogleSignInWrapper.swift in Sources */,
 				02E829102438430D00F60F16 /* SymptomsVC.swift in Sources */,
 				024F2944242712C8008B58A8 /* PageControlView.swift in Sources */,
 				2F012ECE2433A2810005D26A /* Constants.swift in Sources */,

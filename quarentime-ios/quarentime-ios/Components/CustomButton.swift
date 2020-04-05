@@ -23,7 +23,7 @@ class CustomButton: UIButton {
         }
     }
     
-    @IBInspectable public var cornerRadius: CGFloat = 0 {
+    @IBInspectable public var cornerRadius: CGFloat = 4 {
         didSet {
             updateUI()
         }
