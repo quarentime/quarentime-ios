@@ -6,6 +6,17 @@ target 'quarentime-ios' do
   use_frameworks!
 
   # Pods for quarentime-ios
+  
+  # add the Firebase pod for Google Analytics
+  pod 'Firebase/Analytics'
+  # google login
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  # Facebook login
+  pod 'FBSDKLoginKit'
+  # Other
+  pod 'FlagPhoneNumber'
+
 
   target 'quarentime-iosTests' do
     inherit! :search_paths

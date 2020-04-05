@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="CUo-M2-wzQ">
+            <objects>
+                <viewController storyboardIdentifier="login" id="m7h-Zc-G5R" customClass="LoginViewController" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="The-Uj-b8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um0-EQ-8Dl">
+                                <rect key="frame" x="15" y="790" width="384" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LQM-Qi-moy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
+                                <state key="normal" title="Login Face">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookSignIn:" destination="v6E-OP-Ip6" eventType="touchUpInside" id="Nxq-sv-Mq8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgc-gT-kfM" userLabel="Login Google">
+                                <rect key="frame" x="15" y="728" width="384" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Cyd-ym-G36"/>
+                                    <constraint firstAttribute="height" constant="50" id="dqY-tI-2Md"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
+                                <state key="normal" title="Login Google">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleSignIn:" destination="v6E-OP-Ip6" eventType="touchUpInside" id="haL-dI-Iy7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hF1-eg-EZT">
+                                <rect key="frame" x="30" y="686.5" width="354" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mg8-hs-lTB">
+                                <rect key="frame" x="15" y="619.5" width="384" height="47"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hF1-eg-EZT" firstAttribute="top" secondItem="Mg8-hs-lTB" secondAttribute="bottom" constant="20" id="39u-Yl-Uir"/>
+                            <constraint firstItem="mts-El-96S" firstAttribute="trailing" secondItem="hF1-eg-EZT" secondAttribute="trailing" constant="30" id="4A1-u2-nLO"/>
+                            <constraint firstItem="mts-El-96S" firstAttribute="bottom" secondItem="um0-EQ-8Dl" secondAttribute="bottom" constant="22" id="4zz-8a-S9K"/>
+                            <constraint firstItem="um0-EQ-8Dl" firstAttribute="leading" secondItem="mts-El-96S" secondAttribute="leading" constant="15" id="BLK-ga-Yt8"/>
+                            <constraint firstItem="zgc-gT-kfM" firstAttribute="leading" secondItem="mts-El-96S" secondAttribute="leading" constant="15" id="CDs-j6-5fJ"/>
+                            <constraint firstItem="hF1-eg-EZT" firstAttribute="leading" secondItem="mts-El-96S" secondAttribute="leading" constant="30" id="Pfh-aC-che"/>
+                            <constraint firstItem="mts-El-96S" firstAttribute="trailing" secondItem="zgc-gT-kfM" secondAttribute="trailing" constant="15" id="UY4-Dw-PFF"/>
+                            <constraint firstItem="zgc-gT-kfM" firstAttribute="top" secondItem="hF1-eg-EZT" secondAttribute="bottom" constant="20" id="Ysb-El-te6"/>
+                            <constraint firstItem="Mg8-hs-lTB" firstAttribute="leading" secondItem="mts-El-96S" secondAttribute="leading" constant="15" id="dxP-4f-KLg"/>
+                            <constraint firstItem="mts-El-96S" firstAttribute="trailing" secondItem="Mg8-hs-lTB" secondAttribute="trailing" constant="15" id="kE0-LE-fjf"/>
+                            <constraint firstItem="mts-El-96S" firstAttribute="trailing" secondItem="um0-EQ-8Dl" secondAttribute="trailing" constant="15" id="mnx-Vi-Fql"/>
+                            <constraint firstItem="um0-EQ-8Dl" firstAttribute="top" secondItem="zgc-gT-kfM" secondAttribute="bottom" constant="12" id="uaD-xh-yyc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mts-El-96S"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="hF1-eg-EZT" id="7gi-Ml-Nbs"/>
+                        <outlet property="facebookSignInButton" destination="um0-EQ-8Dl" id="6p3-iI-KbI"/>
+                        <outlet property="googleSignInButton" destination="zgc-gT-kfM" id="b5I-zV-sGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6E-OP-Ip6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="22.767857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loginLogo" width="238" height="47"/>
+    </resources>
+</document>

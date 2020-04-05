@@ -27,3 +27,8 @@
 "track.title" = "Track";
 
 "button.skip" = "SKIP";
+
+
+"login.signin.google" = "SIGN IN WITH GMAIL";
+"login.signin.facebook" = "SIGN IN WITH FACEBOOK";
+"login.description" = "Stay safe, be vigilant and most importantly remember, prevention is better than cure. ";

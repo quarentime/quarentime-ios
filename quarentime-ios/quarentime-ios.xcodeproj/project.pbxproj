@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,7 +63,24 @@
 		02F96C982425FAC8005284DE /* quarentime_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96C972425FAC8005284DE /* quarentime_iosTests.swift */; };
 		02F96CA32425FAC8005284DE /* quarentime_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */; };
 		099F27EC7EE37F231275FC6F /* Pods_quarentime_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */; };
+		2F012ECE2433A2810005D26A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F012ECD2433A2800005D26A /* Constants.swift */; };
+		2F012ED02433A80E0005D26A /* VerifyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F012ECF2433A80E0005D26A /* VerifyAccountVC.swift */; };
+		2F1B4CCB2434F8B30033371B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B4CCA2434F8B30033371B /* CustomButton.swift */; };
+		2F3A16852438EBF800E9502F /* FailedBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A16842438EBF800E9502F /* FailedBannerView.xib */; };
+		2F3A16872438EC2700E9502F /* FailedBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A16862438EC2700E9502F /* FailedBannerView.swift */; };
+		2F6EC21C24360E9100AB1795 /* PersonalInformationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC21B24360E9100AB1795 /* PersonalInformationVC.storyboard */; };
+		2F6EC21F24360F2000AB1795 /* VerifyAccountVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC21E24360F2000AB1795 /* VerifyAccountVC.storyboard */; };
+		2F6EC2222436101900AB1795 /* SurveyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC2212436101900AB1795 /* SurveyVC.storyboard */; };
+		2F6EC2252436113800AB1795 /* FirstQuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC2242436113800AB1795 /* FirstQuestionVC.storyboard */; };
+		2F6EC229243611B000AB1795 /* SecondQuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC228243611B000AB1795 /* SecondQuestionVC.storyboard */; };
+		2FDDB1E3242FB9EB009DE7B2 /* PersonalInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDB1E2242FB9EB009DE7B2 /* PersonalInformationVC.swift */; };
+		2FEBAB892437D21000E45E86 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBAB882437D21000E45E86 /* SurveyVC.swift */; };
+		2FEBAB8B2437D51600E45E86 /* FirstQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBAB8A2437D51600E45E86 /* FirstQuestionVC.swift */; };
+		2FEBAB8D2437D53200E45E86 /* SecondQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBAB8C2437D53200E45E86 /* SecondQuestionVC.swift */; };
 		842159E230910DFD56319621 /* Pods_quarentime_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */; };
+		B41E9C722427209000872042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C712427209000872042 /* GoogleService-Info.plist */; };
+		B41E9C752428C00600872042 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C732428C00600872042 /* Login.storyboard */; };
+		B41E9C762428C00600872042 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E9C742428C00600872042 /* LoginViewController.swift */; };
 		D9A0BC158309383BDCB8BC7A /* Pods_quarentime_ios_quarentime_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -147,12 +164,29 @@
 		02F96CA22425FAC8005284DE /* quarentime_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quarentime_iosUITests.swift; sourceTree = "<group>"; };
 		02F96CA42425FAC8005284DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218BE79091AB8CD38FB4C3A3 /* Pods-quarentime-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		2F012ECD2433A2800005D26A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F012ECF2433A80E0005D26A /* VerifyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountVC.swift; sourceTree = "<group>"; };
+		2F1B4CCA2434F8B30033371B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2F3A16842438EBF800E9502F /* FailedBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FailedBannerView.xib; sourceTree = "<group>"; };
+		2F3A16862438EC2700E9502F /* FailedBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedBannerView.swift; sourceTree = "<group>"; };
+		2F6EC21B24360E9100AB1795 /* PersonalInformationVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalInformationVC.storyboard; sourceTree = "<group>"; };
+		2F6EC21E24360F2000AB1795 /* VerifyAccountVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyAccountVC.storyboard; sourceTree = "<group>"; };
+		2F6EC2212436101900AB1795 /* SurveyVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurveyVC.storyboard; sourceTree = "<group>"; };
+		2F6EC2242436113800AB1795 /* FirstQuestionVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstQuestionVC.storyboard; sourceTree = "<group>"; };
+		2F6EC228243611B000AB1795 /* SecondQuestionVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondQuestionVC.storyboard; sourceTree = "<group>"; };
+		2FDDB1E2242FB9EB009DE7B2 /* PersonalInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformationVC.swift; sourceTree = "<group>"; };
+		2FEBAB882437D21000E45E86 /* SurveyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
+		2FEBAB8A2437D51600E45E86 /* FirstQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionVC.swift; sourceTree = "<group>"; };
+		2FEBAB8C2437D53200E45E86 /* SecondQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionVC.swift; sourceTree = "<group>"; };
 		47C837F1DD79059406452532 /* Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_ios_quarentime_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1753BFDA5F3B0BCF762EFB /* Pods-quarentime-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		74FD2E0689C73588DCBBC896 /* Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B41E9C712427209000872042 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B41E9C732428C00600872042 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B41E9C742428C00600872042 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC8130E5BF13801550AEC31D /* Pods-quarentime-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.release.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F776C0125EA0596260D0D14C /* Pods-quarentime-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-iosTests.release.xcconfig"; path = "Target Support Files/Pods-quarentime-iosTests/Pods-quarentime-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +224,7 @@
 			children = (
 				024F294724273341008B58A8 /* StoryboardGettable.swift */,
 				024F294624273341008B58A8 /* XibViewGettable.swift */,
+				2F012ECD2433A2800005D26A /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -260,6 +295,7 @@
 				024790B124321D5D001CAFB2 /* LetsGetStarted */,
 				024F29302426D6E8008B58A8 /* Login */,
 				024F292F2426D6DD008B58A8 /* Onboarding */,
+				2FDDB1DF242FACE4009DE7B2 /* Intake */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -269,8 +305,8 @@
 			children = (
 				027EAC43242E0CA400C3A77E /* Models */,
 				027EAC40242E089300C3A77E /* Views */,
-				024F294A242734E4008B58A8 /* OnboardingVC.swift */,
 				024F294C242734F6008B58A8 /* OnboardingVC.storyboard */,
+				024F294A242734E4008B58A8 /* OnboardingVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -278,6 +314,8 @@
 		024F29302426D6E8008B58A8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				B41E9C732428C00600872042 /* Login.storyboard */,
+				B41E9C742428C00600872042 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -316,6 +354,7 @@
 				02F96C8B2425FAC8005284DE /* LaunchScreen.storyboard */,
 				024F293A24270E79008B58A8 /* Localizable.strings */,
 				02F96C8E2425FAC8005284DE /* Info.plist */,
+				B41E9C712427209000872042 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -423,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				024F29312426D79E008B58A8 /* Components */,
+				2F1B4CCA2434F8B30033371B /* CustomButton.swift */,
 				024F29322426D7A4008B58A8 /* Extensions */,
 				024F292E2426D6D3008B58A8 /* Features */,
 				0224FE522428888400D9AC86 /* Helpers */,
@@ -452,6 +492,73 @@
 				02F96CA42425FAC8005284DE /* Info.plist */,
 			);
 			path = "quarentime-iosUITests";
+			sourceTree = "<group>";
+		};
+		2F3A16832438EBD000E9502F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A16842438EBF800E9502F /* FailedBannerView.xib */,
+				2F3A16862438EC2700E9502F /* FailedBannerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F6EC21A24360E4200AB1795 /* PersonalInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EC21B24360E9100AB1795 /* PersonalInformationVC.storyboard */,
+				2FDDB1E2242FB9EB009DE7B2 /* PersonalInformationVC.swift */,
+			);
+			path = PersonalInfoViewController;
+			sourceTree = "<group>";
+		};
+		2F6EC21D24360EF900AB1795 /* VerifyAccountVC */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A16832438EBD000E9502F /* Views */,
+				2F6EC21E24360F2000AB1795 /* VerifyAccountVC.storyboard */,
+				2F012ECF2433A80E0005D26A /* VerifyAccountVC.swift */,
+			);
+			path = VerifyAccountVC;
+			sourceTree = "<group>";
+		};
+		2F6EC22024360F9F00AB1795 /* SurveyVC */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EC2212436101900AB1795 /* SurveyVC.storyboard */,
+				2FEBAB882437D21000E45E86 /* SurveyVC.swift */,
+			);
+			path = SurveyVC;
+			sourceTree = "<group>";
+		};
+		2F6EC2232436111700AB1795 /* FirstQuestionVC */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EC2242436113800AB1795 /* FirstQuestionVC.storyboard */,
+				2FEBAB8A2437D51600E45E86 /* FirstQuestionVC.swift */,
+			);
+			path = FirstQuestionVC;
+			sourceTree = "<group>";
+		};
+		2F6EC2262436117300AB1795 /* SecondQuestionVC */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EC228243611B000AB1795 /* SecondQuestionVC.storyboard */,
+				2FEBAB8C2437D53200E45E86 /* SecondQuestionVC.swift */,
+			);
+			path = SecondQuestionVC;
+			sourceTree = "<group>";
+		};
+		2FDDB1DF242FACE4009DE7B2 /* Intake */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EC21A24360E4200AB1795 /* PersonalInfoViewController */,
+				2F6EC21D24360EF900AB1795 /* VerifyAccountVC */,
+				2F6EC22024360F9F00AB1795 /* SurveyVC */,
+				2F6EC2232436111700AB1795 /* FirstQuestionVC */,
+				2F6EC2262436117300AB1795 /* SecondQuestionVC */,
+			);
+			path = Intake;
 			sourceTree = "<group>";
 		};
 		61A77401A2EC32C83DE570AE /* Frameworks */ = {
@@ -488,6 +595,8 @@
 				02F96C792425FAC7005284DE /* Sources */,
 				02F96C7A2425FAC7005284DE /* Frameworks */,
 				02F96C7B2425FAC7005284DE /* Resources */,
+				102FFD5B2D804C3684A99F00 /* [CP] Embed Pods Frameworks */,
+				7FBE07AEA2D64FEA36338EB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -525,6 +634,8 @@
 				02F96C9A2425FAC8005284DE /* Sources */,
 				02F96C9B2425FAC8005284DE /* Frameworks */,
 				02F96C9C2425FAC8005284DE /* Resources */,
+				3314FDBCCB2254DE2E932569 /* [CP] Embed Pods Frameworks */,
+				FA58E97ECE3E3F315B4DCDD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -600,6 +711,7 @@
 				0235C3DA24289DCA00365C97 /* SF-Pro-Display-LightItalic.otf in Resources */,
 				0235C3DE24289DCA00365C97 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				02F96C8D2425FAC8005284DE /* LaunchScreen.storyboard in Resources */,
+				B41E9C752428C00600872042 /* Login.storyboard in Resources */,
 				024F293B24270E7A008B58A8 /* Localizable.strings in Resources */,
 				0235C3DB24289DCA00365C97 /* SF-Pro-Display-Medium.otf in Resources */,
 				0235C3E424289DCA00365C97 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
@@ -608,12 +720,19 @@
 				02E8290624381FB200F60F16 /* AddFriendsVC.storyboard in Resources */,
 				02373D5C242E1A2C00526FF6 /* OnboardingCell.xib in Resources */,
 				02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */,
+				2F6EC2252436113800AB1795 /* FirstQuestionVC.storyboard in Resources */,
+				2F6EC21F24360F2000AB1795 /* VerifyAccountVC.storyboard in Resources */,
+				2F6EC21C24360E9100AB1795 /* PersonalInformationVC.storyboard in Resources */,
 				024F294D242734F6008B58A8 /* OnboardingVC.storyboard in Resources */,
+				B41E9C722427209000872042 /* GoogleService-Info.plist in Resources */,
 				0235C3DD24289DCA00365C97 /* SF-Pro-Display-Regular.otf in Resources */,
+				2F3A16852438EBF800E9502F /* FailedBannerView.xib in Resources */,
 				0235C3E224289DCA00365C97 /* SF-Pro-Display-ThinItalic.otf in Resources */,
 				024790B524321DCC001CAFB2 /* LetsStartVC.storyboard in Resources */,
 				02E8290224381D6F00F60F16 /* MainScreenVC.storyboard in Resources */,
 				0235C3D424289DCA00365C97 /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				2F6EC2222436101900AB1795 /* SurveyVC.storyboard in Resources */,
+				2F6EC229243611B000AB1795 /* SecondQuestionVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +753,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		102FFD5B2D804C3684A99F00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3314FDBCCB2254DE2E932569 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		37876C96DBC503E8BB6F67C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -700,6 +853,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7FBE07AEA2D64FEA36338EB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA58E97ECE3E3F315B4DCDD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -713,6 +900,11 @@
 				027EAC42242E0BB800C3A77E /* OnboardingCell.swift in Sources */,
 				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
 				02E82912243866F500F60F16 /* TrackVC.swift in Sources */,
+				2F1B4CCB2434F8B30033371B /* CustomButton.swift in Sources */,
+				2FEBAB8B2437D51600E45E86 /* FirstQuestionVC.swift in Sources */,
+				2FEBAB8D2437D53200E45E86 /* SecondQuestionVC.swift in Sources */,
+				2F3A16872438EC2700E9502F /* FailedBannerView.swift in Sources */,
+				2FDDB1E3242FB9EB009DE7B2 /* PersonalInformationVC.swift in Sources */,
 				024F29362426D870008B58A8 /* Network.swift in Sources */,
 				024F2943242712C8008B58A8 /* PageControlViewProtocol.swift in Sources */,
 				024F2942242712C8008B58A8 /* PageControlItem.swift in Sources */,
@@ -722,14 +914,18 @@
 				024790B024321209001CAFB2 /* LaunchCoordinator.swift in Sources */,
 				024F293924270E53008B58A8 /* String+Localization.swift in Sources */,
 				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
+				2F012ED02433A80E0005D26A /* VerifyAccountVC.swift in Sources */,
+				B41E9C762428C00600872042 /* LoginViewController.swift in Sources */,
 				0224FE5A2428946900D9AC86 /* UIView+Constraints.swift in Sources */,
 				02E8290E2438200700F60F16 /* HomeVC.swift in Sources */,
+				2FEBAB892437D21000E45E86 /* SurveyVC.swift in Sources */,
 				024F294824273341008B58A8 /* XibViewGettable.swift in Sources */,
 				024790B324321DC1001CAFB2 /* LetsStartVC.swift in Sources */,
 				027EAC45242E0CBC00C3A77E /* OnboardingItem.swift in Sources */,
 				02E8290C24381FF100F60F16 /* AddFriendsVC.swift in Sources */,
 				02E829102438430D00F60F16 /* SymptomsVC.swift in Sources */,
 				024F2944242712C8008B58A8 /* PageControlView.swift in Sources */,
+				2F012ECE2433A2810005D26A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
