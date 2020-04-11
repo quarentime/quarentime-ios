@@ -33,8 +33,7 @@ final class FacebookSignInWrapper: NSObject {
             
             let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
             
-            // Perform login by calling Firebase APIs
-            Auth.auth().signIn(with: credential, completion: { [weak self] (user, error) in
+            Auth.auth().signIn(with: credential, completion: { [weak self] (authResult, error) in
                 if let error = error {
                     print("Login error: \(error.localizedDescription)")
                     let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .alert)
@@ -44,13 +43,13 @@ final class FacebookSignInWrapper: NSObject {
                     
                     return
                 }
-                print(user?.user.displayName)
-                print(user?.user.email)
-                print(accessToken.tokenString)
-                print(accessToken.expirationDate)
-                print(accessToken.isExpired)
-                print(accessToken.refreshDate)
-                print(user?.user.refreshToken)
+                authResult?.user.getIDToken(completion: { (token, error) in
+                    if error == nil {
+                        AppStateRepository.shared.setIsLoggedIn(to: true)
+                    } else {
+                        print(error ?? "")
+                    }
+                })
             })
         }
     }

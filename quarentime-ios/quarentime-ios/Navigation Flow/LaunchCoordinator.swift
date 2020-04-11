@@ -18,7 +18,6 @@ struct LaunchCoordinator {
     }
     
     private func initializeThirdPartyLibraries() {
-        // Do shitty configs for frameworks (if possible in background thread)
         FirebaseApp.configure()
     }
     
@@ -38,13 +37,22 @@ struct LaunchCoordinator {
         })
     }
     
-    // TODO: THIS IS TEMPORARY, WE NEED A REPOSITORY TO SAVE THIS APP STATES
+    /// After changes in AppStateRepository this method will know which ViewController set as Root
+    func reValidateEntryPoint(animated: Bool = true) {
+        setRootViewController(in: UIApplication.shared.windows.first, animated: animated)
+    }
+    
     private func checkAppStateInRepositoryAndReturnVC() -> UIViewController {
         let loggedIn = AppStateRepository.shared.isLoggedIn()
-        let isOnboardingCompleted = AppStateRepository.shared.isOnboardingComplete()
         if loggedIn {
+            let isOnboardingCompleted = AppStateRepository.shared.isOnboardingComplete()
             if isOnboardingCompleted {
-                return MainScreenVC.getVC()
+                let isIntakeComplete = AppStateRepository.shared.isIntakeComplete()
+                if isIntakeComplete {
+                    return MainScreenVC.getVC()
+                } else {
+                    return PersonalInformationVC.getVC()
+                }
             } else {
                 return OnboardingVC.getVC()
             }

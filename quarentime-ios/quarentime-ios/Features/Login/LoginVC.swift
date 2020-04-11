@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController, StoryboardGettable {
+class LoginVC: UIViewController, StoryboardGettable, HudViewLoadable {
     
     @IBOutlet weak var googleSignInButton: UIButton!
     @IBOutlet weak var facebookSignInButton: UIButton!
@@ -23,10 +23,12 @@ class LoginVC: UIViewController, StoryboardGettable {
     }
     
     @IBAction func googleSignIn(_ sender: Any) {
+        showBlurActivityIndicator()
         GoogleSignInWrapper.shared.signIn(with: self)
     }
     
     @IBAction func facebookSignIn(_ sender: Any) {
+        showBlurActivityIndicator()
         FacebookSignInWrapper.shared.signIn(with: self)
     }
     

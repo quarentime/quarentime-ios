@@ -47,7 +47,8 @@ final class LetsStartVC: UIViewController, StoryboardGettable {
             self?.letsStartButton.alpha = 0
             self?.view.layoutIfNeeded()
         }) { done in
-            // set home root VC probably call LaunchCoordinator
+            AppStateRepository.shared.setIsOnboardingComplete(to: true)
+            LaunchCoordinator.shared.reValidateEntryPoint()
             self.dismiss(animated: true, completion: nil)
         }
     }

@@ -37,23 +37,23 @@ final class GoogleSignInWrapper: NSObject, GIDSignInDelegate {
         }
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication.accessToken)!)
-        // When user is signed in
-        Auth.auth().signIn(with: credential, completion: { (user, error) in
+        
+        Auth.auth().signIn(with: credential, completion: { (authResult, error) in
             if let error = error {
                 print("Login error: \(error.localizedDescription)")
                 return
             }
-            print(user?.user.displayName)
-            print(user?.user.email)
-            print(authentication.accessToken)
-            print(authentication.refreshToken)
-            print(user?.user.refreshToken)
-            
-            // aca en user tengo toda la data del usuario para mandar al server
+            authResult?.user.getIDToken(completion: { (token, error) in
+                if error == nil {
+                    AppStateRepository.shared.setIsLoggedIn(to: true)
+                    LaunchCoordinator.shared.reValidateEntryPoint()
+                } else {
+                    print(error ?? "")
+                }
+            })
         })
     }
     
-    // Start Google OAuth2 Authentication
     func sign(_ signIn: GIDSignIn?, present viewController: UIViewController?) {
         // Showing OAuth2 authentication window
         if let aController = viewController {
@@ -61,7 +61,6 @@ final class GoogleSignInWrapper: NSObject, GIDSignInDelegate {
         }
     }
     
-    // After Google OAuth2 authentication
     func sign(_ signIn: GIDSignIn?, dismiss viewController: UIViewController?) {
         // Close OAuth2 authentication window
         presentingViewController?.dismiss(animated: true) {() -> Void in }

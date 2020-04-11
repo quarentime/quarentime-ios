@@ -8,20 +8,22 @@
 
 import Foundation
 
-public enum NetworkError: Swift.Error {
+enum NetworkError: Swift.Error {
     case invalidURL
     case noData
+    case validation
 }
 
-public protocol NetworkDispatcher {
+protocol NetworkDispatcher {
     func dispatch(request: RequestData, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void)
 }
 
-public struct URLSessionNetworkDispatcher: NetworkDispatcher {
-    public static let instance = URLSessionNetworkDispatcher()
+struct URLSessionNetworkDispatcher: NetworkDispatcher {
+    
+    static let instance = URLSessionNetworkDispatcher()
     private init() {}
     
-    public func dispatch(request: RequestData, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void) {
+    func dispatch(request: RequestData, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void) {
         guard let url = URL(string: request.path) else {
             onError(NetworkError.invalidURL)
             return
@@ -54,7 +56,15 @@ public struct URLSessionNetworkDispatcher: NetworkDispatcher {
                 return
             }
             
+            let response = response as! HTTPURLResponse
+            let status = response.statusCode
+            guard (200...299).contains(status) else {
+                onError(NetworkError.validation)
+                return
+            }
+            
             onSuccess(data)
             }.resume()
     }
+    
 }

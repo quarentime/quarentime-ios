@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import Firebase
 
 private enum Keys: String {
     case isLoggedIn = "isLoggedIn"
     case isOnboardingComplete = "isOnboardingComplete"
-    case logInToken = "logInToken"
+    case isIntakeComplete = "isIntakeComplete"
 }
 
 struct AppStateRepository {
@@ -30,13 +31,11 @@ struct AppStateRepository {
         return userDefaults.object(forKey: Keys.isLoggedIn.rawValue) as? Bool ?? false
     }
     
-    func set(token: String) {
-        userDefaults.set(token, forKey: Keys.logInToken.rawValue)
-        userDefaults.synchronize()
-    }
-    
-    func get(token: String) -> String {
-        return userDefaults.object(forKey: Keys.logInToken.rawValue) as? String ?? ""
+    func getToken(onCompletion: @escaping (String) -> Void) {
+        Auth.auth().currentUser?.getIDToken(completion: { (token, error) in
+            guard let token = token else { return }
+            onCompletion(token)
+        })
     }
     
     func setIsOnboardingComplete(to isOnboardingComplete: Bool) {
@@ -46,6 +45,10 @@ struct AppStateRepository {
     
     func isOnboardingComplete() -> Bool {
         return userDefaults.object(forKey: Keys.isOnboardingComplete.rawValue) as? Bool ?? false
+    }
+    
+    func isIntakeComplete() -> Bool {
+        return userDefaults.object(forKey: Keys.isIntakeComplete.rawValue) as? Bool ?? false
     }
     
 }

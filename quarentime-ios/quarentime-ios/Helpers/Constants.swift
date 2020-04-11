@@ -11,5 +11,6 @@ import Foundation
 struct Constants {
     
     static let urlPrivacyPolicy = "https://www.google.com"
+    static let host = "https://quarentime-user-api-rcgccs4vga-ew.a.run.app"
 
 }
