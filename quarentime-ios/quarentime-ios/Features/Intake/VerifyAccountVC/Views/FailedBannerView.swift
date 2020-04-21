@@ -9,13 +9,16 @@
 import UIKit
 
 class FailedBannerView: UIView, XibViewGettable {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    @IBOutlet weak var verificationFailedLabel: UILabel!
+    @IBOutlet weak var enterValidCodeLabel: UILabel!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
-    */
-
+    
+    override func awakeFromNib() {
+        verificationFailedLabel.text = "verificationFailed.text".local
+        enterValidCodeLabel.text = "enterValidCode.text".local
+    }
 }

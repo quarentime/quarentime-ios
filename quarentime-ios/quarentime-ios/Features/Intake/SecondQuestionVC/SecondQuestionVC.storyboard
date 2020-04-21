@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
         <array key="SF-Pro-Display-LightItalic.otf">
             <string>SFProDisplay-LightItalic</string>
         </array>
@@ -18,7 +21,7 @@
         <!--SecondQuestionVC-->
         <scene sceneID="e7K-iz-DQM">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="5rO-Bm-ru4" userLabel="SecondQuestionVC" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5rO-Bm-ru4" userLabel="SecondQuestionVC" customClass="SecondQuestionVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lKu-zg-tio">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,25 +29,204 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FK8-Mt-xa3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Have you developed any of the following new symptoms within the last 14 days?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-s0-QrW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2. Have you developed any of the following new symptoms within the last 14 days?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-s0-QrW">
                                         <rect key="frame" x="34" y="22" width="346" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select at least two symptoms if applicable." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eeb-bK-dQg">
-                                        <rect key="frame" x="34" y="62.5" width="346" height="17"/>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-LightItalic" family="SF Pro Display" pointSize="14"/>
+                                        <rect key="frame" x="34" y="62.5" width="346" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-LightItalic" family="SF Pro Display" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddm-Xk-KnN">
+                                        <rect key="frame" x="34" y="107" width="346" height="606"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU2-Is-5bW" userLabel="Fever Button" customClass="CheckBox" customModule="quarentime_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="25" width="17" height="17"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="JRS-Ma-C9A"/>
+                                                    <constraint firstAttribute="width" secondItem="HU2-Is-5bW" secondAttribute="height" multiplier="1:1" id="fTa-vt-0Bx"/>
+                                                    <constraint firstAttribute="width" constant="17" id="njL-a0-a2D"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fever" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJI-5W-SYc">
+                                                <rect key="frame" x="37" y="28" width="279" height="11"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v2-hJ-F77" userLabel="Cough Button" customClass="CheckBox" customModule="quarentime_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="57" width="17" height="17"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="C4x-aR-ZaU"/>
+                                                    <constraint firstAttribute="width" secondItem="8v2-hJ-F77" secondAttribute="height" multiplier="1:1" id="I19-Gj-F6w"/>
+                                                    <constraint firstAttribute="width" constant="17" id="kh2-N4-TSf"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cough (dry)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2u9-oi-xmS">
+                                                <rect key="frame" x="37" y="57" width="279" height="17"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2E-8O-kmz" userLabel="Difficulty breathing Button" customClass="CheckBox" customModule="quarentime_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="89" width="17" height="17"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="mMn-q5-4zm"/>
+                                                    <constraint firstAttribute="width" constant="17" id="yda-qi-t0f"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvY-pn-gcO">
+                                                <rect key="frame" x="37" y="89" width="279" height="17"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-25-OvJ" userLabel="Throat pain Button" customClass="CheckBox" customModule="quarentime_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="121" width="17" height="17"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="2IM-nR-Q0d"/>
+                                                    <constraint firstAttribute="width" constant="17" id="7V8-f4-fM6"/>
+                                                    <constraint firstAttribute="width" secondItem="eAQ-25-OvJ" secondAttribute="height" multiplier="1:1" id="9ZU-14-nGK"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Throat pain and/or runny nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R23-iH-7l7">
+                                                <rect key="frame" x="37" y="121" width="279" height="17"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUd-2b-vio" userLabel="Fatigue Button" customClass="CheckBox" customModule="quarentime_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="153" width="17" height="17"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="17" id="ZDu-m1-dib"/>
+                                                    <constraint firstAttribute="height" constant="17" id="i2M-BE-PXR"/>
+                                                    <constraint firstAttribute="width" secondItem="mUd-2b-vio" secondAttribute="height" multiplier="1:1" id="x4V-bZ-tgi"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fatigue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhV-zC-AfI">
+                                                <rect key="frame" x="37" y="153" width="279" height="17"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qv5-J8-aNG" userLabel="None Button" customClass="CheckBox" customModule="quarentime_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="185" width="17" height="17"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="17" id="RiN-jT-OKu"/>
+                                                    <constraint firstAttribute="height" constant="17" id="dm3-6u-sua"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None of the above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6O-Ch-J1G" userLabel="None of the above">
+                                                <rect key="frame" x="37" y="185" width="279" height="17"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="8v2-hJ-F77" firstAttribute="leading" secondItem="HU2-Is-5bW" secondAttribute="leading" id="0lG-bx-mCp"/>
+                                            <constraint firstItem="I2E-8O-kmz" firstAttribute="width" secondItem="I2E-8O-kmz" secondAttribute="height" multiplier="1:1" id="1cZ-0J-Te0"/>
+                                            <constraint firstItem="MhV-zC-AfI" firstAttribute="centerY" secondItem="mUd-2b-vio" secondAttribute="centerY" id="2Cn-nS-Iwc"/>
+                                            <constraint firstAttribute="trailing" secondItem="eJI-5W-SYc" secondAttribute="trailing" constant="30" id="4AK-jU-M7l"/>
+                                            <constraint firstItem="HU2-Is-5bW" firstAttribute="leading" secondItem="Ddm-Xk-KnN" secondAttribute="leading" id="5Jm-GA-ap8"/>
+                                            <constraint firstItem="Qv5-J8-aNG" firstAttribute="leading" secondItem="mUd-2b-vio" secondAttribute="leading" id="7R1-4k-kOq"/>
+                                            <constraint firstItem="bvY-pn-gcO" firstAttribute="trailing" secondItem="2u9-oi-xmS" secondAttribute="trailing" id="88W-zk-wRs"/>
+                                            <constraint firstItem="8v2-hJ-F77" firstAttribute="trailing" secondItem="HU2-Is-5bW" secondAttribute="trailing" id="98L-1u-ZOg"/>
+                                            <constraint firstItem="I2E-8O-kmz" firstAttribute="top" secondItem="8v2-hJ-F77" secondAttribute="bottom" constant="15" id="BfX-K7-RFh"/>
+                                            <constraint firstItem="R23-iH-7l7" firstAttribute="leading" secondItem="bvY-pn-gcO" secondAttribute="leading" id="FCt-Ja-wUU"/>
+                                            <constraint firstItem="eJI-5W-SYc" firstAttribute="leading" secondItem="HU2-Is-5bW" secondAttribute="trailing" constant="20" id="Fvd-9Z-5y5"/>
+                                            <constraint firstItem="I2E-8O-kmz" firstAttribute="trailing" secondItem="8v2-hJ-F77" secondAttribute="trailing" id="G0P-kT-lGG"/>
+                                            <constraint firstItem="Qv5-J8-aNG" firstAttribute="trailing" secondItem="mUd-2b-vio" secondAttribute="trailing" id="GeV-Ke-WPr"/>
+                                            <constraint firstItem="eAQ-25-OvJ" firstAttribute="top" secondItem="I2E-8O-kmz" secondAttribute="bottom" constant="15" id="Gm0-Oq-1Iu"/>
+                                            <constraint firstItem="mUd-2b-vio" firstAttribute="leading" secondItem="eAQ-25-OvJ" secondAttribute="leading" id="MEv-W3-FxW"/>
+                                            <constraint firstItem="v6O-Ch-J1G" firstAttribute="leading" secondItem="MhV-zC-AfI" secondAttribute="leading" id="O9c-Km-pCL"/>
+                                            <constraint firstItem="2u9-oi-xmS" firstAttribute="centerY" secondItem="8v2-hJ-F77" secondAttribute="centerY" id="OfI-Wx-zd2"/>
+                                            <constraint firstItem="R23-iH-7l7" firstAttribute="trailing" secondItem="bvY-pn-gcO" secondAttribute="trailing" id="QUQ-cc-bLe"/>
+                                            <constraint firstItem="eJI-5W-SYc" firstAttribute="top" secondItem="Ddm-Xk-KnN" secondAttribute="top" constant="28" id="Sth-xS-r5X"/>
+                                            <constraint firstItem="8v2-hJ-F77" firstAttribute="top" secondItem="HU2-Is-5bW" secondAttribute="bottom" constant="15" id="WZa-hj-rhi"/>
+                                            <constraint firstItem="Qv5-J8-aNG" firstAttribute="width" secondItem="Qv5-J8-aNG" secondAttribute="height" multiplier="1:1" id="Wgy-SN-oFU"/>
+                                            <constraint firstItem="2u9-oi-xmS" firstAttribute="trailing" secondItem="eJI-5W-SYc" secondAttribute="trailing" id="WtQ-Os-Vpl"/>
+                                            <constraint firstItem="bvY-pn-gcO" firstAttribute="centerY" secondItem="I2E-8O-kmz" secondAttribute="centerY" id="X3Z-u3-udo"/>
+                                            <constraint firstItem="eJI-5W-SYc" firstAttribute="centerY" secondItem="HU2-Is-5bW" secondAttribute="centerY" id="ZTW-V2-Mvb"/>
+                                            <constraint firstItem="Qv5-J8-aNG" firstAttribute="top" secondItem="mUd-2b-vio" secondAttribute="bottom" constant="15" id="Zda-xf-VtQ"/>
+                                            <constraint firstItem="MhV-zC-AfI" firstAttribute="leading" secondItem="R23-iH-7l7" secondAttribute="leading" id="Zez-ou-0lM"/>
+                                            <constraint firstItem="MhV-zC-AfI" firstAttribute="trailing" secondItem="R23-iH-7l7" secondAttribute="trailing" id="dAw-P5-brb"/>
+                                            <constraint firstItem="v6O-Ch-J1G" firstAttribute="centerY" secondItem="Qv5-J8-aNG" secondAttribute="centerY" id="dNW-wS-sxp"/>
+                                            <constraint firstItem="R23-iH-7l7" firstAttribute="centerY" secondItem="eAQ-25-OvJ" secondAttribute="centerY" id="fg7-UE-al5"/>
+                                            <constraint firstItem="mUd-2b-vio" firstAttribute="top" secondItem="eAQ-25-OvJ" secondAttribute="bottom" constant="15" id="gwN-12-9hx"/>
+                                            <constraint firstItem="2u9-oi-xmS" firstAttribute="leading" secondItem="eJI-5W-SYc" secondAttribute="leading" id="imG-Ej-5xu"/>
+                                            <constraint firstItem="v6O-Ch-J1G" firstAttribute="trailing" secondItem="MhV-zC-AfI" secondAttribute="trailing" id="lHH-1v-MYr"/>
+                                            <constraint firstItem="I2E-8O-kmz" firstAttribute="leading" secondItem="8v2-hJ-F77" secondAttribute="leading" id="oNx-4c-bpJ"/>
+                                            <constraint firstItem="eAQ-25-OvJ" firstAttribute="leading" secondItem="I2E-8O-kmz" secondAttribute="leading" id="ocN-K9-PJG"/>
+                                            <constraint firstItem="eAQ-25-OvJ" firstAttribute="trailing" secondItem="I2E-8O-kmz" secondAttribute="trailing" id="pmL-Sg-zRn"/>
+                                            <constraint firstItem="bvY-pn-gcO" firstAttribute="leading" secondItem="2u9-oi-xmS" secondAttribute="leading" id="qz0-Qp-Pjc"/>
+                                            <constraint firstItem="HU2-Is-5bW" firstAttribute="top" secondItem="Ddm-Xk-KnN" secondAttribute="top" constant="25" id="uMv-bU-KHm"/>
+                                            <constraint firstItem="mUd-2b-vio" firstAttribute="trailing" secondItem="eAQ-25-OvJ" secondAttribute="trailing" id="xVu-Hh-HyS"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-og-rTH">
+                                        <rect key="frame" x="34" y="743" width="346" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dwB-7R-Bc2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="15"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextScreenAction:" destination="5rO-Bm-ru4" eventType="touchUpInside" id="Gdw-AX-BLT"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="Am6-og-rTH" firstAttribute="trailing" secondItem="Ddm-Xk-KnN" secondAttribute="trailing" id="5wI-tU-Xhc"/>
                                     <constraint firstItem="8hI-s0-QrW" firstAttribute="top" secondItem="FK8-Mt-xa3" secondAttribute="top" constant="22" id="Cfg-E7-6fy"/>
                                     <constraint firstItem="Eeb-bK-dQg" firstAttribute="top" secondItem="8hI-s0-QrW" secondAttribute="bottom" constant="2" id="Esj-mA-LlO"/>
+                                    <constraint firstItem="Ddm-Xk-KnN" firstAttribute="leading" secondItem="8hI-s0-QrW" secondAttribute="leading" id="L2k-ch-FjF"/>
+                                    <constraint firstItem="Am6-og-rTH" firstAttribute="leading" secondItem="Ddm-Xk-KnN" secondAttribute="leading" id="Qnf-rf-VqS"/>
+                                    <constraint firstItem="Am6-og-rTH" firstAttribute="top" secondItem="Ddm-Xk-KnN" secondAttribute="bottom" constant="30" id="WsE-Ki-aXZ"/>
+                                    <constraint firstItem="Ddm-Xk-KnN" firstAttribute="top" secondItem="Eeb-bK-dQg" secondAttribute="bottom" constant="25" id="aoK-iB-kYf"/>
                                     <constraint firstItem="8hI-s0-QrW" firstAttribute="leading" secondItem="FK8-Mt-xa3" secondAttribute="leading" constant="34" id="deQ-la-QXN"/>
                                     <constraint firstItem="Eeb-bK-dQg" firstAttribute="trailing" secondItem="8hI-s0-QrW" secondAttribute="trailing" id="gF9-Vc-Hks"/>
+                                    <constraint firstAttribute="bottom" secondItem="Am6-og-rTH" secondAttribute="bottom" constant="25" id="kQ4-WE-rmk"/>
+                                    <constraint firstItem="Ddm-Xk-KnN" firstAttribute="trailing" secondItem="8hI-s0-QrW" secondAttribute="trailing" id="mgF-Pe-adJ"/>
                                     <constraint firstItem="Eeb-bK-dQg" firstAttribute="leading" secondItem="8hI-s0-QrW" secondAttribute="leading" id="sBJ-yc-1Cd"/>
                                     <constraint firstAttribute="trailing" secondItem="8hI-s0-QrW" secondAttribute="trailing" constant="34" id="xFz-cD-RwZ"/>
                                 </constraints>
@@ -59,11 +241,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ahS-9n-ULS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YFs-kQ-OwB"/>
+                    <navigationItem key="navigationItem" title="Intake" id="YFs-kQ-OwB">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="hn9-g2-BgQ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="infoLabel" destination="Eeb-bK-dQg" id="w07-cI-Qd9"/>
+                        <outlet property="nextButton" destination="Am6-og-rTH" id="C1Z-h1-qry"/>
+                        <outlet property="questionLabel" destination="8hI-s0-QrW" id="dLb-i2-CGN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjK-Zh-iqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2090" y="824"/>
+            <point key="canvasLocation" x="2089.8550724637685" y="823.66071428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
 </document>

@@ -74,15 +74,31 @@
 		2F1B4CCB2434F8B30033371B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B4CCA2434F8B30033371B /* CustomButton.swift */; };
 		2F3A16852438EBF800E9502F /* FailedBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A16842438EBF800E9502F /* FailedBannerView.xib */; };
 		2F3A16872438EC2700E9502F /* FailedBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A16862438EC2700E9502F /* FailedBannerView.swift */; };
+		2F652B5A2444799100B90454 /* BenefitsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F652B592444799100B90454 /* BenefitsVC.storyboard */; };
+		2F652B5C244479B200B90454 /* BenefitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F652B5B244479B200B90454 /* BenefitsVC.swift */; };
+		2F652B5E2444F2DD00B90454 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F652B5D2444F2DD00B90454 /* Checkbox.swift */; };
 		2F6EC21C24360E9100AB1795 /* PersonalInformationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC21B24360E9100AB1795 /* PersonalInformationVC.storyboard */; };
 		2F6EC21F24360F2000AB1795 /* VerifyAccountVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC21E24360F2000AB1795 /* VerifyAccountVC.storyboard */; };
 		2F6EC2222436101900AB1795 /* SurveyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC2212436101900AB1795 /* SurveyVC.storyboard */; };
-		2F6EC2252436113800AB1795 /* FirstQuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC2242436113800AB1795 /* FirstQuestionVC.storyboard */; };
 		2F6EC229243611B000AB1795 /* SecondQuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6EC228243611B000AB1795 /* SecondQuestionVC.storyboard */; };
+		2F7A1A4D243D0AB800F3D0C3 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7A1A4C243D0AB800F3D0C3 /* KeyboardLayoutConstraint.swift */; };
+		2F809E022448B9D7006CE768 /* SurveyNC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F809E012448B9D7006CE768 /* SurveyNC.storyboard */; };
+		2F809E052448BA46006CE768 /* SurveyNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F809E042448BA46006CE768 /* SurveyNC.swift */; };
+		2FAAB0F124436D08009A27BE /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAB0F024436D08009A27BE /* ConfirmationVC.swift */; };
+		2FAAB0F324436D1A009A27BE /* ConfirmationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAAB0F224436D1A009A27BE /* ConfirmationVC.storyboard */; };
+		2FAAB0F624436D73009A27BE /* InitialStatusVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAAB0F524436D73009A27BE /* InitialStatusVC.storyboard */; };
+		2FAAB0F824436D8A009A27BE /* InitialStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAB0F724436D8A009A27BE /* InitialStatusVC.swift */; };
+		2FAAB0FD244381F5009A27BE /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAB0FC244381F5009A27BE /* StatusView.swift */; };
+		2FAAB0FF24438209009A27BE /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FAAB0FE24438209009A27BE /* StatusView.xib */; };
+		2FCDDD32244775CD00DBC1EF /* FirstQuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDDD31244775CD00DBC1EF /* FirstQuestionVC.storyboard */; };
 		2FDDB1E3242FB9EB009DE7B2 /* PersonalInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDDB1E2242FB9EB009DE7B2 /* PersonalInformationVC.swift */; };
 		2FEBAB892437D21000E45E86 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBAB882437D21000E45E86 /* SurveyVC.swift */; };
 		2FEBAB8B2437D51600E45E86 /* FirstQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBAB8A2437D51600E45E86 /* FirstQuestionVC.swift */; };
 		2FEBAB8D2437D53200E45E86 /* SecondQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBAB8C2437D53200E45E86 /* SecondQuestionVC.swift */; };
+		2FFA698A2442205E009A037C /* ThirdQuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFA69892442205E009A037C /* ThirdQuestionVC.storyboard */; };
+		2FFA698C24422092009A037C /* ThirdQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA698B24422092009A037C /* ThirdQuestionVC.swift */; };
+		2FFA698F244224B2009A037C /* FourthQuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFA698E244224B2009A037C /* FourthQuestionVC.storyboard */; };
+		2FFA6991244224D7009A037C /* FourthQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA6990244224D7009A037C /* FourthQuestionVC.swift */; };
 		842159E230910DFD56319621 /* Pods_quarentime_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */; };
 		B41E9C722427209000872042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C712427209000872042 /* GoogleService-Info.plist */; };
 		B41E9C752428C00600872042 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41E9C732428C00600872042 /* LoginVC.storyboard */; };
@@ -181,15 +197,31 @@
 		2F1B4CCA2434F8B30033371B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2F3A16842438EBF800E9502F /* FailedBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FailedBannerView.xib; sourceTree = "<group>"; };
 		2F3A16862438EC2700E9502F /* FailedBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedBannerView.swift; sourceTree = "<group>"; };
+		2F652B592444799100B90454 /* BenefitsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BenefitsVC.storyboard; sourceTree = "<group>"; };
+		2F652B5B244479B200B90454 /* BenefitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsVC.swift; sourceTree = "<group>"; };
+		2F652B5D2444F2DD00B90454 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		2F6EC21B24360E9100AB1795 /* PersonalInformationVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalInformationVC.storyboard; sourceTree = "<group>"; };
 		2F6EC21E24360F2000AB1795 /* VerifyAccountVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyAccountVC.storyboard; sourceTree = "<group>"; };
 		2F6EC2212436101900AB1795 /* SurveyVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurveyVC.storyboard; sourceTree = "<group>"; };
-		2F6EC2242436113800AB1795 /* FirstQuestionVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstQuestionVC.storyboard; sourceTree = "<group>"; };
 		2F6EC228243611B000AB1795 /* SecondQuestionVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondQuestionVC.storyboard; sourceTree = "<group>"; };
+		2F7A1A4C243D0AB800F3D0C3 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		2F809E012448B9D7006CE768 /* SurveyNC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurveyNC.storyboard; sourceTree = "<group>"; };
+		2F809E042448BA46006CE768 /* SurveyNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyNC.swift; sourceTree = "<group>"; };
+		2FAAB0F024436D08009A27BE /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
+		2FAAB0F224436D1A009A27BE /* ConfirmationVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmationVC.storyboard; sourceTree = "<group>"; };
+		2FAAB0F524436D73009A27BE /* InitialStatusVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InitialStatusVC.storyboard; sourceTree = "<group>"; };
+		2FAAB0F724436D8A009A27BE /* InitialStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialStatusVC.swift; sourceTree = "<group>"; };
+		2FAAB0FC244381F5009A27BE /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		2FAAB0FE24438209009A27BE /* StatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
+		2FCDDD31244775CD00DBC1EF /* FirstQuestionVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstQuestionVC.storyboard; sourceTree = "<group>"; };
 		2FDDB1E2242FB9EB009DE7B2 /* PersonalInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformationVC.swift; sourceTree = "<group>"; };
 		2FEBAB882437D21000E45E86 /* SurveyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
 		2FEBAB8A2437D51600E45E86 /* FirstQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionVC.swift; sourceTree = "<group>"; };
 		2FEBAB8C2437D53200E45E86 /* SecondQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionVC.swift; sourceTree = "<group>"; };
+		2FFA69892442205E009A037C /* ThirdQuestionVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdQuestionVC.storyboard; sourceTree = "<group>"; };
+		2FFA698B24422092009A037C /* ThirdQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionVC.swift; sourceTree = "<group>"; };
+		2FFA698E244224B2009A037C /* FourthQuestionVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthQuestionVC.storyboard; sourceTree = "<group>"; };
+		2FFA6990244224D7009A037C /* FourthQuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestionVC.swift; sourceTree = "<group>"; };
 		47C837F1DD79059406452532 /* Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios-quarentime-iosUITests/Pods-quarentime-ios-quarentime-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E8632D3442CC1451410C675 /* Pods_quarentime_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA9353BE7BC111A2FB49DD7 /* Pods_quarentime_ios_quarentime_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quarentime_ios_quarentime_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +279,7 @@
 				024F294724273341008B58A8 /* StoryboardGettable.swift */,
 				024F294624273341008B58A8 /* XibViewGettable.swift */,
 				2F012ECD2433A2800005D26A /* Constants.swift */,
+				2F7A1A4C243D0AB800F3D0C3 /* KeyboardLayoutConstraint.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -339,8 +372,9 @@
 		024F29312426D79E008B58A8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2F1B4CCA2434F8B30033371B /* CustomButton.swift */,
 				024F293D242712C7008B58A8 /* PageControl */,
+				2F652B5D2444F2DD00B90454 /* Checkbox.swift */,
+				2F1B4CCA2434F8B30033371B /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -537,6 +571,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2F652B582444797500B90454 /* BenefitsVC */ = {
+			isa = PBXGroup;
+			children = (
+				2F652B592444799100B90454 /* BenefitsVC.storyboard */,
+				2F652B5B244479B200B90454 /* BenefitsVC.swift */,
+			);
+			path = BenefitsVC;
+			sourceTree = "<group>";
+		};
 		2F6EC21A24360E4200AB1795 /* PersonalInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,7 +611,7 @@
 		2F6EC2232436111700AB1795 /* FirstQuestionVC */ = {
 			isa = PBXGroup;
 			children = (
-				2F6EC2242436113800AB1795 /* FirstQuestionVC.storyboard */,
+				2FCDDD31244775CD00DBC1EF /* FirstQuestionVC.storyboard */,
 				2FEBAB8A2437D51600E45E86 /* FirstQuestionVC.swift */,
 			);
 			path = FirstQuestionVC;
@@ -583,16 +626,77 @@
 			path = SecondQuestionVC;
 			sourceTree = "<group>";
 		};
+		2F809E032448B9DE006CE768 /* SurveyNC */ = {
+			isa = PBXGroup;
+			children = (
+				2F809E012448B9D7006CE768 /* SurveyNC.storyboard */,
+				2F809E042448BA46006CE768 /* SurveyNC.swift */,
+			);
+			path = SurveyNC;
+			sourceTree = "<group>";
+		};
+		2FAAB0EF24436CE8009A27BE /* ConfirmationVC */ = {
+			isa = PBXGroup;
+			children = (
+				2FAAB0F224436D1A009A27BE /* ConfirmationVC.storyboard */,
+				2FAAB0F024436D08009A27BE /* ConfirmationVC.swift */,
+			);
+			path = ConfirmationVC;
+			sourceTree = "<group>";
+		};
+		2FAAB0F424436D54009A27BE /* InitialStatusVC */ = {
+			isa = PBXGroup;
+			children = (
+				2FAAB0FB244381CB009A27BE /* StatusView */,
+				2FAAB0F524436D73009A27BE /* InitialStatusVC.storyboard */,
+				2FAAB0F724436D8A009A27BE /* InitialStatusVC.swift */,
+			);
+			path = InitialStatusVC;
+			sourceTree = "<group>";
+		};
+		2FAAB0FB244381CB009A27BE /* StatusView */ = {
+			isa = PBXGroup;
+			children = (
+				2FAAB0FE24438209009A27BE /* StatusView.xib */,
+				2FAAB0FC244381F5009A27BE /* StatusView.swift */,
+			);
+			path = StatusView;
+			sourceTree = "<group>";
+		};
 		2FDDB1DF242FACE4009DE7B2 /* Intake */ = {
 			isa = PBXGroup;
 			children = (
 				2F6EC21A24360E4200AB1795 /* PersonalInfoViewController */,
 				2F6EC21D24360EF900AB1795 /* VerifyAccountVC */,
 				2F6EC22024360F9F00AB1795 /* SurveyVC */,
+				2F809E032448B9DE006CE768 /* SurveyNC */,
 				2F6EC2232436111700AB1795 /* FirstQuestionVC */,
 				2F6EC2262436117300AB1795 /* SecondQuestionVC */,
+				2FFA698824421F8C009A037C /* ThirdQuestionVC */,
+				2FFA698D2442248E009A037C /* FourthQuestionVC */,
+				2FAAB0EF24436CE8009A27BE /* ConfirmationVC */,
+				2FAAB0F424436D54009A27BE /* InitialStatusVC */,
+				2F652B582444797500B90454 /* BenefitsVC */,
 			);
 			path = Intake;
+			sourceTree = "<group>";
+		};
+		2FFA698824421F8C009A037C /* ThirdQuestionVC */ = {
+			isa = PBXGroup;
+			children = (
+				2FFA69892442205E009A037C /* ThirdQuestionVC.storyboard */,
+				2FFA698B24422092009A037C /* ThirdQuestionVC.swift */,
+			);
+			path = ThirdQuestionVC;
+			sourceTree = "<group>";
+		};
+		2FFA698D2442248E009A037C /* FourthQuestionVC */ = {
+			isa = PBXGroup;
+			children = (
+				2FFA698E244224B2009A037C /* FourthQuestionVC.storyboard */,
+				2FFA6990244224D7009A037C /* FourthQuestionVC.swift */,
+			);
+			path = FourthQuestionVC;
 			sourceTree = "<group>";
 		};
 		61A77401A2EC32C83DE570AE /* Frameworks */ = {
@@ -733,18 +837,24 @@
 				0235C3D624289DCA00365C97 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				02E8290424381FA100F60F16 /* HomeVC.storyboard in Resources */,
 				0235C3E324289DCA00365C97 /* SF-Pro-Display-Ultralight.otf in Resources */,
+				2FAAB0FF24438209009A27BE /* StatusView.xib in Resources */,
 				0235C3D724289DCA00365C97 /* SF-Pro-Display-Heavy.otf in Resources */,
 				02E8290A24381FDB00F60F16 /* TrackVC.storyboard in Resources */,
 				0235C3D324289DCA00365C97 /* SF-Pro-Display-Black.otf in Resources */,
 				0235C3DF24289DCA00365C97 /* SF-Pro-Display-Semibold.otf in Resources */,
 				0235C3E024289DCA00365C97 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				2FCDDD32244775CD00DBC1EF /* FirstQuestionVC.storyboard in Resources */,
 				024F2945242712C8008B58A8 /* PageControlItem.xib in Resources */,
 				0235C3DC24289DCA00365C97 /* SF-Pro-Display-MediumItalic.otf in Resources */,
 				0235C3D924289DCA00365C97 /* SF-Pro-Display-Light.otf in Resources */,
 				0235C3D524289DCA00365C97 /* SF-Pro-Display-Bold.otf in Resources */,
+				2FAAB0F324436D1A009A27BE /* ConfirmationVC.storyboard in Resources */,
 				0235C3DA24289DCA00365C97 /* SF-Pro-Display-LightItalic.otf in Resources */,
+				2F809E022448B9D7006CE768 /* SurveyNC.storyboard in Resources */,
 				0235C3DE24289DCA00365C97 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				02F96C8D2425FAC8005284DE /* LaunchScreen.storyboard in Resources */,
+				2FFA698A2442205E009A037C /* ThirdQuestionVC.storyboard in Resources */,
+				2FAAB0F624436D73009A27BE /* InitialStatusVC.storyboard in Resources */,
 				B41E9C752428C00600872042 /* LoginVC.storyboard in Resources */,
 				024F293B24270E7A008B58A8 /* Localizable.strings in Resources */,
 				0235C3DB24289DCA00365C97 /* SF-Pro-Display-Medium.otf in Resources */,
@@ -754,7 +864,8 @@
 				02E8290624381FB200F60F16 /* AddFriendsVC.storyboard in Resources */,
 				02373D5C242E1A2C00526FF6 /* OnboardingCell.xib in Resources */,
 				02F96C8A2425FAC8005284DE /* Assets.xcassets in Resources */,
-				2F6EC2252436113800AB1795 /* FirstQuestionVC.storyboard in Resources */,
+				2F652B5A2444799100B90454 /* BenefitsVC.storyboard in Resources */,
+				2FFA698F244224B2009A037C /* FourthQuestionVC.storyboard in Resources */,
 				2F6EC21F24360F2000AB1795 /* VerifyAccountVC.storyboard in Resources */,
 				2F6EC21C24360E9100AB1795 /* PersonalInformationVC.storyboard in Resources */,
 				024F294D242734F6008B58A8 /* OnboardingVC.storyboard in Resources */,
@@ -932,7 +1043,9 @@
 				024F294924273341008B58A8 /* StoryboardGettable.swift in Sources */,
 				02E8290024381D5E00F60F16 /* MainScreenVC.swift in Sources */,
 				024F294B242734E4008B58A8 /* OnboardingVC.swift in Sources */,
+				2F809E052448BA46006CE768 /* SurveyNC.swift in Sources */,
 				027EAC42242E0BB800C3A77E /* OnboardingCell.swift in Sources */,
+				2F7A1A4D243D0AB800F3D0C3 /* KeyboardLayoutConstraint.swift in Sources */,
 				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
 				021CEB5124397358000956CB /* AppStateRepository.swift in Sources */,
 				02E82912243866F500F60F16 /* TrackVC.swift in Sources */,
@@ -941,6 +1054,7 @@
 				2FEBAB8B2437D51600E45E86 /* FirstQuestionVC.swift in Sources */,
 				2FEBAB8D2437D53200E45E86 /* SecondQuestionVC.swift in Sources */,
 				2F3A16872438EC2700E9502F /* FailedBannerView.swift in Sources */,
+				2F652B5E2444F2DD00B90454 /* Checkbox.swift in Sources */,
 				2FDDB1E3242FB9EB009DE7B2 /* PersonalInformationVC.swift in Sources */,
 				024F29362426D870008B58A8 /* Network.swift in Sources */,
 				024F2943242712C8008B58A8 /* PageControlViewProtocol.swift in Sources */,
@@ -952,12 +1066,17 @@
 				024F293924270E53008B58A8 /* String+Localization.swift in Sources */,
 				024F29372426D870008B58A8 /* RequestType.swift in Sources */,
 				2F012ED02433A80E0005D26A /* VerifyAccountVC.swift in Sources */,
+				2F652B5C244479B200B90454 /* BenefitsVC.swift in Sources */,
 				B41E9C762428C00600872042 /* LoginVC.swift in Sources */,
 				0224FE5A2428946900D9AC86 /* UIView+Constraints.swift in Sources */,
+				2FFA6991244224D7009A037C /* FourthQuestionVC.swift in Sources */,
+				2FAAB0F124436D08009A27BE /* ConfirmationVC.swift in Sources */,
 				02E8290E2438200700F60F16 /* HomeVC.swift in Sources */,
 				2FEBAB892437D21000E45E86 /* SurveyVC.swift in Sources */,
 				024F294824273341008B58A8 /* XibViewGettable.swift in Sources */,
+				2FAAB0F824436D8A009A27BE /* InitialStatusVC.swift in Sources */,
 				024790B324321DC1001CAFB2 /* LetsStartVC.swift in Sources */,
+				2FAAB0FD244381F5009A27BE /* StatusView.swift in Sources */,
 				027EAC45242E0CBC00C3A77E /* OnboardingItem.swift in Sources */,
 				02E8290C24381FF100F60F16 /* AddFriendsVC.swift in Sources */,
 				021CEB532439A156000956CB /* GoogleSignInWrapper.swift in Sources */,
@@ -966,6 +1085,7 @@
 				02B8D4B4243DAC1800279CFD /* HudView.swift in Sources */,
 				0292E0B1243EF25600FD69B7 /* SetPersonalInformation.swift in Sources */,
 				2F012ECE2433A2810005D26A /* Constants.swift in Sources */,
+				2FFA698C24422092009A037C /* ThirdQuestionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7M4-zE-BNQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--BenefitsVC-->
+        <scene sceneID="8ta-7O-l7i">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="7M4-zE-BNQ" customClass="BenefitsVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sVc-Vo-MZI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why contact trace?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxQ-Ib-0hL">
+                                <rect key="frame" x="32" y="76" width="350" height="27"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyB-N1-AS0">
+                                <rect key="frame" x="32" y="133" width="350" height="623"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aG1-nZ-ztv">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="623"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xid-1R-wdh" userLabel="Content View">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="623"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benefits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV0-jh-L0K">
+                                                        <rect key="frame" x="0.0" y="24" width="350" height="29"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNf-tF-Ooh">
+                                                        <rect key="frame" x="0.0" y="69" width="350" height="50.5"/>
+                                                        <string key="text">Early detection could potentialy help reduce the rist of the spread of the virus, and better protect our families and loved ones.</string>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-J9-DBb">
+                                                        <rect key="frame" x="0.0" y="135.5" width="350" height="67"/>
+                                                        <string key="text">Currently, contact tracing relies on the recall and memory of interviewees. There were however, instances when interviewees could not remember all their contact, or did not have information on whom they had been in contact with.</string>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helping healthcare workers" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcj-HQ-Sdj">
+                                                        <rect key="frame" x="0.0" y="218.5" width="350" height="17"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It also helps us support the work of contact tracers and healthcare workers by combating the spread od COVID-19 togerther." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNS-qv-uRx">
+                                                        <rect key="frame" x="0.0" y="235.5" width="350" height="50.5"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In contact tracing process, time metters" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpp-lN-yKx">
+                                                        <rect key="frame" x="0.0" y="302" width="350" height="17"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rke-yg-u3e">
+                                                        <rect key="frame" x="0.0" y="319" width="350" height="50.5"/>
+                                                        <string key="text">This enables users to take the necessary action sooner, such as monitoring his own health closely for signs of flu-like symptoms.</string>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0u-NL-dCC">
+                                                        <rect key="frame" x="0.0" y="385.5" width="350" height="50.5"/>
+                                                        <string key="text">The faster the contact tracing process can be initiated and can identify the people at risk, the faster we can advice to do quarantine if necessary and limit spead localy.</string>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Kpp-lN-yKx" firstAttribute="trailing" secondItem="eNS-qv-uRx" secondAttribute="trailing" id="0M7-8r-2LU"/>
+                                                    <constraint firstItem="rke-yg-u3e" firstAttribute="trailing" secondItem="Kpp-lN-yKx" secondAttribute="trailing" id="1CX-LL-fWH"/>
+                                                    <constraint firstItem="LC9-J9-DBb" firstAttribute="leading" secondItem="MNf-tF-Ooh" secondAttribute="leading" id="5Ac-JM-cPN"/>
+                                                    <constraint firstItem="LC9-J9-DBb" firstAttribute="trailing" secondItem="MNf-tF-Ooh" secondAttribute="trailing" id="8EI-hJ-h6s"/>
+                                                    <constraint firstItem="rke-yg-u3e" firstAttribute="top" secondItem="Kpp-lN-yKx" secondAttribute="bottom" id="EnL-Li-d9N"/>
+                                                    <constraint firstItem="Dcj-HQ-Sdj" firstAttribute="top" secondItem="LC9-J9-DBb" secondAttribute="bottom" constant="16" id="GIg-Lu-lMb"/>
+                                                    <constraint firstItem="h0u-NL-dCC" firstAttribute="top" secondItem="rke-yg-u3e" secondAttribute="bottom" constant="16" id="PME-n1-ZpN"/>
+                                                    <constraint firstItem="MNf-tF-Ooh" firstAttribute="leading" secondItem="aV0-jh-L0K" secondAttribute="leading" id="Q7m-11-Rt0"/>
+                                                    <constraint firstItem="eNS-qv-uRx" firstAttribute="top" secondItem="Dcj-HQ-Sdj" secondAttribute="bottom" id="UhD-SL-cO6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aV0-jh-L0K" secondAttribute="trailing" id="UvT-ND-iPJ"/>
+                                                    <constraint firstItem="Dcj-HQ-Sdj" firstAttribute="trailing" secondItem="LC9-J9-DBb" secondAttribute="trailing" id="WLf-FR-ecf"/>
+                                                    <constraint firstItem="Kpp-lN-yKx" firstAttribute="top" secondItem="eNS-qv-uRx" secondAttribute="bottom" constant="16" id="ZJT-wh-WgV"/>
+                                                    <constraint firstItem="MNf-tF-Ooh" firstAttribute="trailing" secondItem="aV0-jh-L0K" secondAttribute="trailing" id="dTo-e6-pFA"/>
+                                                    <constraint firstItem="eNS-qv-uRx" firstAttribute="leading" secondItem="Dcj-HQ-Sdj" secondAttribute="leading" id="eLZ-qR-uh7"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="h0u-NL-dCC" secondAttribute="bottom" constant="30" id="eTw-W7-uqA"/>
+                                                    <constraint firstItem="aV0-jh-L0K" firstAttribute="top" secondItem="Xid-1R-wdh" secondAttribute="top" constant="24" id="f0I-tF-Poq"/>
+                                                    <constraint firstItem="LC9-J9-DBb" firstAttribute="top" secondItem="MNf-tF-Ooh" secondAttribute="bottom" constant="16" id="fQT-xa-SaN"/>
+                                                    <constraint firstItem="h0u-NL-dCC" firstAttribute="leading" secondItem="rke-yg-u3e" secondAttribute="leading" id="iGk-9p-F7G"/>
+                                                    <constraint firstItem="Dcj-HQ-Sdj" firstAttribute="leading" secondItem="LC9-J9-DBb" secondAttribute="leading" id="kfI-P7-Boi"/>
+                                                    <constraint firstItem="eNS-qv-uRx" firstAttribute="trailing" secondItem="Dcj-HQ-Sdj" secondAttribute="trailing" id="lGY-Ta-VB0"/>
+                                                    <constraint firstItem="rke-yg-u3e" firstAttribute="leading" secondItem="Kpp-lN-yKx" secondAttribute="leading" id="odf-o9-0lM"/>
+                                                    <constraint firstItem="aV0-jh-L0K" firstAttribute="leading" secondItem="Xid-1R-wdh" secondAttribute="leading" id="qko-1a-m8A"/>
+                                                    <constraint firstItem="Kpp-lN-yKx" firstAttribute="leading" secondItem="eNS-qv-uRx" secondAttribute="leading" id="sRU-ah-hJ4"/>
+                                                    <constraint firstItem="MNf-tF-Ooh" firstAttribute="top" secondItem="aV0-jh-L0K" secondAttribute="bottom" constant="16" id="t8Q-f5-Anb"/>
+                                                    <constraint firstItem="h0u-NL-dCC" firstAttribute="trailing" secondItem="rke-yg-u3e" secondAttribute="trailing" id="uXS-ct-vaD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Xid-1R-wdh" firstAttribute="leading" secondItem="Q3Y-bV-f86" secondAttribute="leading" id="L4q-sW-jWb"/>
+                                            <constraint firstItem="Xid-1R-wdh" firstAttribute="width" secondItem="a3j-U8-MsT" secondAttribute="width" id="NkV-B4-n39"/>
+                                            <constraint firstItem="Xid-1R-wdh" firstAttribute="bottom" secondItem="Q3Y-bV-f86" secondAttribute="bottom" id="Rza-oI-OGz"/>
+                                            <constraint firstItem="Xid-1R-wdh" firstAttribute="height" secondItem="a3j-U8-MsT" secondAttribute="height" priority="250" id="cpU-lP-lug"/>
+                                            <constraint firstItem="Xid-1R-wdh" firstAttribute="trailing" secondItem="Q3Y-bV-f86" secondAttribute="trailing" id="pbF-um-h1F"/>
+                                            <constraint firstItem="Xid-1R-wdh" firstAttribute="top" secondItem="Q3Y-bV-f86" secondAttribute="top" id="zuP-yg-E3H"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="Q3Y-bV-f86"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="a3j-U8-MsT"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aG1-nZ-ztv" secondAttribute="trailing" id="6o0-o6-vAJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="aG1-nZ-ztv" secondAttribute="bottom" id="Grn-eC-m25"/>
+                                    <constraint firstItem="aG1-nZ-ztv" firstAttribute="leading" secondItem="iyB-N1-AS0" secondAttribute="leading" id="sWd-Xz-I93"/>
+                                    <constraint firstItem="aG1-nZ-ztv" firstAttribute="top" secondItem="iyB-N1-AS0" secondAttribute="top" id="xR5-ed-Wni"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pul-Cp-KWy">
+                                <rect key="frame" x="32" y="796" width="350" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="874-aN-Awd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                <state key="normal" title="LET'S START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pul-Cp-KWy" firstAttribute="leading" secondItem="JHR-gP-ACU" secondAttribute="leading" constant="32" id="0ms-Ns-0PX"/>
+                            <constraint firstItem="iyB-N1-AS0" firstAttribute="trailing" secondItem="nxQ-Ib-0hL" secondAttribute="trailing" id="9i5-H5-7D1"/>
+                            <constraint firstItem="JHR-gP-ACU" firstAttribute="trailing" secondItem="Pul-Cp-KWy" secondAttribute="trailing" constant="32" id="TS7-pT-JmR"/>
+                            <constraint firstItem="iyB-N1-AS0" firstAttribute="leading" secondItem="nxQ-Ib-0hL" secondAttribute="leading" id="gSE-gK-gen"/>
+                            <constraint firstItem="JHR-gP-ACU" firstAttribute="bottom" secondItem="Pul-Cp-KWy" secondAttribute="bottom" constant="16" id="hbG-1t-ZN6"/>
+                            <constraint firstItem="JHR-gP-ACU" firstAttribute="trailing" secondItem="nxQ-Ib-0hL" secondAttribute="trailing" constant="32" id="kXm-ba-UL9"/>
+                            <constraint firstItem="nxQ-Ib-0hL" firstAttribute="top" secondItem="JHR-gP-ACU" secondAttribute="top" constant="32" id="oUl-f2-MQM"/>
+                            <constraint firstItem="Pul-Cp-KWy" firstAttribute="top" secondItem="iyB-N1-AS0" secondAttribute="bottom" constant="40" id="so1-bj-bSh"/>
+                            <constraint firstItem="nxQ-Ib-0hL" firstAttribute="leading" secondItem="JHR-gP-ACU" secondAttribute="leading" constant="32" id="ufr-IJ-NAk"/>
+                            <constraint firstItem="iyB-N1-AS0" firstAttribute="top" secondItem="nxQ-Ib-0hL" secondAttribute="bottom" constant="30" id="zyd-Ef-eWV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JHR-gP-ACU"/>
+                    </view>
+                    <connections>
+                        <outlet property="benefitsLabel" destination="aV0-jh-L0K" id="4lL-ZQ-1jk"/>
+                        <outlet property="helpingWorkersLabel" destination="Dcj-HQ-Sdj" id="sLR-Va-Khc"/>
+                        <outlet property="inContactTracingLabel" destination="Kpp-lN-yKx" id="0Ic-pZ-7pj"/>
+                        <outlet property="paragraph1" destination="MNf-tF-Ooh" id="QrS-2X-Z1Z"/>
+                        <outlet property="paragraph2" destination="LC9-J9-DBb" id="iqs-HS-HvR"/>
+                        <outlet property="paragraph3" destination="eNS-qv-uRx" id="AaB-vc-Szr"/>
+                        <outlet property="paragraph4" destination="rke-yg-u3e" id="UcU-2U-nre"/>
+                        <outlet property="paragraph5" destination="h0u-NL-dCC" id="7ri-ZP-msi"/>
+                        <outlet property="questionLabel" destination="nxQ-Ib-0hL" id="rj5-uZ-1T4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3CB-7l-qh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="88"/>
+        </scene>
+    </scenes>
+</document>

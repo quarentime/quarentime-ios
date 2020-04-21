@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YdK-cg-fFo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intake-->
+        <scene sceneID="y7i-eR-DPh">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="YdK-cg-fFo" customClass="ConfirmationVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cV3-bp-dKo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQ3-VM-TSu">
+                                <rect key="frame" x="34" y="69" width="346" height="693"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYO-cd-z5h" userLabel="first declaration button" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10" width="17" height="17"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="Ts2-ib-voD"/>
+                                            <constraint firstAttribute="width" secondItem="qYO-cd-z5h" secondAttribute="height" multiplier="1:1" id="YXc-HU-pQv"/>
+                                            <constraint firstAttribute="width" constant="17" id="pXP-mN-DIs"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <state key="selected" image="checkmark" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="firstCheckboxActon:" destination="YdK-cg-fFo" eventType="touchUpInside" id="d0A-EB-B59"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I declare that the information is filled in truthfully." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH5-xc-zZC">
+                                        <rect key="frame" x="37" y="10" width="279" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhE-Lg-Jes" userLabel="second declaration button" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="17" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="S84-iz-8V2"/>
+                                            <constraint firstAttribute="width" constant="17" id="YdU-pD-s5v"/>
+                                            <constraint firstAttribute="width" secondItem="lhE-Lg-Jes" secondAttribute="height" multiplier="1:1" id="v7z-ds-J2d"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <state key="selected" image="checkmark" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="secondCheckboxAction:" destination="YdK-cg-fFo" eventType="touchUpInside" id="slt-vb-bjU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please indicate that you have read and agree with the Terms and Conditions and the Privacy Policy." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTV-OL-4PS">
+                                        <rect key="frame" x="37" y="56" width="279" height="50.5"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="FTV-OL-4PS" firstAttribute="leading" secondItem="jH5-xc-zZC" secondAttribute="leading" id="2pf-xD-OUC"/>
+                                    <constraint firstItem="jH5-xc-zZC" firstAttribute="top" secondItem="kQ3-VM-TSu" secondAttribute="top" constant="10" id="5L4-rq-ASy"/>
+                                    <constraint firstItem="jH5-xc-zZC" firstAttribute="leading" secondItem="qYO-cd-z5h" secondAttribute="trailing" constant="20" id="7YI-Uj-2La"/>
+                                    <constraint firstItem="jH5-xc-zZC" firstAttribute="centerY" secondItem="qYO-cd-z5h" secondAttribute="centerY" id="HXN-WM-Vlp"/>
+                                    <constraint firstItem="qYO-cd-z5h" firstAttribute="top" secondItem="kQ3-VM-TSu" secondAttribute="top" constant="10" id="HoS-No-5KK"/>
+                                    <constraint firstItem="lhE-Lg-Jes" firstAttribute="trailing" secondItem="qYO-cd-z5h" secondAttribute="trailing" id="NaB-X1-7VF"/>
+                                    <constraint firstItem="FTV-OL-4PS" firstAttribute="trailing" secondItem="jH5-xc-zZC" secondAttribute="trailing" id="O3b-ti-xZF"/>
+                                    <constraint firstItem="lhE-Lg-Jes" firstAttribute="leading" secondItem="qYO-cd-z5h" secondAttribute="leading" id="WBG-Wb-sl9"/>
+                                    <constraint firstItem="FTV-OL-4PS" firstAttribute="top" secondItem="jH5-xc-zZC" secondAttribute="bottom" constant="29" id="Y9L-oF-5AW"/>
+                                    <constraint firstItem="qYO-cd-z5h" firstAttribute="leading" secondItem="kQ3-VM-TSu" secondAttribute="leading" id="evs-AS-2kH"/>
+                                    <constraint firstAttribute="trailing" secondItem="jH5-xc-zZC" secondAttribute="trailing" constant="30" id="o8J-cX-T6s"/>
+                                    <constraint firstItem="FTV-OL-4PS" firstAttribute="centerY" secondItem="lhE-Lg-Jes" secondAttribute="centerY" constant="13" id="z3s-Hn-Lbl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49d-sz-YNu">
+                                <rect key="frame" x="34" y="787" width="346" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gA5-09-RfU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="15"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextScreen:" destination="YdK-cg-fFo" eventType="touchUpInside" id="fxM-s5-txw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZPQ-0j-Nek" firstAttribute="trailing" secondItem="kQ3-VM-TSu" secondAttribute="trailing" constant="34" id="9Qh-eM-ZdK"/>
+                            <constraint firstItem="49d-sz-YNu" firstAttribute="leading" secondItem="kQ3-VM-TSu" secondAttribute="leading" id="9dM-aM-8h0"/>
+                            <constraint firstItem="49d-sz-YNu" firstAttribute="top" secondItem="kQ3-VM-TSu" secondAttribute="bottom" constant="25" id="FP3-Cz-wzq"/>
+                            <constraint firstItem="kQ3-VM-TSu" firstAttribute="leading" secondItem="ZPQ-0j-Nek" secondAttribute="leading" constant="34" id="hOX-Pm-8Wv"/>
+                            <constraint firstItem="ZPQ-0j-Nek" firstAttribute="trailing" secondItem="49d-sz-YNu" secondAttribute="trailing" constant="34" id="jcb-fg-M8k"/>
+                            <constraint firstItem="kQ3-VM-TSu" firstAttribute="top" secondItem="ZPQ-0j-Nek" secondAttribute="top" constant="25" id="k0P-ov-ElO"/>
+                            <constraint firstItem="49d-sz-YNu" firstAttribute="trailing" secondItem="kQ3-VM-TSu" secondAttribute="trailing" id="mTj-9U-Ypn"/>
+                            <constraint firstItem="49d-sz-YNu" firstAttribute="leading" secondItem="ZPQ-0j-Nek" secondAttribute="leading" constant="34" id="p0l-GZ-aG2"/>
+                            <constraint firstItem="ZPQ-0j-Nek" firstAttribute="bottom" secondItem="49d-sz-YNu" secondAttribute="bottom" constant="25" id="z0P-ar-w8U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZPQ-0j-Nek"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Intake" id="f5a-bW-lgf">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="uig-sO-7o4"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="firstCheckbox" destination="qYO-cd-z5h" id="dLg-yM-tFF"/>
+                        <outlet property="firstLabel" destination="jH5-xc-zZC" id="giv-uf-XXV"/>
+                        <outlet property="nextButton" destination="49d-sz-YNu" id="XNx-mZ-hMW"/>
+                        <outlet property="secondCheckbox" destination="lhE-Lg-Jes" id="jYh-QM-875"/>
+                        <outlet property="secondLabel" destination="FTV-OL-4PS" id="LmE-ea-bBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWX-OS-2Nv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

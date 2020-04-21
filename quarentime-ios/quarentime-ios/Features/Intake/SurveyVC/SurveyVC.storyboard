@@ -30,7 +30,7 @@
                                         <rect key="frame" x="34" y="16" width="346" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-75-ZQr" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="0.0" width="25" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <color key="backgroundColor" red="0.6588235294" green="0.97647058819999999" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="F0A-4b-SK0"/>
@@ -46,7 +46,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pud-Iw-PUp" userLabel="line 1">
-                                                <rect key="frame" x="33" y="12" width="127.5" height="1"/>
+                                                <rect key="frame" x="25" y="12" width="135.5" height="1"/>
                                                 <color key="backgroundColor" red="0.6588235294" green="0.97647058819999999" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="PQX-F5-qbM"/>
@@ -69,14 +69,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o97-jh-Su0" userLabel="line 1">
-                                                <rect key="frame" x="185.5" y="12" width="143.5" height="1"/>
+                                                <rect key="frame" x="185.5" y="12" width="135.5" height="1"/>
                                                 <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="qhN-1f-Kse"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrO-gj-vf8">
-                                                <rect key="frame" x="329" y="0.0" width="25" height="25"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrO-gj-vf8" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
+                                                <rect key="frame" x="321" y="0.0" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="6s2-QW-U5Q"/>
                                                 </constraints>
@@ -103,8 +103,8 @@
                                             <constraint firstItem="o97-jh-Su0" firstAttribute="leading" secondItem="V2g-qf-cyU" secondAttribute="trailing" id="8Qh-9A-UIu"/>
                                             <constraint firstAttribute="bottom" secondItem="CrO-gj-vf8" secondAttribute="bottom" id="9Yi-CC-4Ki"/>
                                             <constraint firstItem="o97-jh-Su0" firstAttribute="top" secondItem="S4z-M2-HG0" secondAttribute="top" constant="12" id="QPK-tU-egb"/>
-                                            <constraint firstItem="sGv-75-ZQr" firstAttribute="leading" secondItem="S4z-M2-HG0" secondAttribute="leading" constant="8" id="SLc-gb-1EK"/>
-                                            <constraint firstAttribute="trailing" secondItem="CrO-gj-vf8" secondAttribute="trailing" constant="-8" id="bFE-qG-iRA"/>
+                                            <constraint firstItem="sGv-75-ZQr" firstAttribute="leading" secondItem="S4z-M2-HG0" secondAttribute="leading" id="SLc-gb-1EK"/>
+                                            <constraint firstAttribute="trailing" secondItem="CrO-gj-vf8" secondAttribute="trailing" id="bFE-qG-iRA"/>
                                             <constraint firstAttribute="bottom" secondItem="V2g-qf-cyU" secondAttribute="bottom" id="caV-uI-0R0"/>
                                             <constraint firstItem="pud-Iw-PUp" firstAttribute="leading" secondItem="sGv-75-ZQr" secondAttribute="trailing" id="fcF-0O-h42"/>
                                             <constraint firstAttribute="bottom" secondItem="o97-jh-Su0" secondAttribute="bottom" constant="12" id="fzC-hG-QAM"/>
@@ -193,10 +193,16 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="infoLabel1" destination="djB-t8-IAk" id="Yvf-8p-Y6Q"/>
+                        <outlet property="infoLabel2" destination="hVW-3R-VNe" id="ahn-ES-SsR"/>
+                        <outlet property="letsStartButton" destination="rCP-3c-Ylz" id="EZg-EK-xyd"/>
+                        <outlet property="quarentimeIntakeLabel" destination="1bO-us-jCS" id="QVF-Lq-DUn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3t-hv-mTb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.80000000000001" y="824.43778110944538"/>
+            <point key="canvasLocation" x="903" y="804"/>
         </scene>
     </scenes>
     <resources>

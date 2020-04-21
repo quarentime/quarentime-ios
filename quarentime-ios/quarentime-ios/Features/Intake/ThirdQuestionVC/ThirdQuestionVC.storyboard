@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lfz-tU-XOr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intake-->
+        <scene sceneID="Par-l2-hx8">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Lfz-tU-XOr" customClass="ThirdQuestionVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJc-MM-irw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAs-hp-kSY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2a. Have you travelled to a high risk area before your symptoms started?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7B-1L-oOx">
+                                        <rect key="frame" x="34" y="16" width="346" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6p-p4-Vt5" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
+                                        <rect key="frame" x="34" y="74.5" width="75" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="k3b-LH-lfe"/>
+                                            <constraint firstAttribute="width" constant="75" id="vbr-Ot-axW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextScreen:" destination="Lfz-tU-XOr" eventType="touchUpInside" id="HZN-gP-ORU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-Qh-5ng" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
+                                        <rect key="frame" x="124" y="74" width="75" height="36"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="9kl-ha-abc"/>
+                                            <constraint firstAttribute="width" constant="75" id="uJW-iT-mZC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextScreen:" destination="Lfz-tU-XOr" eventType="touchUpInside" id="6UX-dV-k6c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="e8P-Qh-5ng" firstAttribute="leading" secondItem="I6p-p4-Vt5" secondAttribute="trailing" constant="15" id="4pf-ya-2WT"/>
+                                    <constraint firstItem="e8P-Qh-5ng" firstAttribute="top" secondItem="L7B-1L-oOx" secondAttribute="bottom" constant="19.5" id="BJq-83-od8"/>
+                                    <constraint firstItem="I6p-p4-Vt5" firstAttribute="leading" secondItem="L7B-1L-oOx" secondAttribute="leading" id="bUQ-Jx-xZf"/>
+                                    <constraint firstItem="I6p-p4-Vt5" firstAttribute="top" secondItem="L7B-1L-oOx" secondAttribute="bottom" constant="20" id="iSR-N8-Aey"/>
+                                    <constraint firstAttribute="trailing" secondItem="L7B-1L-oOx" secondAttribute="trailing" constant="34" id="l1J-rY-SEe"/>
+                                    <constraint firstItem="L7B-1L-oOx" firstAttribute="top" secondItem="iAs-hp-kSY" secondAttribute="top" constant="16" id="m7b-9j-bib"/>
+                                    <constraint firstItem="L7B-1L-oOx" firstAttribute="leading" secondItem="iAs-hp-kSY" secondAttribute="leading" constant="34" id="mfh-Fj-XVf"/>
+                                    <constraint firstItem="e8P-Qh-5ng" firstAttribute="baseline" secondItem="I6p-p4-Vt5" secondAttribute="firstBaseline" id="yfd-2k-jAZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iAs-hp-kSY" firstAttribute="trailing" secondItem="tRv-S7-1Tb" secondAttribute="trailing" id="5S4-tj-3ao"/>
+                            <constraint firstItem="iAs-hp-kSY" firstAttribute="top" secondItem="tRv-S7-1Tb" secondAttribute="top" id="IUe-cn-vVd"/>
+                            <constraint firstItem="tRv-S7-1Tb" firstAttribute="bottom" secondItem="iAs-hp-kSY" secondAttribute="bottom" id="aVA-BH-fSg"/>
+                            <constraint firstItem="iAs-hp-kSY" firstAttribute="leading" secondItem="tRv-S7-1Tb" secondAttribute="leading" id="bsS-eT-fxw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tRv-S7-1Tb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Intake" id="rxW-xZ-AsB">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="LVg-Sa-fah"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noButton" destination="e8P-Qh-5ng" id="jQx-DY-qdK"/>
+                        <outlet property="question" destination="L7B-1L-oOx" id="Rkb-I1-bsc"/>
+                        <outlet property="yesButton" destination="I6p-p4-Vt5" id="9eP-RH-O0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muN-cG-mIx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

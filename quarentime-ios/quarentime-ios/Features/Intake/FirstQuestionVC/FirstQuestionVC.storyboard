@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UR7-0O-TLk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0XG-AX-7Wp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -12,99 +12,107 @@
         </array>
     </customFonts>
     <scenes>
-        <!--FirstQuestionVC-->
-        <scene sceneID="S6T-4b-izw">
+        <!--Intake-->
+        <scene sceneID="T7O-f4-FWr">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="UR7-0O-TLk" userLabel="FirstQuestionVC" customClass="FirstQuestionVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mv9-Ir-e2s">
+                <viewController modalPresentationStyle="fullScreen" id="0XG-AX-7Wp" customClass="FirstQuestionVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Qn-RY-SSy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGF-NJ-Wsi">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This intake is not intended to provide medical advice. If you have medical questions, consult your healthcare provider." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOG-J8-xmL">
-                                        <rect key="frame" x="34" y="22" width="346" height="33.5"/>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Do you have tested positive of COVID-19?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTr-CI-Exl">
-                                        <rect key="frame" x="34" y="77" width="346" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEL-6s-CFv" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
-                                        <rect key="frame" x="34" y="116.5" width="75" height="36"/>
-                                        <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="3i0-7c-LzJ"/>
-                                            <constraint firstAttribute="height" constant="36" id="BXz-kR-7FR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
-                                        <state key="normal" title="YES">
-                                            <color key="titleColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zN-kl-Whs" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
-                                        <rect key="frame" x="124" y="116" width="75" height="36"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="mQc-ml-DOk"/>
-                                            <constraint firstAttribute="width" constant="75" id="prz-2K-zDB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
-                                        <state key="normal" title="NO"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This intake is not intended to provide medical advice. In case of medical questions, please consult your healthcare provider." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFP-uw-Pa3">
+                                <rect key="frame" x="34" y="66" width="346" height="50.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Have you tested positive for COVID-19?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjW-tC-Ydv">
+                                <rect key="frame" x="34" y="138.5" width="346" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zb3-dH-57t" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
+                                <rect key="frame" x="34" y="178" width="75" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="7zN-kl-Whs" firstAttribute="leading" secondItem="dEL-6s-CFv" secondAttribute="trailing" constant="15" id="0St-FR-FSZ"/>
-                                    <constraint firstItem="DOG-J8-xmL" firstAttribute="leading" secondItem="qGF-NJ-Wsi" secondAttribute="leading" constant="34" id="EOb-tc-LV7"/>
-                                    <constraint firstItem="VTr-CI-Exl" firstAttribute="top" secondItem="DOG-J8-xmL" secondAttribute="bottom" constant="21.5" id="FpW-gZ-J8T"/>
-                                    <constraint firstItem="VTr-CI-Exl" firstAttribute="leading" secondItem="DOG-J8-xmL" secondAttribute="leading" id="H2F-Kc-DZW"/>
-                                    <constraint firstItem="dEL-6s-CFv" firstAttribute="top" secondItem="VTr-CI-Exl" secondAttribute="bottom" constant="20" id="Nzd-Rl-Vah"/>
-                                    <constraint firstItem="dEL-6s-CFv" firstAttribute="leading" secondItem="VTr-CI-Exl" secondAttribute="leading" id="WnC-bX-e3z"/>
-                                    <constraint firstItem="VTr-CI-Exl" firstAttribute="trailing" secondItem="DOG-J8-xmL" secondAttribute="trailing" id="Xxc-3r-xvw"/>
-                                    <constraint firstAttribute="trailing" secondItem="DOG-J8-xmL" secondAttribute="trailing" constant="34" id="jK3-ip-4s0"/>
-                                    <constraint firstItem="7zN-kl-Whs" firstAttribute="baseline" secondItem="dEL-6s-CFv" secondAttribute="firstBaseline" id="nRE-oI-fOh"/>
-                                    <constraint firstItem="7zN-kl-Whs" firstAttribute="top" secondItem="VTr-CI-Exl" secondAttribute="bottom" constant="19.5" id="pAP-lA-Y3X"/>
-                                    <constraint firstItem="DOG-J8-xmL" firstAttribute="top" secondItem="qGF-NJ-Wsi" secondAttribute="top" constant="22" id="qSS-2i-QEV"/>
+                                    <constraint firstAttribute="width" constant="75" id="0xA-Kd-dXw"/>
+                                    <constraint firstAttribute="height" constant="36" id="7l5-18-TXh"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <state key="normal" title="YES">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextScreen:" destination="0XG-AX-7Wp" eventType="touchUpInside" id="vuL-eH-xpS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwB-Or-muc" customClass="CustomButton" customModule="quarentime_ios" customModuleProvider="target">
+                                <rect key="frame" x="124" y="178" width="75" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="o2z-do-4I6"/>
+                                    <constraint firstAttribute="height" constant="36" id="tl6-rE-dCo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextScreen:" destination="0XG-AX-7Wp" eventType="touchUpInside" id="YEA-Mi-Wcq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Kuk-60-CLk" firstAttribute="trailing" secondItem="qGF-NJ-Wsi" secondAttribute="trailing" id="PDy-zq-oEH"/>
-                            <constraint firstItem="Kuk-60-CLk" firstAttribute="bottom" secondItem="qGF-NJ-Wsi" secondAttribute="bottom" id="ZbW-3s-CJD"/>
-                            <constraint firstItem="qGF-NJ-Wsi" firstAttribute="top" secondItem="Kuk-60-CLk" secondAttribute="top" id="jzq-zW-y1o"/>
-                            <constraint firstItem="qGF-NJ-Wsi" firstAttribute="leading" secondItem="Kuk-60-CLk" secondAttribute="leading" id="ucR-K7-wXL"/>
+                            <constraint firstItem="QwB-Or-muc" firstAttribute="centerY" secondItem="zb3-dH-57t" secondAttribute="centerY" id="AeC-IG-wMt"/>
+                            <constraint firstItem="FjW-tC-Ydv" firstAttribute="trailing" secondItem="AFP-uw-Pa3" secondAttribute="trailing" id="FVg-zd-WXl"/>
+                            <constraint firstItem="FjW-tC-Ydv" firstAttribute="leading" secondItem="AFP-uw-Pa3" secondAttribute="leading" id="LH7-CO-f2i"/>
+                            <constraint firstItem="AFP-uw-Pa3" firstAttribute="top" secondItem="sDf-xi-f3o" secondAttribute="top" constant="22" id="NCG-uY-ovP"/>
+                            <constraint firstItem="QwB-Or-muc" firstAttribute="leading" secondItem="zb3-dH-57t" secondAttribute="trailing" constant="15" id="NlO-Zv-71A"/>
+                            <constraint firstItem="QwB-Or-muc" firstAttribute="top" secondItem="FjW-tC-Ydv" secondAttribute="bottom" constant="20" id="Nse-Fn-YXZ"/>
+                            <constraint firstItem="FjW-tC-Ydv" firstAttribute="top" secondItem="AFP-uw-Pa3" secondAttribute="bottom" constant="22" id="S14-ud-2LK"/>
+                            <constraint firstItem="zb3-dH-57t" firstAttribute="top" secondItem="FjW-tC-Ydv" secondAttribute="bottom" constant="20" id="e0y-uW-EtG"/>
+                            <constraint firstItem="zb3-dH-57t" firstAttribute="leading" secondItem="FjW-tC-Ydv" secondAttribute="leading" id="iQU-TH-Wjr"/>
+                            <constraint firstItem="sDf-xi-f3o" firstAttribute="trailing" secondItem="AFP-uw-Pa3" secondAttribute="trailing" constant="34" id="wfY-ZK-J6Z"/>
+                            <constraint firstItem="AFP-uw-Pa3" firstAttribute="leading" secondItem="sDf-xi-f3o" secondAttribute="leading" constant="34" id="wmZ-Be-BNV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Kuk-60-CLk"/>
+                        <viewLayoutGuide key="safeArea" id="sDf-xi-f3o"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Intake" id="dmE-8Q-x39">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="eeD-cr-Llm">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Intake" id="b8L-Fg-BPZ">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="p2L-rE-Yar"/>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="AFP-uw-Pa3" id="dTJ-Be-Vqx"/>
+                        <outlet property="noButton" destination="QwB-Or-muc" id="Dnw-LV-BbB"/>
+                        <outlet property="questionLabel" destination="FjW-tC-Ydv" id="K4A-lZ-AZI"/>
+                        <outlet property="yesButton" destination="zb3-dH-57t" id="XK5-Vz-3Hi"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="op8-Vl-1cr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXI-aW-iNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1285.5999999999999" y="824.43778110944538"/>
+            <point key="canvasLocation" x="478" y="255"/>
         </scene>
     </scenes>
     <resources>

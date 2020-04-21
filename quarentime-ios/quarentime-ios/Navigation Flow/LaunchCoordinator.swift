@@ -43,22 +43,23 @@ struct LaunchCoordinator {
     }
     
     private func checkAppStateInRepositoryAndReturnVC() -> UIViewController {
-        let loggedIn = AppStateRepository.shared.isLoggedIn()
-        if loggedIn {
-            let isOnboardingCompleted = AppStateRepository.shared.isOnboardingComplete()
-            if isOnboardingCompleted {
-                let isIntakeComplete = AppStateRepository.shared.isIntakeComplete()
-                if isIntakeComplete {
-                    return MainScreenVC.getVC()
-                } else {
-                    return PersonalInformationVC.getVC()
-                }
-            } else {
-                return OnboardingVC.getVC()
-            }
-        } else {
-            return LoginVC.getVC()
-        }
+//        let loggedIn = AppStateRepository.shared.isLoggedIn()
+//        if loggedIn {
+//            let isOnboardingCompleted = AppStateRepository.shared.isOnboardingComplete()
+//            if isOnboardingCompleted {
+//                let isIntakeComplete = AppStateRepository.shared.isIntakeComplete()
+//                if isIntakeComplete {
+//                    return MainScreenVC.getVC()
+//                } else {
+//                    return PersonalInformationVC.getVC()
+//                }
+//            } else {
+//                return OnboardingVC.getVC()
+//            }
+//        } else {
+//            return LoginVC.getVC()
+//        }
+        return PersonalInformationVC.getVC()
     }
     
 }

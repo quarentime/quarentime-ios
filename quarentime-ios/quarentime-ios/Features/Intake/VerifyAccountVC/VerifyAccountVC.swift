@@ -16,19 +16,34 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate, StoryboardGettable
     @IBOutlet weak var buttonStep2: UIButton!
     @IBOutlet weak var buttonStep3: UIButton!
     
+    @IBOutlet weak var verifyAccountLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var didntGetCodeLabel: UILabel!
+    @IBOutlet weak var resendCodeButton: UIButton!
+    @IBOutlet weak var privacyLabel1: UILabel!
+    @IBOutlet weak var privacyLabel2: UILabel!
+    @IBOutlet weak var privacyPolicyButton: UIButton!
+    
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    
     @IBOutlet var textFieldsCollection: [UITextField]!
     
+    @IBOutlet weak var bannerView: FailedBannerView!
+    
     var textFieldsIndexes:[UITextField:Int] = [:]
+    var codeString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dismissKeyboardOnTap()
+        localization()
+        resendCodeButton.titleLabel?.adjustsFontSizeToFitWidth = true
         
         for index in 0 ..< textFieldsCollection.count {
             textFieldsIndexes[textFieldsCollection[index]] = index
         }
+        
     }
-    
-    
     
     //MARK: - textField Delegate
     
@@ -46,11 +61,19 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate, StoryboardGettable
         return false
     }
     
+    // NOTE: following code looks horrible now and will be refactored once the phone verification feature is implemented. While testing use "000000" to pass to the next screen.
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textFieldsCollection.last?.text?.isEmpty == false {
+        
+        codeString += textField.text!
+        
+        if textFieldsCollection.last?.text?.isEmpty == false && codeString != "000000"{
+            failedVerificationBanner()
+            codeString = ""
+        } else if textFieldsCollection.last?.text?.isEmpty == false {
             let surveyVC = SurveyVC.getVC()
             present(surveyVC, animated: true, completion: nil)
         }
+        print(codeString)
     }
     
     func setNextResponder(_ index:Int?, direction:Direction) {
@@ -69,8 +92,43 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate, StoryboardGettable
         
     }
     
-    //MARK: - IBActions
+    //MARK: - Other
     
+    func failedVerificationBanner() {
+        let banner = FailedBannerView.getView()
+        heightConstraint.constant = 100
+        bannerView.addSubviewAndConstrainToEdges(banner, withMargin: 0)
+        
+        for item in textFieldsCollection {
+            item.layer.borderWidth = 1
+            item.layer.cornerRadius = 5
+            item.layer.borderColor = #colorLiteral(red: 1, green: 0.3113751709, blue: 0.44245857, alpha: 1)
+            item.text = ""
+        }
+    }
+    
+    //MARK: - Keyboard
+    
+    func dismissKeyboardOnTap() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func localization() {
+        verifyAccountLabel.text = "verifyAccount.text".local
+        infoLabel.text = "enterCode.text".local
+        didntGetCodeLabel.text = "didntGetCode.text".local
+        resendCodeButton.setTitle("resendCode.text".local, for: .normal)
+        privacyLabel1.text = "policy1.text".local
+        privacyLabel2.text = "policy2.text".local
+        privacyPolicyButton.setTitle("privacyPolicy.title".local, for: .normal)
+    }
+    
+    //MARK: - IBActions
     @IBAction func privacyPolicyTapped(_ sender: Any) {
         if let url = URL(string: Constants.urlPrivacyPolicy) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)

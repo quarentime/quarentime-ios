@@ -15,6 +15,17 @@ class PersonalInformationVC: UIViewController, UITextFieldDelegate, StoryboardGe
     @IBOutlet weak var buttonStep1: UIButton!
     @IBOutlet weak var buttonStep2: UIButton!
     @IBOutlet weak var buttonStep3: UIButton!
+    
+    @IBOutlet weak var personalInfoLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var surnameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var telephoneNumberLabel: UILabel!
+    @IBOutlet weak var privacyLabel1: UILabel!
+    @IBOutlet weak var privacyLabel2: UILabel!
+    @IBOutlet weak var privacyPolicyButton: UIButton!
+    @IBOutlet weak var letsStartButton: CustomButton!
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var surnameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
@@ -24,6 +35,8 @@ class PersonalInformationVC: UIViewController, UITextFieldDelegate, StoryboardGe
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneNumberTextField.delegate = self
+        localization()
+        dismissKeyboard()
     }
     
     private func postUserInfo(info: PersonalInformation, onCompletion: @escaping (Result<Void, Error>) -> Void) {
@@ -70,6 +83,33 @@ class PersonalInformationVC: UIViewController, UITextFieldDelegate, StoryboardGe
         }
     }
     
+    //MARK: - Keyboard
+    func dismissKeyboardOnTap() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    //MARK: - Other
+    func localization() {
+        personalInfoLabel.text = "personalInfo.text".local
+        nameLabel.text = "name.text".local
+        surnameLabel.text = "surname.text".local
+        ageLabel.text = "age.text".local
+        telephoneNumberLabel.text = "telephoneNumber.text".local
+        
+        nameTextField.placeholder = "enterName.placeholder".local
+        surnameTextField.placeholder = "enterSurname.placeholder".local
+        ageTextField.placeholder = "enterAge.placeholder".local
+        
+        privacyLabel1.text = "policy1.text".local
+        privacyLabel2.text = "policy2.text".local
+        privacyPolicyButton.setTitle("privacyPolicy.title".local, for: .normal)
+        letsStartButton.setTitle("letsStart.button".local, for: .normal)
+    }
 }
 
 extension PersonalInformationVC: FPNTextFieldDelegate {
@@ -84,11 +124,11 @@ extension PersonalInformationVC: FPNTextFieldDelegate {
     
     func fpnDisplayCountryList() {
         let listController: FPNCountryListViewController = FPNCountryListViewController(style: .grouped)
-
+        
         phoneNumberTextField.displayMode = .list
         listController.setup(repository: phoneNumberTextField.countryRepository)
         listController.didSelect = { [weak self] country in
-        self?.phoneNumberTextField.setFlag(countryCode: country.code) }
+            self?.phoneNumberTextField.setFlag(countryCode: country.code) }
         
         let navigationViewController = UINavigationController(rootViewController: listController)
         listController.title = "Countries"

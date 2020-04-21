@@ -9,24 +9,26 @@
 import UIKit
 
 class SecondQuestionVC: UIViewController, StoryboardGettable {
-
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        localization()
     }
     
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func localization() {
+        questionLabel.text = "question2.text".local
+        infoLabel.text = "intakeInfo4.text".local
+        nextButton.setTitle("next.button".local, for: .normal)
     }
-    */
-
+    
+    //temporary button
+    @IBAction func nextScreenAction(_ sender: Any) {
+        let thirdQuestionVC = ThirdQuestionVC.getVC()
+        navigationController?.pushViewController(thirdQuestionVC, animated: true)
+    }
+    
 }
