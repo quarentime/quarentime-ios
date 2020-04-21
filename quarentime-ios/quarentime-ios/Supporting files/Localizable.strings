@@ -32,6 +32,7 @@
 "login.signin.facebook" = "SIGN IN WITH FACEBOOK";
 "login.description" = "Stay safe, be vigilant and most importantly remember, prevention is better than cure.";
 
+/* PersonalInformationVC */
 "personalInfo.text" = "Personal Information";
 "name.text" = "Name";
 "surname.text" = "Surname";
@@ -46,28 +47,43 @@
 "policy2.text" = "Here's our";
 "privacyPolicy.title" = "Privacy Policy";
 
+/* FailedBannerView */
 "verificationFailed.text" = "Verification failed";
 "enterValidCode.text" = "Please enter a valid code";
 
+/* VerifyAccountVC */
 "verifyAccount.text" = "Verify Account";
 "enterCode.text" = "Enter the 6 digit code we sent you via SMS to continue";
 "didntGetCode.text" = "Didn't get the code?";
 "resendCode.text" = "Resend code";
 
+/* SurveyVC */
 "quarentimeIntake.text" = "Quarentime Intake";
 "intakeInfo1.text" = "Usage of this app does not substitute medical treatment by a physician or clinical diagnostics.";
 "intakeInfo2.text" = "If you currently feel seriously ill, please immediately contact your personal healthcare provider.";
 "next.button" = "NEXT";
 
+/*FirstQuestionVC*/
 "intakeInfo3.text" = "This intake is not intended to provide medical advice. If you have medical questions, consult your healthcare provider.";
 "question1.text" = "1. Do you have tested positive of COVID-19?";
 "yes.button" = "YES";
 "no.button" = "NO";
 
+/* SecondQuestionVC */
 "question2.text" = "2. Have you developed any of the following new symptoms within the last 14 days?";
 "intakeInfo4.text" = "Select at least two symptoms if applicable.";
+"symptom.fever" = "Fever";
+"symptom.cough" = "Cough (dry)";
+"symptom.breathing" = "Difficulty breathing";
+"symptom.pain" = "Throat pain and/or runny nose";
+"symptom.fatigue" = "Fatigue";
+"symptom.none" = "None of the above";
 
+/* ThirthQuestionVC */
 "question2a.text" = "2a. Have you travelled to a high risk area before your symptoms started?";
+
+/* FourthQuestionVC*/
+"question2b.text" = "2b. Have you come into close contact (less than 1m/ 3feet) with a confirmed or suspected COVID-19 case?";
 "definition.text" = "Definition: contact person";
 "paragraph1.text" = "A person who experienced any one of the following exposures during the 2 days before and the 14 days after the onset of symptoms of a probable or confirmed case:";
 "paragraph2.text" = "1. Face-to-face contact with a probable or confirmed case within 1 meter and for more than 15 minutes;";
@@ -76,9 +92,14 @@
 "paragraph5.text" = "4. Other situations as indicated by local risk assessments.";
 "sourceWHO.text" = "Source: World Health Organization";
 
+/* InitialStatusVC */
 "thanks.text" = "Thanks Pitu!";
 "initialStatus.text" = "Your initial status is:";
 "createTrace.button" = "CREATE MY CONTACT TRACE";
+
+/* ConfirmationVC */
+"declaration1.text" = "I declare that the information is filled in truthfully.";
+"declaration2.text" = "Please indicate that you have read and agree with the Terms and Conditions and the Privacy Policy";
 
 /* BenefitsVC */
 "benefits.question.text" = "Why contact trace?";
@@ -90,3 +111,14 @@
 "benefits.boldParagraph4.text" = "In contact tracing process, time metters";
 "benefits.paragraph4.text" = "This enables users to take the necessary action sooner, such as monitoring his own health closely for signs of flu-like symptoms.";
 "benefits.paragraph5.text" = "The faster the contact tracing process can be initiated and can identify the people at risk, the faster we can advice to do quarantine if necessary and limit spead localy.";
+
+/* StatusView */
+"case.suspected" = "Suspected Case";
+"case.healthy" = "Healthy";
+"case.positive" = "Tested positive";
+"case.recovered" = "Recovered";
+
+
+
+
+

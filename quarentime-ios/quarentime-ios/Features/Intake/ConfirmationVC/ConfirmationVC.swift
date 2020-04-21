@@ -17,17 +17,21 @@ class ConfirmationVC: UIViewController, StoryboardGettable {
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMultipleTapLabel()
         nextButton.isEnabled = false
         nextButton.alpha = 0.5
+        localization()
+    }
+    
+    private func localization() {
+        firstLabel.text = "declaration1.text".local
+        secondLabel.text = "declaration2.text".local
+        nextButton.setTitle("next.button", for: .normal)
     }
     
     //MARK: - Tappable Label
-    
     func setupMultipleTapLabel() {
         let text = (secondLabel.text)!
         let underlineAttriString = NSMutableAttributedString(string: text)

@@ -25,7 +25,6 @@ class FourthQuestionVC: UIViewController, StoryboardGettable {
     override func viewDidLoad() {
         super.viewDidLoad()
         localization()
-        
         borderView.layer.borderWidth = 1
         borderView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         borderView.layer.cornerRadius = 4.0
@@ -37,7 +36,7 @@ class FourthQuestionVC: UIViewController, StoryboardGettable {
     }
     
     func localization() {
-        questionLabel.text = "question2a.text".local
+        questionLabel.text = "question2b.text".local
         yesButton.setTitle("yes.button".local, for: .normal)
         noButton.setTitle("no.button".local, for: .normal)
         definitionLabel.text = "definition.text".local

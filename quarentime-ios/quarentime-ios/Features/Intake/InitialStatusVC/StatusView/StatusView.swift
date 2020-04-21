@@ -32,16 +32,16 @@ class StatusView: UIView, XibViewGettable {
     
     func setStatus() {
         if initialStatus == .suspected {
-            statusLabel?.text = "Suspected Case"
+            statusLabel?.text = "case.suspected".local
             backgroundColor = #colorLiteral(red: 0.9791664481, green: 0.7743744254, blue: 0.4536771178, alpha: 1)
         } else if initialStatus == .healthy {
-            statusLabel?.text = "Healthy"
+            statusLabel?.text = "case.healthy".local
             backgroundColor = #colorLiteral(red: 0.3803921569, green: 0.7568627451, blue: 0.968627451, alpha: 1)
         } else if initialStatus == .positive  {
-            statusLabel?.text = "Tested positive"
+            statusLabel?.text = "case.positive".local
             backgroundColor = #colorLiteral(red: 0.968627451, green: 0.3803921569, blue: 0.3803921569, alpha: 1)
         } else if initialStatus == .recovered {
-            statusLabel?.text = "Recovered"
+            statusLabel?.text = "case.recovered".local
             backgroundColor = #colorLiteral(red: 0.7568627451, green: 0.5568627451, blue: 0.7411764706, alpha: 1)
         }
     }
