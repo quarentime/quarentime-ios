@@ -20,8 +20,8 @@ class SecondQuestionVC: UIViewController, StoryboardGettable {
     }
     
     func localization() {
-        questionLabel.text = "question2.text".local
-        infoLabel.text = "intakeInfo4.text".local
+        questionLabel.text = "survey.question2.title".local
+        infoLabel.text = "survey.selectSymptoms.title".local
         nextButton.setTitle("next.button".local, for: .normal)
     }
     

@@ -119,13 +119,13 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate, StoryboardGettable
     }
     
     func localization() {
-        verifyAccountLabel.text = "verifyAccount.text".local
-        infoLabel.text = "enterCode.text".local
-        didntGetCodeLabel.text = "didntGetCode.text".local
-        resendCodeButton.setTitle("resendCode.text".local, for: .normal)
-        privacyLabel1.text = "policy1.text".local
-        privacyLabel2.text = "policy2.text".local
-        privacyPolicyButton.setTitle("privacyPolicy.title".local, for: .normal)
+        verifyAccountLabel.text = "verifyAccount.title".local
+        infoLabel.text = "verifyAccount.code.title".local
+        didntGetCodeLabel.text = "verifyAccount.didntGetCode.title".local
+        resendCodeButton.setTitle("verifyAccount.resendCode.title".local, for: .normal)
+        privacyLabel1.text = "privacyPolicy.label1.title".local
+        privacyLabel2.text = "privacyPolicy.label2.title".local
+        privacyPolicyButton.setTitle("privacyPolicy.button.title".local, for: .normal)
     }
     
     //MARK: - IBActions

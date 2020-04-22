@@ -18,6 +18,12 @@
 "letsStart.title" = "Thanks for sign up!";
 "letsStart.button" = "LET'S START";
 
+"next.button" = "NEXT";
+
+"yes.button" = "YES";
+
+"no.button" = "NO";
+
 "home.title" = "Home";
 
 "addFriends.title" = "Add Friends";
@@ -32,91 +38,112 @@
 "login.signin.facebook" = "SIGN IN WITH FACEBOOK";
 "login.description" = "Stay safe, be vigilant and most importantly remember, prevention is better than cure.";
 
-/* PersonalInformationVC */
-"personalInfo.text" = "Personal Information";
-"name.text" = "Name";
-"surname.text" = "Surname";
-"age.text" = "Age";
-"telephoneNumber.text" = "Telephone Number";
+"personalInfo.title" = "Personal Information";
+"personalInfo.name.title" = "Name";
+"personalInfo.surname.title" = "Surname";
+"personalInfo.age.title" = "Age";
+"personalInfo.telephoneNumber.title" = "Telephone Number";
+"personalInfo.name.placeholder" = "Enter your first name";
+"personalInfo.surname.placeholder" = "Enter your surname";
+"personalInfo.age.placeholder" = "Enter your age";
 
-"enterName.placeholder" = "Enter your first name";
-"enterSurname.placeholder" = "Enter your surname";
-"enterAge.placeholder" = "Enter your age";
+"privacyPolicy.label1.title" = "We care about protecting your data";
+"privacyPolicy.label2.title" = "Here's our";
+"privacyPolicy.button.title" = "Privacy Policy";
 
-"policy1.text" = "We care about protecting your data";
-"policy2.text" = "Here's our";
-"privacyPolicy.title" = "Privacy Policy";
+"banner.verificationFailed.title" = "Verification failed";
+"banner.enterValidCode.title" = "Please enter a valid code";
 
-/* FailedBannerView */
-"verificationFailed.text" = "Verification failed";
-"enterValidCode.text" = "Please enter a valid code";
+"verifyAccount.title" = "Verify Account";
+"verifyAccount.code.title" = "Enter the 6 digit code we sent you via SMS to continue";
+"verifyAccount.didntGetCode.title" = "Didn't get the code?";
+"verifyAccount.resendCode.title" = "Resend code";
 
-/* VerifyAccountVC */
-"verifyAccount.text" = "Verify Account";
-"enterCode.text" = "Enter the 6 digit code we sent you via SMS to continue";
-"didntGetCode.text" = "Didn't get the code?";
-"resendCode.text" = "Resend code";
+"survey.quarentimeIntake.title" = "Quarentime Intake";
+"survey.intakeInfo1.title" = "Usage of this app does not substitute medical treatment by a physician or clinical diagnostics.";
+"survey.intakeInfo2.title" = "If you currently feel seriously ill, please immediately contact your personal healthcare provider.";
 
-/* SurveyVC */
-"quarentimeIntake.text" = "Quarentime Intake";
-"intakeInfo1.text" = "Usage of this app does not substitute medical treatment by a physician or clinical diagnostics.";
-"intakeInfo2.text" = "If you currently feel seriously ill, please immediately contact your personal healthcare provider.";
-"next.button" = "NEXT";
+"survey.info.title" = "This intake is not intended to provide medical advice. If you have medical questions, consult your healthcare provider.";
+"survey.question1.title" = "1. Do you have tested positive of COVID-19?";
 
-/*FirstQuestionVC*/
-"intakeInfo3.text" = "This intake is not intended to provide medical advice. If you have medical questions, consult your healthcare provider.";
-"question1.text" = "1. Do you have tested positive of COVID-19?";
-"yes.button" = "YES";
-"no.button" = "NO";
+"survey.question2.title" = "2. Have you developed any of the following new symptoms within the last 14 days?";
+"survey.selectSymptoms.title" = "Select at least two symptoms if applicable.";
 
-/* SecondQuestionVC */
-"question2.text" = "2. Have you developed any of the following new symptoms within the last 14 days?";
-"intakeInfo4.text" = "Select at least two symptoms if applicable.";
-"symptom.fever" = "Fever";
-"symptom.cough" = "Cough (dry)";
-"symptom.breathing" = "Difficulty breathing";
-"symptom.pain" = "Throat pain and/or runny nose";
-"symptom.fatigue" = "Fatigue";
-"symptom.none" = "None of the above";
+"symptom.fever.title" = "Fever";
+"symptom.cough.title" = "Cough (dry)";
+"symptom.breathing.title" = "Difficulty breathing";
+"symptom.pain.title" = "Throat pain and/or runny nose";
+"symptom.fatigue.title" = "Fatigue";
+"symptom.none.title" = "None of the above";
 
-/* ThirthQuestionVC */
-"question2a.text" = "2a. Have you travelled to a high risk area before your symptoms started?";
+"survey.question2a.title" = "2a. Have you travelled to a high risk area before your symptoms started?";
 
-/* FourthQuestionVC*/
-"question2b.text" = "2b. Have you come into close contact (less than 1m/ 3feet) with a confirmed or suspected COVID-19 case?";
-"definition.text" = "Definition: contact person";
-"paragraph1.text" = "A person who experienced any one of the following exposures during the 2 days before and the 14 days after the onset of symptoms of a probable or confirmed case:";
-"paragraph2.text" = "1. Face-to-face contact with a probable or confirmed case within 1 meter and for more than 15 minutes;";
-"paragraph3.text" = "2. Direct physical contact with a probable or confirmed case;";
-"paragraph4.text" = "3. Direct care for a patient with probable or confirmed COVID-19 disease without using proper personal protective equipment;";
-"paragraph5.text" = "4. Other situations as indicated by local risk assessments.";
-"sourceWHO.text" = "Source: World Health Organization";
+"survey.question2b.title" = "2b. Have you come into close contact (less than 1m/ 3feet) with a confirmed or suspected COVID-19 case?";
+"survey.question2b.definition.title" = "Definition: contact person";
+"survey.question2b.paragraph1.title" = "A person who experienced any one of the following exposures during the 2 days before and the 14 days after the onset of symptoms of a probable or confirmed case:";
+"survey.question2b.paragraph2.title" = "1. Face-to-face contact with a probable or confirmed case within 1 meter and for more than 15 minutes;";
+"survey.question2b.paragraph3.title" = "2. Direct physical contact with a probable or confirmed case;";
+"survey.question2b.paragraph4.title" = "3. Direct care for a patient with probable or confirmed COVID-19 disease without using proper personal protective equipment;";
+"survey.question2b.paragraph5.title" = "4. Other situations as indicated by local risk assessments.";
+"survey.question2b.source.title" = "Source: World Health Organization";
 
-/* InitialStatusVC */
-"thanks.text" = "Thanks Pitu!";
-"initialStatus.text" = "Your initial status is:";
-"createTrace.button" = "CREATE MY CONTACT TRACE";
+"initialStatus.thanks.title" = "Thanks Pitu!";
+"initialStatus.title" = "Your initial status is:";
+"initialStatus.createTrace.button" = "CREATE MY CONTACT TRACE";
 
-/* ConfirmationVC */
-"declaration1.text" = "I declare that the information is filled in truthfully.";
-"declaration2.text" = "Please indicate that you have read and agree with the Terms and Conditions and the Privacy Policy";
+"confirmation.label1.title" = "I declare that the information is filled in truthfully.";
+"confirmation.label2.title" = "Please indicate that you have read and agree with the Terms and Conditions and the Privacy Policy";
 
-/* BenefitsVC */
-"benefits.question.text" = "Why contact trace?";
-"benefits.text" = "Benefits";
-"benefits.paragraph1.text" = "Early detection could potentialy help reduce the rist of the spread of the virus, and better protect our families and loved ones.";
-"benefits.paragraph2.text" = "Currently, contact tracing relies on the recall and memory of interviewees. There were however, instances when interviewees could not remember all their contact, or did not have information on whom they had been in contact with.";
-"benefits.boldParagraph3.text" = "Helping healthcare workers";
-"benefits.paragraph3.text" = "It also helps us support the work of contact tracers and healthcare workers by combating the spread od COVID-19 togerther.";
-"benefits.boldParagraph4.text" = "In contact tracing process, time metters";
-"benefits.paragraph4.text" = "This enables users to take the necessary action sooner, such as monitoring his own health closely for signs of flu-like symptoms.";
-"benefits.paragraph5.text" = "The faster the contact tracing process can be initiated and can identify the people at risk, the faster we can advice to do quarantine if necessary and limit spead localy.";
+"benefits.question.title" = "Why contact trace?";
+"benefits.title" = "Benefits";
+"benefits.paragraph1.title" = "Early detection could potentialy help reduce the rist of the spread of the virus, and better protect our families and loved ones.";
+"benefits.paragraph2.title" = "Currently, contact tracing relies on the recall and memory of interviewees. There were however, instances when interviewees could not remember all their contact, or did not have information on whom they had been in contact with.";
+"benefits.boldParagraph3.title" = "Helping healthcare workers";
+"benefits.paragraph3.title" = "It also helps us support the work of contact tracers and healthcare workers by combating the spread od COVID-19 togerther.";
+"benefits.boldParagraph4.title" = "In contact tracing process, time metters";
+"benefits.paragraph4.title" = "This enables users to take the necessary action sooner, such as monitoring his own health closely for signs of flu-like symptoms.";
+"benefits.paragraph5.title" = "The faster the contact tracing process can be initiated and can identify the people at risk, the faster we can advice to do quarantine if necessary and limit spead localy.";
 
-/* StatusView */
-"case.suspected" = "Suspected Case";
-"case.healthy" = "Healthy";
-"case.positive" = "Tested positive";
-"case.recovered" = "Recovered";
+"status.suspected.title" = "Suspected Case";
+"status.healthy.title" = "Healthy";
+"status.positive.title" = "Tested positive";
+"status.recovered.title" = "Recovered";
+
+"help.group.title" = "Group";
+"help.color.yellow.title" = "Yellow";
+"help.color.blue.title" = "Blue";
+"help.color.purple.title" = "Purple";
+"help.color.red.title" = "Red";
+
+"help.yellow.title" = "Suspected Case";
+"help.blue.title" = "Healthy";
+"help.purple.title" = "Recovered patients";
+"help.red.title" = "COVID-19 Positive";
+"help.highRisk.blue.title" = "Healthy, High Risk";
+
+"help.yellow.paragraph1.title" = "A patient with acute respiratory illness (fever and at least one sign/symptom of respiratory disease, e.g., cough, shortness of\nbreath), and a history of travel to or residence in a location reporting community transmission of COVID-19 disease during the 14 days prior to symptom onset.";
+"help.yellow.paragraph2.title" = "A patient with any acute respiratory illness and having been in contact with a confirmed or probable COVID-19 case (see definition of contact) in the last 14 days prior to symptom onset.";
+"help.yellow.paragraph3.title" = "A patient with severe acute respiratory illness (fever and at least one sign/symptom of respiratory disease, e.g., cough, shortness of breath; AND requiring hospitalization) and in the absence of an alternative diagnosis that fully explains the clinical presentation. ";
+
+"help.blue.paragraph1.title" = "Based on your answers it seems that you have not been infected by the novel coronavirus. However, please follow the local guidelines and avoid unnecessary exposure to other people.";
+"help.blue.boldParagraph.title" = "Maintain social distancing!";
+"help.blue.paragraph2.title" = "In the meantime, take care of yourself, take care of others and remember together is better!";
+
+"help.purple.boldParagraph.title" = "Congratulations!";
+"help.purple.paragraph.title" = "It seems like you fought the novel coronavirus and survived. However, it is important that you still follow the local guidelines and avoid unnecessary exposure to other people.";
+
+"help.red.paragraph1.title" = "Since you have tested positive for COVID-19 \nyou have probably received information from a local medical professional on the right course of action.";
+"help.red.paragraph2.title" = "Whether you have severe symptoms or not please isolate yourself and keep away from your loved ones to avoid infecting them.";
+"help.red.paragraph3.title" = "If your symptoms get worse, contact a medical professional.";
+"help.red.boldParagraph.title" = "Take care!";
+
+"help.highRisk.blue.paragraph1.title" = "Based on your answers it seems that you have not been infected by the novel coronavirus. However, please follow the local guidelines and avoid unnecessary exposure to other people.";
+"help.highRisk.blue.boldParagraph.title" = "Maintain social distancing!";
+"help.highRisk.blue.paragraph2.title" = "In the meantime, take care of yourself, take care of others and remember together is better!";
+
+
+
+
 
 
 

@@ -18,7 +18,7 @@ class FailedBannerView: UIView, XibViewGettable {
     }
     
     override func awakeFromNib() {
-        verificationFailedLabel.text = "verificationFailed.text".local
-        enterValidCodeLabel.text = "enterValidCode.text".local
+        verificationFailedLabel.text = "banner.verificationFailed.title".local
+        enterValidCodeLabel.text = "banner.enterValidCode.title".local
     }
 }

@@ -28,9 +28,9 @@ class InitialStatusVC: UIViewController, StoryboardGettable {
     }
     
     func localization() {
-        thanksLabel.text = "thanks.text".local;
-        initialStatusLabel.text = "initialStatus.text".local
-        createTraceButton.setTitle("createTrace.button".local, for: .normal)
+        thanksLabel.text = "initialStatus.thanks.title".local;
+        initialStatusLabel.text = "initialStatus.title".local
+        createTraceButton.setTitle("initialStatus.createTrace.button".local, for: .normal)
     }
     
     @IBAction func createContactTraceAction(_ sender: Any) {

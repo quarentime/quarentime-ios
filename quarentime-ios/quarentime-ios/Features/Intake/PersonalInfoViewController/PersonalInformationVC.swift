@@ -95,19 +95,19 @@ class PersonalInformationVC: UIViewController, UITextFieldDelegate, StoryboardGe
     
     //MARK: - Other
     func localization() {
-        personalInfoLabel.text = "personalInfo.text".local
-        nameLabel.text = "name.text".local
-        surnameLabel.text = "surname.text".local
-        ageLabel.text = "age.text".local
-        telephoneNumberLabel.text = "telephoneNumber.text".local
+        personalInfoLabel.text = "personalInfo.title".local
+        nameLabel.text = "personalInfo.name.title".local
+        surnameLabel.text = "personalInfo.surname.title".local
+        ageLabel.text = "personalInfo.age.title".local
+        telephoneNumberLabel.text = "personalInfo.telephoneNumber.title".local
         
-        nameTextField.placeholder = "enterName.placeholder".local
-        surnameTextField.placeholder = "enterSurname.placeholder".local
-        ageTextField.placeholder = "enterAge.placeholder".local
+        nameTextField.placeholder = "personalInfo.name.placeholder".local
+        surnameTextField.placeholder = "personalInfo.surname.placeholder".local
+        ageTextField.placeholder = "personalInfo.age.placeholder".local
         
-        privacyLabel1.text = "policy1.text".local
-        privacyLabel2.text = "policy2.text".local
-        privacyPolicyButton.setTitle("privacyPolicy.title".local, for: .normal)
+        privacyLabel1.text = "privacyPolicy.label1.title".local
+        privacyLabel2.text = "privacyPolicy.label2.title".local
+        privacyPolicyButton.setTitle("privacyPolicy.button.title".local, for: .normal)
         letsStartButton.setTitle("letsStart.button".local, for: .normal)
     }
 }
@@ -115,11 +115,9 @@ class PersonalInformationVC: UIViewController, UITextFieldDelegate, StoryboardGe
 extension PersonalInformationVC: FPNTextFieldDelegate {
 
     func fpnDidSelectCountry(name: String, dialCode: String, code: String) {
-        
     }
     
     func fpnDidValidatePhoneNumber(textField: FPNTextField, isValid: Bool) {
-        
     }
     
     func fpnDisplayCountryList() {

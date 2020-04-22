@@ -26,9 +26,9 @@ class ConfirmationVC: UIViewController, StoryboardGettable {
     }
     
     private func localization() {
-        firstLabel.text = "declaration1.text".local
-        secondLabel.text = "declaration2.text".local
-        nextButton.setTitle("next.button", for: .normal)
+        firstLabel.text = "confirmation.label1.title".local
+        secondLabel.text = "confirmation.label2.title".local
+        nextButton.setTitle("next.button".local, for: .normal)
     }
     
     //MARK: - Tappable Label

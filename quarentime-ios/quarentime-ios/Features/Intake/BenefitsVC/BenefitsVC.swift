@@ -26,14 +26,14 @@ class BenefitsVC: UIViewController, StoryboardGettable {
     }
     
     func localization() {
-        questionLabel.text = "benefits.question.text".local
-        benefitsLabel.text = "benefits.text".local
-        paragraph1.text = "benefits.paragraph1.text".local
-        paragraph2.text = "benefits.paragraph2.text".local
-        helpingWorkersLabel.text = "benefits.boldParagraph3.text".local
-        paragraph3.text = "benefits.paragraph3.text".local
-        inContactTracingLabel.text = "benefits.boldParagraph4.text".local
-        paragraph4.text = "benefits.paragraph4.text".local
-        paragraph5.text = "benefits.paragraph5.text".local
+        questionLabel.text = "benefits.question.title".local
+        benefitsLabel.text = "benefits.title".local
+        paragraph1.text = "benefits.paragraph1.title".local
+        paragraph2.text = "benefits.paragraph2.title".local
+        helpingWorkersLabel.text = "benefits.boldParagraph3.title".local
+        paragraph3.text = "benefits.paragraph3.title".local
+        inContactTracingLabel.text = "benefits.boldParagraph4.title".local
+        paragraph4.text = "benefits.paragraph4.title".local
+        paragraph5.text = "benefits.paragraph5.title".local
     }
 }

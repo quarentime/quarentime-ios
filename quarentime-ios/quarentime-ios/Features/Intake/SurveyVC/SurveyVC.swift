@@ -21,9 +21,9 @@ class SurveyVC: UIViewController, StoryboardGettable {
     }
     
     func localization() {
-        quarentimeIntakeLabel.text = "quarentimeIntake.text".local
-        infoLabel1.text = "intakeInfo1.text".local
-        infoLabel2.text = "intakeInfo2.text".local
+        quarentimeIntakeLabel.text = "survey.quarentimeIntake.title".local
+        infoLabel1.text = "survey.intakeInfo1.title".local
+        infoLabel2.text = "survey.intakeInfo2.title".local
         letsStartButton.setTitle("next.button".local, for: .normal)
     }
     

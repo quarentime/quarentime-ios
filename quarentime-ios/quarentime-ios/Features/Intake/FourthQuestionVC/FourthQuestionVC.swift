@@ -36,16 +36,16 @@ class FourthQuestionVC: UIViewController, StoryboardGettable {
     }
     
     func localization() {
-        questionLabel.text = "question2b.text".local
+        questionLabel.text = "survey.question2b.title".local
         yesButton.setTitle("yes.button".local, for: .normal)
         noButton.setTitle("no.button".local, for: .normal)
-        definitionLabel.text = "definition.text".local
-        firstParagraphLabel.text = "paragraph1.text".local
-        secondParagraphLabel.text = "paragraph2.text".local
-        thirdParagraphLabel.text = "paragraph3.text".local
-        fourthParagraphLabel.text = "paragraph4.text".local
-        fifthParagraphLabel.text = "paragraph5.text" .local
-        sourceLabel.text = "sourceWHO.text".local
+        definitionLabel.text = "survey.question2b.definition.title".local
+        firstParagraphLabel.text = "survey.question2b.paragraph1.title".local
+        secondParagraphLabel.text = "survey.question2b.paragraph2.title".local
+        thirdParagraphLabel.text = "survey.question2b.paragraph3.title".local
+        fourthParagraphLabel.text = "survey.question2b.paragraph4.title".local
+        fifthParagraphLabel.text = "survey.question2b.paragraph5.title".local
+        sourceLabel.text = "survey.question2b.source.title".local
     }
     
 }

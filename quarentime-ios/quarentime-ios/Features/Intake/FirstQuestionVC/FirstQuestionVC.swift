@@ -22,8 +22,8 @@ class FirstQuestionVC: UIViewController, StoryboardGettable {
     }
     
     func localization() {
-        infoLabel.text = "intakeInfo3.text".local
-        questionLabel.text = "question1.text".local
+        infoLabel.text = "survey.info.title".local
+        questionLabel.text = "survey.question1.title".local
         yesButton.setTitle("yes.button".local, for: .normal)
         noButton.setTitle("no.button".local, for: .normal)
     }
