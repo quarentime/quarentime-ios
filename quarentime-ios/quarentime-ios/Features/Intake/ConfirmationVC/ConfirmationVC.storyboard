@@ -144,7 +144,11 @@
                         <viewLayoutGuide key="safeArea" id="ZPQ-0j-Nek"/>
                     </view>
                     <navigationItem key="navigationItem" title="Intake" id="f5a-bW-lgf">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="uig-sO-7o4"/>
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="uig-sO-7o4">
+                            <connections>
+                                <action selector="backButton:" destination="YdK-cg-fFo" id="IXn-QR-h7R"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="firstCheckbox" destination="qYO-cd-z5h" id="dLg-yM-tFF"/>

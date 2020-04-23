@@ -19,13 +19,13 @@ class BenefitsVC: UIViewController, StoryboardGettable {
     @IBOutlet weak var inContactTracingLabel: UILabel!
     @IBOutlet weak var paragraph4: UILabel!
     @IBOutlet weak var paragraph5: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        localization()
+        setupLabels()
     }
     
-    func localization() {
+    func setupLabels() {
         questionLabel.text = "benefits.question.title".local
         benefitsLabel.text = "benefits.title".local
         paragraph1.text = "benefits.paragraph1.title".local

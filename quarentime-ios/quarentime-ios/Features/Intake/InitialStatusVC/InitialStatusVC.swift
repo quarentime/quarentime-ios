@@ -10,7 +10,7 @@ import UIKit
 
 class InitialStatusVC: UIViewController, StoryboardGettable {
     
-    @IBOutlet weak var statusView: StatusView!
+    @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var thanksLabel: UILabel!
     @IBOutlet weak var initialStatusLabel: UILabel!
     @IBOutlet weak var createTraceButton: UIButton!
@@ -23,12 +23,13 @@ class InitialStatusVC: UIViewController, StoryboardGettable {
     
     //NOTE: Later we should set the status here
     func setStatusView() {
-        let status = StatusView.getView()
-        statusView.addSubviewAndConstrainToEdges(status, withMargin: 0)
+        let statusView = StatusView.getView()
+        statusView.delegate = self
+        innerView.addSubviewAndConstrainToEdges(statusView, withMargin: 0)
     }
     
-    func localization() {
-        thanksLabel.text = "initialStatus.thanks.title".local;
+    func setupLabels() {
+        thanksLabel.text = "initialStatus.thanks.title".local
         initialStatusLabel.text = "initialStatus.title".local
         createTraceButton.setTitle("initialStatus.createTrace.button".local, for: .normal)
     }
@@ -36,6 +37,14 @@ class InitialStatusVC: UIViewController, StoryboardGettable {
     @IBAction func createContactTraceAction(_ sender: Any) {
         let benefitsVC = BenefitsVC.getVC()
         present(benefitsVC, animated: true)
+    }
+}
+
+extension InitialStatusVC: StatusViewDelegate {
+    
+    func openHelpVC() {
+        let helpNC = HelpNC.getNavigationVC()
+        present(helpNC, animated: true, completion: nil)
     }
     
 }

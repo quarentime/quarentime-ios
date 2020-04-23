@@ -18,16 +18,19 @@ class FirstQuestionVC: UIViewController, StoryboardGettable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        localization()
+        setupLabels()
     }
     
-    func localization() {
+    func setupLabels() {
         infoLabel.text = "survey.info.title".local
         questionLabel.text = "survey.question1.title".local
         yesButton.setTitle("yes.button".local, for: .normal)
         noButton.setTitle("no.button".local, for: .normal)
     }
     
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     //both buttons are connected with the next screen until the functionalities are done
     @IBAction func nextScreen(_ sender: Any) {
         let secondQuestionVC = SecondQuestionVC.getVC()

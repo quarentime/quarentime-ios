@@ -209,7 +209,11 @@
                         <viewLayoutGuide key="safeArea" id="UwQ-39-Hwq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Intake" id="0WY-FS-BA8">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="7B2-6d-Gjh"/>
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="7B2-6d-Gjh">
+                            <connections>
+                                <action selector="backButton:" destination="H1N-dH-4iP" id="aer-IX-3VS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="borderView" destination="PgE-De-3VH" id="qT6-Mv-fez"/>

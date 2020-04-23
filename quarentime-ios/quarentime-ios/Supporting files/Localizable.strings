@@ -121,16 +121,16 @@
 "help.red.title" = "COVID-19 Positive";
 "help.highRisk.blue.title" = "Healthy, High Risk";
 
-"help.yellow.paragraph1.title" = "A patient with acute respiratory illness (fever and at least one sign/symptom of respiratory disease, e.g., cough, shortness of\nbreath), and a history of travel to or residence in a location reporting community transmission of COVID-19 disease during the 14 days prior to symptom onset.";
+"help.yellow.paragraph1.title" = "A patient with acute respiratory illness (fever and at least one sign/symptom of respiratory disease, e.g., cough, shortness of breath), and a history of travel to or residence in a location reporting community transmission of COVID-19 disease during the 14 days prior to symptom onset.";
 "help.yellow.paragraph2.title" = "A patient with any acute respiratory illness and having been in contact with a confirmed or probable COVID-19 case (see definition of contact) in the last 14 days prior to symptom onset.";
 "help.yellow.paragraph3.title" = "A patient with severe acute respiratory illness (fever and at least one sign/symptom of respiratory disease, e.g., cough, shortness of breath; AND requiring hospitalization) and in the absence of an alternative diagnosis that fully explains the clinical presentation. ";
 
 "help.blue.paragraph1.title" = "Based on your answers it seems that you have not been infected by the novel coronavirus. However, please follow the local guidelines and avoid unnecessary exposure to other people.";
 "help.blue.boldParagraph.title" = "Maintain social distancing!";
-"help.blue.paragraph2.title" = "In the meantime, take care of yourself, take care of others and remember together is better!";
+"help.blue.paragraph3.title" = "In the meantime, take care of yourself, take care of others and remember together is better!";
 
 "help.purple.boldParagraph.title" = "Congratulations!";
-"help.purple.paragraph.title" = "It seems like you fought the novel coronavirus and survived. However, it is important that you still follow the local guidelines and avoid unnecessary exposure to other people.";
+"help.purple.paragraph2.title" = "It seems like you fought the novel coronavirus and survived. However, it is important that you still follow the local guidelines and avoid unnecessary exposure to other people.";
 
 "help.red.paragraph1.title" = "Since you have tested positive for COVID-19 \nyou have probably received information from a local medical professional on the right course of action.";
 "help.red.paragraph2.title" = "Whether you have severe symptoms or not please isolate yourself and keep away from your loved ones to avoid infecting them.";

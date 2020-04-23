@@ -71,6 +71,10 @@
 		099F27EC7EE37F231275FC6F /* Pods_quarentime_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAB4BD78DCE79624CAE89FB /* Pods_quarentime_ios.framework */; };
 		2F012ECE2433A2810005D26A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F012ECD2433A2800005D26A /* Constants.swift */; };
 		2F012ED02433A80E0005D26A /* VerifyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F012ECF2433A80E0005D26A /* VerifyAccountVC.swift */; };
+		2F07944C245075C6008046AC /* HelpVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F07944B245075C6008046AC /* HelpVC.storyboard */; };
+		2F07944E245075E2008046AC /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07944D245075E2008046AC /* HelpVC.swift */; };
+		2F07945124509357008046AC /* HelpNC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F07945024509357008046AC /* HelpNC.storyboard */; };
+		2F07945324509372008046AC /* HelpNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07945224509372008046AC /* HelpNC.swift */; };
 		2F1B4CCB2434F8B30033371B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B4CCA2434F8B30033371B /* CustomButton.swift */; };
 		2F3A16852438EBF800E9502F /* FailedBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A16842438EBF800E9502F /* FailedBannerView.xib */; };
 		2F3A16872438EC2700E9502F /* FailedBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A16862438EC2700E9502F /* FailedBannerView.swift */; };
@@ -194,6 +198,10 @@
 		218BE79091AB8CD38FB4C3A3 /* Pods-quarentime-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quarentime-ios.debug.xcconfig"; path = "Target Support Files/Pods-quarentime-ios/Pods-quarentime-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		2F012ECD2433A2800005D26A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2F012ECF2433A80E0005D26A /* VerifyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountVC.swift; sourceTree = "<group>"; };
+		2F07944B245075C6008046AC /* HelpVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpVC.storyboard; sourceTree = "<group>"; };
+		2F07944D245075E2008046AC /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		2F07945024509357008046AC /* HelpNC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpNC.storyboard; sourceTree = "<group>"; };
+		2F07945224509372008046AC /* HelpNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpNC.swift; sourceTree = "<group>"; };
 		2F1B4CCA2434F8B30033371B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2F3A16842438EBF800E9502F /* FailedBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FailedBannerView.xib; sourceTree = "<group>"; };
 		2F3A16862438EC2700E9502F /* FailedBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedBannerView.swift; sourceTree = "<group>"; };
@@ -562,6 +570,25 @@
 			path = "quarentime-iosUITests";
 			sourceTree = "<group>";
 		};
+		2F07944A245074EB008046AC /* HelpVC */ = {
+			isa = PBXGroup;
+			children = (
+				2F07944F2450933E008046AC /* HelpNC */,
+				2F07944B245075C6008046AC /* HelpVC.storyboard */,
+				2F07944D245075E2008046AC /* HelpVC.swift */,
+			);
+			path = HelpVC;
+			sourceTree = "<group>";
+		};
+		2F07944F2450933E008046AC /* HelpNC */ = {
+			isa = PBXGroup;
+			children = (
+				2F07945024509357008046AC /* HelpNC.storyboard */,
+				2F07945224509372008046AC /* HelpNC.swift */,
+			);
+			path = HelpNC;
+			sourceTree = "<group>";
+		};
 		2F3A16832438EBD000E9502F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,6 +703,7 @@
 				2FFA698D2442248E009A037C /* FourthQuestionVC */,
 				2FAAB0EF24436CE8009A27BE /* ConfirmationVC */,
 				2FAAB0F424436D54009A27BE /* InitialStatusVC */,
+				2F07944A245074EB008046AC /* HelpVC */,
 				2F652B582444797500B90454 /* BenefitsVC */,
 			);
 			path = Intake;
@@ -833,6 +861,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F07944C245075C6008046AC /* HelpVC.storyboard in Resources */,
 				02E8290824381FC800F60F16 /* SymptomsVC.storyboard in Resources */,
 				0235C3D624289DCA00365C97 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				02E8290424381FA100F60F16 /* HomeVC.storyboard in Resources */,
@@ -844,6 +873,7 @@
 				0235C3DF24289DCA00365C97 /* SF-Pro-Display-Semibold.otf in Resources */,
 				0235C3E024289DCA00365C97 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
 				2FCDDD32244775CD00DBC1EF /* FirstQuestionVC.storyboard in Resources */,
+				2F07945124509357008046AC /* HelpNC.storyboard in Resources */,
 				024F2945242712C8008B58A8 /* PageControlItem.xib in Resources */,
 				0235C3DC24289DCA00365C97 /* SF-Pro-Display-MediumItalic.otf in Resources */,
 				0235C3D924289DCA00365C97 /* SF-Pro-Display-Light.otf in Resources */,
@@ -1045,6 +1075,7 @@
 				024F294B242734E4008B58A8 /* OnboardingVC.swift in Sources */,
 				2F809E052448BA46006CE768 /* SurveyNC.swift in Sources */,
 				027EAC42242E0BB800C3A77E /* OnboardingCell.swift in Sources */,
+				2F07944E245075E2008046AC /* HelpVC.swift in Sources */,
 				2F7A1A4D243D0AB800F3D0C3 /* KeyboardLayoutConstraint.swift in Sources */,
 				02F96C812425FAC7005284DE /* AppDelegate.swift in Sources */,
 				021CEB5124397358000956CB /* AppStateRepository.swift in Sources */,
@@ -1073,6 +1104,7 @@
 				2FAAB0F124436D08009A27BE /* ConfirmationVC.swift in Sources */,
 				02E8290E2438200700F60F16 /* HomeVC.swift in Sources */,
 				2FEBAB892437D21000E45E86 /* SurveyVC.swift in Sources */,
+				2F07945324509372008046AC /* HelpNC.swift in Sources */,
 				024F294824273341008B58A8 /* XibViewGettable.swift in Sources */,
 				2FAAB0F824436D8A009A27BE /* InitialStatusVC.swift in Sources */,
 				024790B324321DC1001CAFB2 /* LetsStartVC.swift in Sources */,

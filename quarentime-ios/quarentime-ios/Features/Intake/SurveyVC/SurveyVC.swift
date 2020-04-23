@@ -17,10 +17,10 @@ class SurveyVC: UIViewController, StoryboardGettable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        localization()
+        setupLabels()
     }
     
-    func localization() {
+    func setupLabels() {
         quarentimeIntakeLabel.text = "survey.quarentimeIntake.title".local
         infoLabel1.text = "survey.intakeInfo1.title".local
         infoLabel2.text = "survey.intakeInfo2.title".local

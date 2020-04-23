@@ -36,7 +36,7 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate, StoryboardGettable
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissKeyboardOnTap()
-        localization()
+        setupLabel()
         resendCodeButton.titleLabel?.adjustsFontSizeToFitWidth = true
         
         for index in 0 ..< textFieldsCollection.count {
@@ -118,7 +118,7 @@ class VerifyAccountVC: UIViewController, UITextFieldDelegate, StoryboardGettable
         view.endEditing(true)
     }
     
-    func localization() {
+    func setupLabel() {
         verifyAccountLabel.text = "verifyAccount.title".local
         infoLabel.text = "verifyAccount.code.title".local
         didntGetCodeLabel.text = "verifyAccount.didntGetCode.title".local

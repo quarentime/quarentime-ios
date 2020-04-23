@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bsA-ak-dTA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Help-->
+        <scene sceneID="deT-GA-UZl">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="bsA-ak-dTA" customClass="HelpVC" customModule="quarentime_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dVe-3Q-71f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8IC-jW-rSx" userLabel="ColorView">
+                                <rect key="frame" x="111.5" y="74" width="322.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imS-C6-a1N">
+                                        <rect key="frame" x="20" y="13" width="65.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.72941176470000002" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="imS-C6-a1N" firstAttribute="top" secondItem="8IC-jW-rSx" secondAttribute="top" constant="13" id="4pO-fg-qFQ"/>
+                                    <constraint firstItem="imS-C6-a1N" firstAttribute="leading" secondItem="8IC-jW-rSx" secondAttribute="leading" constant="20" id="Svu-tb-3u1"/>
+                                    <constraint firstAttribute="bottom" secondItem="imS-C6-a1N" secondAttribute="bottom" constant="13" id="WL4-l9-h3Y"/>
+                                    <constraint firstAttribute="height" constant="50" id="a7h-5b-YLc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akh-0w-LB4">
+                                <rect key="frame" x="34" y="74" width="57.5" height="50"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suspected Case" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFw-nX-2Gx">
+                                <rect key="frame" x="34" y="154" width="340" height="26.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paragraph 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xie-s1-Kd3">
+                                <rect key="frame" x="34" y="196.5" width="340" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paragraph 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHz-B8-Gf9">
+                                <rect key="frame" x="34" y="228.5" width="340" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paragraph 3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6w-fk-mVe">
+                                <rect key="frame" x="34" y="260.5" width="340" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paragraph 4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-kT-sxW">
+                                <rect key="frame" x="34" y="292.5" width="340" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LFw-nX-2Gx" firstAttribute="leading" secondItem="Akh-0w-LB4" secondAttribute="leading" id="5mz-8c-Ocj"/>
+                            <constraint firstItem="pbr-kT-sxW" firstAttribute="trailing" secondItem="y6w-fk-mVe" secondAttribute="trailing" id="7Gy-Su-79H"/>
+                            <constraint firstItem="xie-s1-Kd3" firstAttribute="trailing" secondItem="LFw-nX-2Gx" secondAttribute="trailing" id="9y4-2s-OIA"/>
+                            <constraint firstItem="y6w-fk-mVe" firstAttribute="top" secondItem="gHz-B8-Gf9" secondAttribute="bottom" constant="15" id="BKJ-kf-VBl"/>
+                            <constraint firstItem="gHz-B8-Gf9" firstAttribute="top" secondItem="xie-s1-Kd3" secondAttribute="bottom" constant="15" id="CdU-xk-P2d"/>
+                            <constraint firstItem="xie-s1-Kd3" firstAttribute="leading" secondItem="LFw-nX-2Gx" secondAttribute="leading" id="E2O-Ij-pMa"/>
+                            <constraint firstItem="y6w-fk-mVe" firstAttribute="trailing" secondItem="gHz-B8-Gf9" secondAttribute="trailing" id="H6f-p6-kPl"/>
+                            <constraint firstItem="xBt-mx-y8N" firstAttribute="trailing" secondItem="LFw-nX-2Gx" secondAttribute="trailing" constant="40" id="XAX-xp-Jfp"/>
+                            <constraint firstItem="y6w-fk-mVe" firstAttribute="leading" secondItem="gHz-B8-Gf9" secondAttribute="leading" id="acW-L7-9VI"/>
+                            <constraint firstItem="8IC-jW-rSx" firstAttribute="centerY" secondItem="Akh-0w-LB4" secondAttribute="centerY" id="bfp-da-Zkd"/>
+                            <constraint firstItem="gHz-B8-Gf9" firstAttribute="trailing" secondItem="xie-s1-Kd3" secondAttribute="trailing" id="cfd-Vu-HJQ"/>
+                            <constraint firstItem="Akh-0w-LB4" firstAttribute="top" secondItem="8IC-jW-rSx" secondAttribute="top" id="eZh-yA-XWU"/>
+                            <constraint firstItem="xie-s1-Kd3" firstAttribute="top" secondItem="LFw-nX-2Gx" secondAttribute="bottom" constant="16" id="fSf-bb-w3x"/>
+                            <constraint firstItem="pbr-kT-sxW" firstAttribute="leading" secondItem="y6w-fk-mVe" secondAttribute="leading" id="fk0-Od-PK1"/>
+                            <constraint firstItem="LFw-nX-2Gx" firstAttribute="top" secondItem="8IC-jW-rSx" secondAttribute="bottom" constant="30" id="mhT-Qa-Mue"/>
+                            <constraint firstItem="8IC-jW-rSx" firstAttribute="top" secondItem="xBt-mx-y8N" secondAttribute="top" constant="30" id="p58-Mp-dX1"/>
+                            <constraint firstItem="pbr-kT-sxW" firstAttribute="top" secondItem="y6w-fk-mVe" secondAttribute="bottom" constant="15" id="qFg-YM-Hyw"/>
+                            <constraint firstItem="Akh-0w-LB4" firstAttribute="leading" secondItem="xBt-mx-y8N" secondAttribute="leading" constant="34" id="ufd-pQ-MWr"/>
+                            <constraint firstItem="8IC-jW-rSx" firstAttribute="leading" secondItem="Akh-0w-LB4" secondAttribute="trailing" constant="20" id="w8o-lx-1IG"/>
+                            <constraint firstItem="xBt-mx-y8N" firstAttribute="trailing" secondItem="8IC-jW-rSx" secondAttribute="trailing" constant="-20" id="xLn-9e-QaZ"/>
+                            <constraint firstItem="gHz-B8-Gf9" firstAttribute="leading" secondItem="xie-s1-Kd3" secondAttribute="leading" id="z9w-Du-9I9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xBt-mx-y8N"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="UDa-GT-L4r">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="Ffd-5P-POs">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButtonAction:" destination="bsA-ak-dTA" id="hOG-Yd-1dN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="colorLabel" destination="imS-C6-a1N" id="Rfp-QE-h0O"/>
+                        <outlet property="coloredView" destination="8IC-jW-rSx" id="kxq-Vn-Por"/>
+                        <outlet property="groupLabel" destination="Akh-0w-LB4" id="eoz-yS-ZgF"/>
+                        <outlet property="paragraph1Label" destination="xie-s1-Kd3" id="geU-KZ-OON"/>
+                        <outlet property="paragraph2Label" destination="gHz-B8-Gf9" id="V3z-uF-EkL"/>
+                        <outlet property="paragraph3Label" destination="y6w-fk-mVe" id="HTd-yP-Fee"/>
+                        <outlet property="paragraph4Label" destination="pbr-kT-sxW" id="9ZN-lS-ZIz"/>
+                        <outlet property="statusLabel" destination="LFw-nX-2Gx" id="5tj-hV-B00"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPO-yn-IZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446.37681159420293" y="39.508928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

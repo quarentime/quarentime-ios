@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol StatusViewDelegate {
+    func openHelpVC()
+}
+
 enum Status {
     case suspected
     case healthy
@@ -18,10 +22,11 @@ enum Status {
 class StatusView: UIView, XibViewGettable {
     
     @IBOutlet weak var helpButton: UIButton!
-    @IBOutlet weak var statusLabel: UILabel?
-    @IBOutlet weak var highRiskLabel: UILabel?
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var highRiskLabel: UILabel!
     @IBOutlet weak var highRiskBackground: UIView!
-        
+    
+    var delegate: StatusViewDelegate?
     var initialStatus: Status = .positive
     
     override func awakeFromNib() {
@@ -31,18 +36,23 @@ class StatusView: UIView, XibViewGettable {
     }
     
     func setStatus() {
-        if initialStatus == .suspected {
+        switch initialStatus {
+        case .suspected:
             statusLabel?.text = "status.suspected.title".local
             backgroundColor = #colorLiteral(red: 0.9791664481, green: 0.7743744254, blue: 0.4536771178, alpha: 1)
-        } else if initialStatus == .healthy {
+        case .healthy:
             statusLabel?.text = "status.healthy.title".local
             backgroundColor = #colorLiteral(red: 0.3803921569, green: 0.7568627451, blue: 0.968627451, alpha: 1)
-        } else if initialStatus == .positive  {
+        case .positive:
             statusLabel?.text = "status.positive.title".local
             backgroundColor = #colorLiteral(red: 0.968627451, green: 0.3803921569, blue: 0.3803921569, alpha: 1)
-        } else if initialStatus == .recovered {
+        case .recovered:
             statusLabel?.text = "status.recovered.title".local
             backgroundColor = #colorLiteral(red: 0.7568627451, green: 0.5568627451, blue: 0.7411764706, alpha: 1)
         }
+    }
+    
+    @IBAction func helpButtonAction(_ sender: Any) {
+        delegate?.openHelpVC()
     }
 }

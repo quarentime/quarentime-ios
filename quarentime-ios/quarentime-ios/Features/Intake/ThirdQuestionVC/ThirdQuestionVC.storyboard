@@ -102,7 +102,11 @@
                         <viewLayoutGuide key="safeArea" id="tRv-S7-1Tb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Intake" id="rxW-xZ-AsB">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="LVg-Sa-fah"/>
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="LVg-Sa-fah">
+                            <connections>
+                                <action selector="backButton:" destination="Lfz-tU-XOr" id="6dK-rv-vVE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="noButton" destination="e8P-Qh-5ng" id="jQx-DY-qdK"/>

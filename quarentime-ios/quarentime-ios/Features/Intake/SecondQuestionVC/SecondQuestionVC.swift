@@ -16,15 +16,18 @@ class SecondQuestionVC: UIViewController, StoryboardGettable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        localization()
+        setupLabels()
     }
     
-    func localization() {
+    func setupLabels() {
         questionLabel.text = "survey.question2.title".local
         infoLabel.text = "survey.selectSymptoms.title".local
         nextButton.setTitle("next.button".local, for: .normal)
     }
     
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+    }
     //temporary button
     @IBAction func nextScreenAction(_ sender: Any) {
         let thirdQuestionVC = ThirdQuestionVC.getVC()

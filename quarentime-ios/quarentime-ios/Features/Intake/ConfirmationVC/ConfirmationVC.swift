@@ -22,10 +22,10 @@ class ConfirmationVC: UIViewController, StoryboardGettable {
         setupMultipleTapLabel()
         nextButton.isEnabled = false
         nextButton.alpha = 0.5
-        localization()
+        setupLabels()
     }
     
-    private func localization() {
+    private func setupLabels() {
         firstLabel.text = "confirmation.label1.title".local
         secondLabel.text = "confirmation.label2.title".local
         nextButton.setTitle("next.button".local, for: .normal)
@@ -97,6 +97,11 @@ class ConfirmationVC: UIViewController, StoryboardGettable {
     @IBAction func nextScreen(_ sender: Any) {
         let nextVC = InitialStatusVC.getVC()
         present(nextVC, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
     }
 }
 

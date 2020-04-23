@@ -100,7 +100,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Intake" id="b8L-Fg-BPZ">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="p2L-rE-Yar"/>
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="p2L-rE-Yar">
+                            <connections>
+                                <action selector="backButton:" destination="0XG-AX-7Wp" id="vR5-h6-p8h"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

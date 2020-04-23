@@ -14,4 +14,6 @@ class SurveyNC: UINavigationController, StoryboardGettable {
         super.viewDidLoad()
         viewControllers = [FirstQuestionVC.getVC()]
     }
+    
+    
 }

@@ -35,7 +35,7 @@ class PersonalInformationVC: UIViewController, UITextFieldDelegate, StoryboardGe
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneNumberTextField.delegate = self
-        localization()
+        setupLabel()
         dismissKeyboard()
     }
     
@@ -94,7 +94,7 @@ class PersonalInformationVC: UIViewController, UITextFieldDelegate, StoryboardGe
     }
     
     //MARK: - Other
-    func localization() {
+    func setupLabel() {
         personalInfoLabel.text = "personalInfo.title".local
         nameLabel.text = "personalInfo.name.title".local
         surnameLabel.text = "personalInfo.surname.title".local
